@@ -1,8 +1,8 @@
 // Configuración central de NovaTech Ingenieros.
 // Reemplaza estos valores con los datos reales de la empresa.
 export const siteConfig = {
-  brand: "NovaTech Ingenieros",
-  tagline: "Ingeniería Solar y Climatización",
+  brand: "NovaTech Ingeniería",
+  tagline: "Ingeniería Solar, Climatización y Reformas",
   phone: "+34 600 123 456",
   phoneRaw: "+34600123456",
   whatsapp: "34600123456",

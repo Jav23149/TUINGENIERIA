@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <span className="flex h-9 w-9 items-center justify-center bg-citron font-display text-sm font-black text-graphite">N</span>
               <span className="font-display text-base font-bold text-foreground">
-                NovaTech<span className="text-citron">.</span>
+                NovaTech<span className="text-citron"> Ingeniería</span>
               </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -36,6 +36,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm">
               <li><Link to="/fotovoltaica" className="text-muted-foreground transition hover:text-citron">Fotovoltaica</Link></li>
               <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron">Climatización</Link></li>
+              <li><Link to="/reformas" className="text-muted-foreground transition hover:text-citron">Reformas</Link></li>
               <li><Link to="/fotovoltaica" className="text-muted-foreground transition hover:text-citron">Autoconsumo solar</Link></li>
               <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron">Splits y conductos</Link></li>
             </ul>

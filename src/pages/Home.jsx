@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Sun, Wind, Phone, MessageCircle, ArrowRight, CheckCircle2, Zap, Leaf, Wrench, ShieldCheck, Clock, Euro } from "lucide-react";
+import { Sun, Wind, Hammer, Phone, MessageCircle, ArrowRight, CheckCircle2, Zap, Leaf, Wrench, ShieldCheck, Clock, Euro } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
@@ -9,6 +9,7 @@ import ServiceCTA from "@/components/site/ServiceCTA";
 const SOLAR_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2db8ad089_generated_image.png";
 const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/bb853e33f_generated_image.png";
 const SOLAR_MACRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6cbdd156_generated_image.png";
+const REFORMAS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/0b21260cd_generated_image.png";
 
 export default function Home() {
   return (
@@ -22,11 +23,11 @@ export default function Home() {
               <Zap className="h-3.5 w-3.5" /> Ingeniería solar y climatización en {siteConfig.provincia}
             </span>
             <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl lg:text-6xl">
-              Energía solar y clima inteligente para tu hogar y empresa
+              Energía solar, climatización y reformas con ingeniería en {siteConfig.provincia}
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Instalación profesional de placas solares, aire acondicionado split y conductos en {siteConfig.provincia}.
-              Ahorra en tu factura con ingenieros certificados. Presupuesto gratis en 2 horas.
+              Ingeniería certificada en fotovoltaica, climatización y reformas integrales en {siteConfig.provincia}.
+              Ahorra, renueva y mejora tu espacio. Presupuesto gratis en 2 horas.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-graphite transition hover:brightness-95">
@@ -39,7 +40,7 @@ export default function Home() {
           </div>
 
           {/* SPLIT SERVICE CARDS */}
-          <div className="mt-16 grid gap-6 lg:grid-cols-2">
+          <div className="mt-16 grid gap-6 lg:grid-cols-3">
             <Link to="/fotovoltaica" className="group relative overflow-hidden rounded-sm border border-border bg-card">
               <div className="relative h-64 overflow-hidden">
                 <Image src={SOLAR_IMG} alt="Instalación de placas solares fotovoltaicas en tejado" className="h-full w-full" fittingType="fill" />
@@ -68,6 +69,23 @@ export default function Home() {
               <div className="p-6">
                 <h2 className="font-display text-2xl font-bold text-foreground">Clima Inteligente</h2>
                 <p className="mt-2 text-sm text-muted-foreground">Splits, conductos, bombas de calor y aerotermia. Confort total con la máxima eficiencia energética.</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-citron transition group-hover:gap-2">
+                  Ver servicio <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
+            </Link>
+
+            <Link to="/reformas" className="group relative overflow-hidden rounded-sm border border-border bg-card">
+              <div className="relative h-64 overflow-hidden">
+                <Image src={REFORMAS_IMG} alt="Reforma integral de vivienda con dirección de obra" className="h-full w-full" fittingType="fill" />
+                <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/40 to-transparent" />
+                <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
+                  <Hammer className="h-3.5 w-3.5" /> REFORMAS
+                </div>
+              </div>
+              <div className="p-6">
+                <h2 className="font-display text-2xl font-bold text-foreground">Reformas con Ingeniería</h2>
+                <p className="mt-2 text-sm text-muted-foreground">Reformas integrales de viviendas y locales con dirección de obra. Llave en mano y con garantía.</p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-citron transition group-hover:gap-2">
                   Ver servicio <ArrowRight className="h-4 w-4" />
                 </span>
@@ -103,9 +121,9 @@ export default function Home() {
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-wider text-citron">Qué hacemos</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Dos especialidades, un mismo estándar de ingeniería</h2>
-            <p className="mt-4 text-muted-foreground">Diseñamos, instalamos y mantenemos sistemas energéticos de alto rendimiento en {siteConfig.provincia} y alrededores.</p>
+            <p className="mt-4 text-muted-foreground">Diseñamos, instalamos y reformamos en {siteConfig.provincia} y alrededores con un mismo estándar de ingeniería.</p>
           </div>
-          <div className="mt-14 grid gap-8 md:grid-cols-2">
+          <div className="mt-14 grid gap-8 md:grid-cols-3">
             <div className="rounded-sm border border-border bg-card p-8">
               <Sun className="h-10 w-10 text-citron" />
               <h3 className="mt-5 font-display text-xl font-bold text-foreground">Energía Fotovoltaica</h3>
@@ -127,6 +145,18 @@ export default function Home() {
                 ))}
               </ul>
               <Link to="/climatizacion" className="mt-6 inline-flex items-center gap-1 text-sm font-bold text-citron hover:gap-2 transition-all">
+                Saber más <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+            <div className="rounded-sm border border-border bg-card p-8">
+              <Hammer className="h-10 w-10 text-citron" />
+              <h3 className="mt-5 font-display text-xl font-bold text-foreground">Reformas Integrales</h3>
+              <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
+                {["Reformas de viviendas y locales", "Proyecto y dirección de obra", "Electricidad, fontanería y acabados", "Llave en mano con garantía"].map((i) => (
+                  <li key={i} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-citron" /> {i}</li>
+                ))}
+              </ul>
+              <Link to="/reformas" className="mt-6 inline-flex items-center gap-1 text-sm font-bold text-citron hover:gap-2 transition-all">
                 Saber más <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
