@@ -1,48 +1,72 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Sun, Wind, Hammer, Phone, MessageCircle, ArrowRight, CheckCircle2, Zap, Leaf, Wrench, ShieldCheck, Clock, Euro } from "lucide-react";
+import { Sun, Wind, Hammer, Phone, ArrowRight, CheckCircle2, Zap, Leaf, Wrench, ShieldCheck, Clock, Euro, Star, MapPin } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
+import Reviews from "@/components/site/Reviews";
+import CaseStudies from "@/components/site/CaseStudies";
+import WhatsAppButton, { WhatsAppGlyph } from "@/components/site/WhatsAppButton";
 
 const SOLAR_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2db8ad089_generated_image.png";
 const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/bb853e33f_generated_image.png";
 const SOLAR_MACRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6cbdd156_generated_image.png";
 const REFORMAS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/0b21260cd_generated_image.png";
+const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6cbdd156_generated_image.png";
 
 export default function Home() {
   return (
     <>
-      {/* HERO SPLIT */}
+      {/* HERO */}
       <section className="relative overflow-hidden border-b border-border">
-        <div className="blueprint-grid absolute inset-0 opacity-40" />
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
-          <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-citron/40 bg-citron/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron">
-              <Zap className="h-3.5 w-3.5" /> Ingeniería solar y climatización en {siteConfig.provincia}
-            </span>
+        <div className="absolute inset-0">
+          <Image src={HERO_IMG} alt="Instalación fotovoltaica y de climatización" className="h-full w-full" fittingType="fill" />
+          <div className="absolute inset-0 bg-gradient-to-br from-graphite via-graphite/90 to-graphite/70" />
+          <div className="blueprint-grid absolute inset-0 opacity-30" />
+        </div>
+        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-28">
+          <div className="max-w-3xl">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="inline-flex items-center gap-2 rounded-full border border-citron/40 bg-citron/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron">
+                <Zap className="h-3.5 w-3.5" /> Ingeniería solar, climatización y reformas
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-4 py-1.5 text-xs font-semibold text-foreground backdrop-blur">
+                <Star className="h-3.5 w-3.5 fill-citron text-citron" /> 4,9/5 · +120 reseñas en Google
+              </span>
+            </div>
             <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl lg:text-6xl">
-              Energía solar, climatización y reformas con ingeniería en {siteConfig.provincia}
+              Energía, clima y reformas con ingeniería en {siteConfig.provincia}
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Ingeniería certificada en fotovoltaica, climatización y reformas integrales en {siteConfig.provincia}.
-              Ahorra, renueva y mejora tu espacio. Presupuesto gratis en 2 horas.
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              Ingenieros certificados en fotovoltaica, climatización y reformas integrales.
+              Ahorra hasta un 70% en tu factura y renueva tu espacio. Presupuesto gratis en 2 horas.
             </p>
-            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-graphite transition hover:brightness-95">
-                <MessageCircle className="h-4 w-4" /> Presupuesto por WhatsApp
-              </a>
-              <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-7 text-sm font-bold text-foreground transition hover:border-citron hover:text-citron">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <WhatsAppButton label="Presupuesto por WhatsApp" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-7 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
+              <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border bg-card/60 px-7 text-sm font-bold text-foreground backdrop-blur transition hover:border-citron hover:text-citron">
                 <Phone className="h-4 w-4" /> {siteConfig.phone}
               </a>
+              <Link to="/#contacto" className="flex h-12 items-center justify-center gap-2 rounded-sm border border-citron/50 bg-citron/10 px-7 text-sm font-bold text-citron transition hover:bg-citron/20">
+                Solicitar presupuesto gratis
+              </Link>
+            </div>
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
+              <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-citron" /> Ingenieros certificados</span>
+              <span className="flex items-center gap-1.5"><Clock className="h-4 w-4 text-citron" /> Presupuesto en 2 horas</span>
+              <span className="flex items-center gap-1.5"><Euro className="h-4 w-4 text-citron" /> Ahorro hasta 70%</span>
+              <span className="flex items-center gap-1.5"><Wrench className="h-4 w-4 text-citron" /> Garantía 5 años</span>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* SPLIT SERVICE CARDS */}
-          <div className="mt-16 grid gap-6 lg:grid-cols-3">
-            <Link to="/fotovoltaica" className="group relative overflow-hidden rounded-sm border border-border bg-card">
-              <div className="relative h-64 overflow-hidden">
+      {/* SERVICE CARDS */}
+      <section className="border-b border-border bg-card">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="grid gap-6 lg:grid-cols-3">
+            <Link to="/fotovoltaica" className="group relative overflow-hidden rounded-sm border border-border bg-background">
+              <div className="relative h-56 overflow-hidden">
                 <Image src={SOLAR_IMG} alt="Instalación de placas solares fotovoltaicas en tejado" className="h-full w-full" fittingType="fill" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/40 to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
@@ -58,8 +82,8 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link to="/climatizacion" className="group relative overflow-hidden rounded-sm border border-border bg-card">
-              <div className="relative h-64 overflow-hidden">
+            <Link to="/climatizacion" className="group relative overflow-hidden rounded-sm border border-border bg-background">
+              <div className="relative h-56 overflow-hidden">
                 <Image src={HVAC_IMG} alt="Instalación de aire acondicionado split y conductos" className="h-full w-full" fittingType="fill" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/40 to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
@@ -75,8 +99,8 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link to="/reformas" className="group relative overflow-hidden rounded-sm border border-border bg-card">
-              <div className="relative h-64 overflow-hidden">
+            <Link to="/reformas" className="group relative overflow-hidden rounded-sm border border-border bg-background">
+              <div className="relative h-56 overflow-hidden">
                 <Image src={REFORMAS_IMG} alt="Reforma integral de vivienda con dirección de obra" className="h-full w-full" fittingType="fill" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/40 to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
@@ -96,7 +120,7 @@ export default function Home() {
       </section>
 
       {/* TRUST BAR */}
-      <section className="border-b border-border bg-card">
+      <section className="border-b border-border">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-4 py-10 sm:px-6 lg:grid-cols-4 lg:px-8">
           {[
             { icon: ShieldCheck, label: "Ingenieros certificados", value: "ISO 9001" },
@@ -120,7 +144,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-wider text-citron">Qué hacemos</p>
-            <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Dos especialidades, un mismo estándar de ingeniería</h2>
+            <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tres especialidades, un mismo estándar de ingeniería</h2>
             <p className="mt-4 text-muted-foreground">Diseñamos, instalamos y reformamos en {siteConfig.provincia} y alrededores con un mismo estándar de ingeniería.</p>
           </div>
           <div className="mt-14 grid gap-8 md:grid-cols-3">
@@ -196,6 +220,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CASE STUDIES */}
+      <CaseStudies />
+
+      {/* REVIEWS */}
+      <Reviews />
+
       <ServiceCTA />
 
       {/* CONTACT */}
@@ -211,10 +241,14 @@ export default function Home() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><Phone className="h-5 w-5 text-citron" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">Llámanos</p><p className="font-bold text-foreground">{siteConfig.phone}</p></div>
                 </a>
-                <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><MessageCircle className="h-5 w-5 text-citron" /></div>
+                <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-[#25D366]">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-[#25D366]/10"><WhatsAppGlyph className="h-6 w-6 text-[#25D366]" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</p><p className="font-bold text-foreground">Escríbenos ahora</p></div>
                 </a>
+                <div className="flex items-center gap-4 rounded-sm border border-border bg-card p-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><MapPin className="h-5 w-5 text-citron" /></div>
+                  <div><p className="text-xs uppercase tracking-wider text-muted-foreground">Zona de servicio</p><p className="font-bold text-foreground">{siteConfig.provincia} y alrededores</p></div>
+                </div>
               </div>
             </div>
             <div className="rounded-sm border border-border bg-card p-6 sm:p-8">
