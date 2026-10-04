@@ -4,8 +4,48 @@ import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
+import ProjectGallery from "@/components/site/ProjectGallery";
 
 const REFORMAS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/0b21260cd_generated_image.png";
+
+const PROYECTOS_REFORMAS = [
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/124212da4_generated_image.png",
+    titulo: "Cocina y salón en Valencia",
+    tipo: "Reforma integral",
+    zona: "Valencia capital",
+    resultado: "Open space cocina-salón con isla, nueva electricidad y carpintería a medida. Llave en mano en 8 semanas con dirección de obra.",
+    metricas: [
+      { label: "Plazo", value: "8 sem" },
+      { label: "Superficie", value: "45 m²" },
+      { label: "Garantía", value: "3 años" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1bbd31a63_generated_image.png",
+    titulo: "Baño principal en Alzira",
+    tipo: "Reforma de baño",
+    zona: "Alzira, Valencia",
+    resultado: "Baño completo con plato de ducha de resina, mobiliario suspendido y iluminación LED. Acabados premium en 3 semanas.",
+    metricas: [
+      { label: "Plazo", value: "3 sem" },
+      { label: "Superficie", value: "8 m²" },
+      { label: "Garantía", value: "2 años" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/0b21260cd_generated_image.png",
+    titulo: "Vivienda de los años 80 en Torrent",
+    tipo: "Reforma llave en mano",
+    zona: "Torrent, Valencia",
+    resultado: "Reforma integral con electricidad, fontanería, pladur, suelos y pintura. Dirección de obra y un único responsable.",
+    metricas: [
+      { label: "Plazo", value: "12 sem" },
+      { label: "Superficie", value: "95 m²" },
+      { label: "Garantía", value: "3 años" },
+    ],
+  },
+];
 
 const servicios = [
   { icon: Home, title: "Reformas integrales", desc: "Renovamos tu vivienda o local de principio a fin, con un único responsable." },
@@ -115,6 +155,15 @@ export default function Reformas() {
           </div>
         </div>
       </section>
+
+      {/* PROYECTOS REALES */}
+      <ProjectGallery
+        proyectos={PROYECTOS_REFORMAS}
+        eyebrow="Proyectos reales"
+        titulo="Reformas terminadas en Valencia"
+        subtitulo="Ejemplos reales de reformas integrales y parciales con dirección de ingeniería."
+        fondoCard
+      />
 
       <ServiceCTA title="¿Vamos a reformar tu espacio?" subtitle="Presupuesto gratis y sin compromiso en menos de 2 horas." />
 

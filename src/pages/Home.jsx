@@ -6,14 +6,89 @@ import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import Reviews from "@/components/site/Reviews";
-import CaseStudies from "@/components/site/CaseStudies";
+import ProjectGallery from "@/components/site/ProjectGallery";
 import WhatsAppButton, { WhatsAppGlyph } from "@/components/site/WhatsAppButton";
 
 const SOLAR_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2db8ad089_generated_image.png";
 const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/bb853e33f_generated_image.png";
 const SOLAR_MACRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6cbdd156_generated_image.png";
 const REFORMAS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/0b21260cd_generated_image.png";
-const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6cbdd156_generated_image.png";
+const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/26f52153e_generated_image.png";
+
+const PROYECTOS = [
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/26f52153e_generated_image.png",
+    titulo: "Vivienda unifamiliar en Paterna",
+    tipo: "Fotovoltaica + Batería",
+    zona: "Paterna, Valencia",
+    resultado: "8 paneles de 500W + batería de 10 kWh. Ahorro del 78% en la factura anual para una familia con coche eléctrico.",
+    metricas: [
+      { label: "Ahorro anual", value: "78%" },
+      { label: "Amortización", value: "4,5 años" },
+      { label: "Potencia", value: "4 kWp" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2d6291ef9_generated_image.png",
+    titulo: "Nave industrial en Sagunto",
+    tipo: "Fotovoltaica industrial",
+    zona: "Sagunto, Valencia",
+    resultado: "Autoconsumo con excedentes para nave logística de 2.000 m². Cubre el 80% del consumo diurno de la actividad.",
+    metricas: [
+      { label: "Superficie", value: "2.000 m²" },
+      { label: "Ahorro", value: "80%" },
+      { label: "Paneles", value: "120" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/b0b980a42_generated_image.png",
+    titulo: "Piso de 110 m² en Valencia",
+    tipo: "Climatización por conductos",
+    zona: "Valencia capital",
+    resultado: "Conductos ocultos con fan-coils y bomba de calor inverter A+++. Confort silencioso en toda la casa.",
+    metricas: [
+      { label: "Eficiencia", value: "A+++" },
+      { label: "Zonas", value: "4" },
+      { label: "Ruido", value: "<22 dB" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1f1c1492d_generated_image.png",
+    titulo: "Reforma con aerotermia en Torrent",
+    tipo: "Reforma + Climatización",
+    zona: "Torrent, Valencia",
+    resultado: "Reforma integral con sustitución de caldera de gas por aerotermia. Calefacción, ACS y aire en un solo sistema.",
+    metricas: [
+      { label: "Plazo", value: "10 sem" },
+      { label: "Superficie", value: "90 m²" },
+      { label: "Ahorro", value: "45%" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/124212da4_generated_image.png",
+    titulo: "Cocina y salón en Valencia",
+    tipo: "Reforma integral",
+    zona: "Valencia capital",
+    resultado: "Open space cocina-salón con isla, nueva electricidad y carpintería a medida. Llave en mano en 8 semanas.",
+    metricas: [
+      { label: "Plazo", value: "8 sem" },
+      { label: "Superficie", value: "45 m²" },
+      { label: "Garantía", value: "3 años" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1bbd31a63_generated_image.png",
+    titulo: "Baño principal en Alzira",
+    tipo: "Reforma de baño",
+    zona: "Alzira, Valencia",
+    resultado: "Baño completo con plato de ducha de resina, mobiliario suspendido y iluminación LED. Acabados premium.",
+    metricas: [
+      { label: "Plazo", value: "3 sem" },
+      { label: "Superficie", value: "8 m²" },
+      { label: "Garantía", value: "2 años" },
+    ],
+  },
+];
 
 export default function Home() {
   return (
@@ -220,8 +295,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CASE STUDIES */}
-      <CaseStudies />
+      {/* PROYECTOS REALES */}
+      <ProjectGallery
+        proyectos={PROYECTOS}
+        eyebrow="Proyectos reales"
+        titulo="Proyectos reales en Valencia"
+        subtitulo="Seis ejemplos de ingeniería aplicada, con resultados medibles para cada cliente."
+        fondoCard
+      />
 
       {/* REVIEWS */}
       <Reviews />

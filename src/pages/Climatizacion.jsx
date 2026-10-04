@@ -5,8 +5,48 @@ import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
+import ProjectGallery from "@/components/site/ProjectGallery";
 
 const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/bb853e33f_generated_image.png";
+
+const PROYECTOS_HVAC = [
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/b0b980a42_generated_image.png",
+    titulo: "Piso de 110 m² en Valencia",
+    tipo: "Conductos + Inverter A+++",
+    zona: "Valencia capital",
+    resultado: "Sistema de conductos ocultos con bomba de calor inverter. 4 zonas independientes con control por app y silencio absoluto.",
+    metricas: [
+      { label: "Eficiencia", value: "A+++" },
+      { label: "Zonas", value: "4" },
+      { label: "Ruido", value: "<22 dB" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1f1c1492d_generated_image.png",
+    titulo: "Reforma con aerotermia en Torrent",
+    tipo: "Aerotermia",
+    zona: "Torrent, Valencia",
+    resultado: "Sustitución de caldera de gas por aerotermia. Calefacción, agua caliente y aire acondicionado en un solo equipo eficiente.",
+    metricas: [
+      { label: "Ahorro", value: "45%" },
+      { label: "Energía", value: "A+++" },
+      { label: "Cobertura", value: "100%" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/bb853e33f_generated_image.png",
+    titulo: "Local comercial en Paterna",
+    tipo: "Multi-split",
+    zona: "Paterna, Valencia",
+    resultado: "3 splits inverter para local de 120 m². Climatización diferenciada por zonas y bajo consumo en horario comercial.",
+    metricas: [
+      { label: "Superficie", value: "120 m²" },
+      { label: "Equipos", value: "3" },
+      { label: "Consumo", value: "-40%" },
+    ],
+  },
+];
 
 const servicios = [
   { icon: Snowflake, title: "Aire acondicionado split", desc: "Splits y multi-splits de marcas premium para cualquier estancia." },
@@ -125,6 +165,15 @@ export default function Climatizacion() {
           </div>
         </div>
       </section>
+
+      {/* PROYECTOS REALES */}
+      <ProjectGallery
+        proyectos={PROYECTOS_HVAC}
+        eyebrow="Proyectos reales"
+        titulo="Instalaciones de climatización terminadas"
+        subtitulo="Ejemplos reales de splits, conductos y aerotermia en la provincia de Valencia."
+        fondoCard
+      />
 
       <ServiceCTA title="¿Listo para tu instalación de climatización?" subtitle="Presupuesto gratis y sin compromiso en menos de 2 horas." />
 

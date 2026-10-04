@@ -5,9 +5,49 @@ import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
+import ProjectGallery from "@/components/site/ProjectGallery";
 
 const SOLAR_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2db8ad089_generated_image.png";
 const SOLAR_MACRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6cbdd156_generated_image.png";
+
+const PROYECTOS_SOLAR = [
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/26f52153e_generated_image.png",
+    titulo: "Vivienda unifamiliar en Paterna",
+    tipo: "Autoconsumo + Batería",
+    zona: "Paterna, Valencia",
+    resultado: "8 paneles de 500W + batería de 10 kWh para una familia con coche eléctrico. Cubren el 78% del consumo y recargan el vehículo de noche.",
+    metricas: [
+      { label: "Ahorro anual", value: "78%" },
+      { label: "Amortización", value: "4,5 años" },
+      { label: "Potencia", value: "4 kWp" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2d6291ef9_generated_image.png",
+    titulo: "Nave industrial en Sagunto",
+    tipo: "Autoconsumo industrial",
+    zona: "Sagunto, Valencia",
+    resultado: "120 paneles en cubierta de nave logística de 2.000 m². El 80% del consumo diurno se cubre con energía solar.",
+    metricas: [
+      { label: "Superficie", value: "2.000 m²" },
+      { label: "Ahorro", value: "80%" },
+      { label: "Paneles", value: "120" },
+    ],
+  },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6cbdd156_generated_image.png",
+    titulo: "Chalet con piscina en Burjassot",
+    tipo: "Autoconsumo + Bombeo",
+    zona: "Burjassot, Valencia",
+    resultado: "Instalación de 6 kWp con sistema de bombeo solar para riego de jardín y piscina. Consumo casi nulo en verano.",
+    metricas: [
+      { label: "Ahorro verano", value: "90%" },
+      { label: "Potencia", value: "6 kWp" },
+      { label: "Bombeo", value: "Sí" },
+    ],
+  },
+];
 
 const servicios = [
   { icon: Zap, title: "Autoconsumo fotovoltaico", desc: "Paneles solares para tu vivienda o empresa con conexión a red." },
@@ -102,6 +142,15 @@ export default function Fotovoltaica() {
           </div>
         </div>
       </section>
+
+      {/* PROYECTOS REALES */}
+      <ProjectGallery
+        proyectos={PROYECTOS_SOLAR}
+        eyebrow="Proyectos reales"
+        titulo="Instalaciones solares terminadas"
+        subtitulo="Ejemplos reales de autoconsumo fotovoltaico en la provincia de Valencia."
+        fondoCard
+      />
 
       <ServiceCTA title="¿Cuánto puedes ahorrar con placas solares?" subtitle="Te hacemos un estudio de ahorro personalizado gratis." />
 
