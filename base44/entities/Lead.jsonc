@@ -1,0 +1,40 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "description": "Nombre del contacto"
+    },
+    "telefono": {
+      "type": "string",
+      "description": "Tel\u00e9fono de contacto"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email de contacto"
+    },
+    "servicio": {
+      "type": "string",
+      "enum": [
+        "fotovoltaica",
+        "climatizacion",
+        "general"
+      ],
+      "default": "general",
+      "description": "Servicio de inter\u00e9s"
+    },
+    "mensaje": {
+      "type": "string",
+      "description": "Mensaje del cliente"
+    },
+    "origen": {
+      "type": "string",
+      "description": "Origen del lead (p\u00e1gina)"
+    }
+  },
+  "required": [
+    "nombre",
+    "telefono"
+  ]
+}
