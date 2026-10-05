@@ -97,8 +97,8 @@ export default function Home() {
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0">
           <Image src={HERO_IMG} alt="Instalación fotovoltaica y de climatización" className="h-full w-full" fittingType="fill" />
-          <div className="absolute inset-0 bg-gradient-to-br from-graphite via-graphite/90 to-graphite/70" />
-          <div className="blueprint-grid absolute inset-0 opacity-30" />
+          <div className="absolute inset-0 bg-gradient-to-br from-graphite/70 via-graphite/40 to-transparent" />
+          <div className="blueprint-grid absolute inset-0 opacity-20" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-28">
           <div className="max-w-3xl">
@@ -143,7 +143,7 @@ export default function Home() {
             <Link to="/fotovoltaica" className="group relative overflow-hidden rounded-sm border border-border bg-background">
               <div className="relative h-56 overflow-hidden">
                 <Image src={SOLAR_IMG} alt="Instalación de placas solares fotovoltaicas en tejado" className="h-full w-full" fittingType="fill" />
-                <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
                   <Sun className="h-3.5 w-3.5" /> FOTOVOLTAICA
                 </div>
@@ -160,7 +160,7 @@ export default function Home() {
             <Link to="/climatizacion" className="group relative overflow-hidden rounded-sm border border-border bg-background">
               <div className="relative h-56 overflow-hidden">
                 <Image src={HVAC_IMG} alt="Instalación de aire acondicionado split y conductos" className="h-full w-full" fittingType="fill" />
-                <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
                   <Wind className="h-3.5 w-3.5" /> CLIMATIZACIÓN
                 </div>
@@ -177,7 +177,7 @@ export default function Home() {
             <Link to="/reformas" className="group relative overflow-hidden rounded-sm border border-border bg-background">
               <div className="relative h-56 overflow-hidden">
                 <Image src={REFORMAS_IMG} alt="Reforma integral de vivienda con dirección de obra" className="h-full w-full" fittingType="fill" />
-                <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
                   <Hammer className="h-3.5 w-3.5" /> REFORMAS
                 </div>
