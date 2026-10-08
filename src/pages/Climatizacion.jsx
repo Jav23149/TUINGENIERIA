@@ -6,8 +6,8 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
-const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/bb853e33f_generated_image.png";
-const CONDUCTOS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/b0b980a42_generated_image.png";
+const HVAC_IMG = "https://images.unsplash.com/photo-1761330440311-16e160cad236?auto=format&fit=crop&w=1600&q=80";
+const CONDUCTOS_IMG = "https://images.unsplash.com/photo-1776860154052-d91c90b25c59?auto=format&fit=crop&w=1600&q=80";
 
 const PROYECTOS_HVAC = [
   {
@@ -35,7 +35,7 @@ const PROYECTOS_HVAC = [
     ],
   },
   {
-    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1f1c1492d_generated_image.png",
+    imagen: "https://images.unsplash.com/photo-1667983453881-4992fe86ab1b?auto=format&fit=crop&w=1600&q=80",
     titulo: "Chalet en Torrent",
     tipo: "Split + conductos",
     zona: "Torrent, Valencia",

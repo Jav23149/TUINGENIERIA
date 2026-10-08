@@ -9,11 +9,11 @@ import Reviews from "@/components/site/Reviews";
 import ProjectGallery from "@/components/site/ProjectGallery";
 import WhatsAppButton, { WhatsAppGlyph } from "@/components/site/WhatsAppButton";
 
-const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/741d98b54_generated_image.png";
-const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/bb853e33f_generated_image.png";
-const CONDUCTOS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/b0b980a42_generated_image.png";
-const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/124212da4_generated_image.png";
-const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1bbd31a63_generated_image.png";
+const HERO_IMG = "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1600&q=80";
+const HVAC_IMG = "https://images.unsplash.com/photo-1761330440311-16e160cad236?auto=format&fit=crop&w=1600&q=80";
+const CONDUCTOS_IMG = "https://images.unsplash.com/photo-1776860154052-d91c90b25c59?auto=format&fit=crop&w=1600&q=80";
+const COCINA_IMG = "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=80";
+const BANO_IMG = "https://images.unsplash.com/photo-1778731660083-60d60e6817ca?auto=format&fit=crop&w=1600&q=80";
 
 const PROYECTOS = [
   {

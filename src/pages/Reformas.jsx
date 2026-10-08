@@ -6,9 +6,9 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
-const REFORMAS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/0b21260cd_generated_image.png";
-const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/124212da4_generated_image.png";
-const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1bbd31a63_generated_image.png";
+const REFORMAS_IMG = "https://images.unsplash.com/photo-1783125127024-3f3eda015db4?auto=format&fit=crop&w=1600&q=80";
+const COCINA_IMG = "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=80";
+const BANO_IMG = "https://images.unsplash.com/photo-1778731660083-60d60e6817ca?auto=format&fit=crop&w=1600&q=80";
 
 const PROYECTOS_REFORMAS = [
   {

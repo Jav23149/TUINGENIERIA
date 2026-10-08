@@ -6,8 +6,8 @@ import { siteConfig } from "@/lib/siteConfig";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import WhatsAppButton from "@/components/site/WhatsAppButton";
 
-const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/741d98b54_generated_image.png";
-const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/124212da4_generated_image.png";
+const HERO_IMG = "https://images.unsplash.com/photo-1761330440311-16e160cad236?auto=format&fit=crop&w=1600&q=80";
+const COCINA_IMG = "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=80";
 
 const valores = [
   { icon: Target, title: "Ingeniería precisa", desc: "Dimensionamos cada sistema y planificamos cada obra con datos reales, sin improvisar." },
