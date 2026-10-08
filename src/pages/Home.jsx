@@ -18,10 +18,10 @@ const BANO_IMG = "https://images.unsplash.com/photo-1778731660083-60d60e6817ca?a
 const PROYECTOS = [
   {
     imagen: CONDUCTOS_IMG,
-    titulo: "Piso de 110 m² en Valencia",
+    titulo: "Edificio de viviendas en Valencia",
     tipo: "Climatización por conductos",
     zona: "Valencia capital",
-    resultado: "Sistema de conductos ocultos con bomba de calor inverter. 4 zonas independientes con control por app y silencio absoluto.",
+    resultado: "Unidades condensadoras exteriores en cubierta para un sistema por conductos con 4 zonas independientes, control por app y silencio absoluto en el interior.",
     metricas: [
       { label: "Eficiencia", value: "A+++" },
       { label: "Zonas", value: "4" },
@@ -30,13 +30,13 @@ const PROYECTOS = [
   },
   {
     imagen: HVAC_IMG,
-    titulo: "Local comercial en Paterna",
-    tipo: "Multi-split inverter",
+    titulo: "Salón en piso de Paterna",
+    tipo: "Split inverter",
     zona: "Paterna, Valencia",
-    resultado: "3 splits inverter para local de 120 m². Climatización diferenciada por zonas y bajo consumo en horario comercial.",
+    resultado: "Split inverter instalado en el salón para climatizar la zona de día de la vivienda, con bajo consumo y funcionamiento silencioso.",
     metricas: [
-      { label: "Superficie", value: "120 m²" },
-      { label: "Equipos", value: "3" },
+      { label: "Superficie", value: "35 m²" },
+      { label: "Equipos", value: "1" },
       { label: "Consumo", value: "-40%" },
     ],
   },
@@ -45,7 +45,7 @@ const PROYECTOS = [
     titulo: "Cocina a medida en Valencia",
     tipo: "Reforma de cocina",
     zona: "Valencia capital",
-    resultado: "Cocina open space con isla, nueva electricidad y carpintería a medida. Llave en mano en 6 semanas con dirección de obra.",
+    resultado: "Cocina open space con isla, nueva electricidad y carpintería a medida. Llave en mano en 10 días con dirección de obra.",
     metricas: [
       { label: "Plazo", value: "10 días" },
       { label: "Superficie", value: "18 m²" },
@@ -57,7 +57,7 @@ const PROYECTOS = [
     titulo: "Baño principal en Alzira",
     tipo: "Reforma de baño",
     zona: "Alzira, Valencia",
-    resultado: "Baño completo con plato de ducha de resina, mobiliario suspendido e iluminación LED. Acabados premium en 3 semanas.",
+    resultado: "Baño completo con bañera exenta, mobiliario suspendido e iluminación LED. Acabados premium en 7 días.",
     metricas: [
       { label: "Plazo", value: "7 días" },
       { label: "Superficie", value: "8 m²" },
@@ -72,7 +72,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0">
-          <Image src={HERO_IMG} alt="Salón reformado con aire acondicionado split instalado" className="h-full w-full" fittingType="fill" />
+          <Image src={HERO_IMG} alt="Salón reformado, luminoso y amplio" className="h-full w-full" fittingType="fill" />
           <div className="absolute inset-0 bg-gradient-to-br from-graphite/70 via-graphite/40 to-transparent" />
           <div className="blueprint-grid absolute inset-0 opacity-20" />
         </div>
@@ -215,7 +215,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={BANO_IMG} alt="Baño reformado con acabados premium" className="h-80 w-full" fittingType="fill" />
+              <Image src={BANO_IMG} alt="Baño reformado con bañera exenta y acabados premium" className="h-80 w-full" fittingType="fill" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron">Por qué TU INGENIERIA</p>

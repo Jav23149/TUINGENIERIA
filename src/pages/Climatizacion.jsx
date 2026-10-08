@@ -12,10 +12,10 @@ const CONDUCTOS_IMG = "https://images.unsplash.com/photo-1776860154052-d91c90b25
 const PROYECTOS_HVAC = [
   {
     imagen: CONDUCTOS_IMG,
-    titulo: "Piso de 110 m² en Valencia",
+    titulo: "Edificio de viviendas en Valencia",
     tipo: "Conductos + Inverter A+++",
     zona: "Valencia capital",
-    resultado: "Sistema de conductos ocultos con bomba de calor inverter. 4 zonas independientes con control por app y silencio absoluto.",
+    resultado: "Unidades condensadoras exteriores en cubierta para un sistema por conductos con 4 zonas independientes, control por app y silencio absoluto en el interior.",
     metricas: [
       { label: "Eficiencia", value: "A+++" },
       { label: "Zonas", value: "4" },
@@ -24,22 +24,22 @@ const PROYECTOS_HVAC = [
   },
   {
     imagen: HVAC_IMG,
-    titulo: "Local comercial en Paterna",
-    tipo: "Multi-split inverter",
+    titulo: "Salón en piso de Paterna",
+    tipo: "Split inverter",
     zona: "Paterna, Valencia",
-    resultado: "3 splits inverter para local de 120 m². Climatización diferenciada por zonas y bajo consumo en horario comercial.",
+    resultado: "Split inverter instalado en el salón de la vivienda. Climatización silenciosa de la zona de día con bajo consumo.",
     metricas: [
-      { label: "Superficie", value: "120 m²" },
-      { label: "Equipos", value: "3" },
+      { label: "Superficie", value: "35 m²" },
+      { label: "Equipos", value: "1" },
       { label: "Consumo", value: "-40%" },
     ],
   },
   {
     imagen: "https://images.unsplash.com/photo-1667983453881-4992fe86ab1b?auto=format&fit=crop&w=1600&q=80",
-    titulo: "Chalet en Torrent",
-    tipo: "Split + conductos",
+    titulo: "Vivienda en Torrent",
+    tipo: "Multi-split inverter",
     zona: "Torrent, Valencia",
-    resultado: "Combinación de splits en dormitorios y conductos en zona de día. Climatización integral con un único proyecto técnico.",
+    resultado: "Varios splits inverter distribuidos por las estancias para climatizar cada habitación de forma independiente, con eficiencia A+++.",
     metricas: [
       { label: "Estancias", value: "6" },
       { label: "Eficiencia", value: "A+++" },
@@ -91,7 +91,7 @@ export default function Climatizacion() {
               </div>
             </div>
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={HVAC_IMG} alt="Instalación de aire acondicionado split en pared" className="h-80 w-full lg:h-96" fittingType="fill" />
+              <Image src={HVAC_IMG} alt="Salón con equipo de aire acondicionado split instalado en la pared" className="h-80 w-full lg:h-96" fittingType="fill" />
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@ export default function Climatizacion() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={CONDUCTOS_IMG} alt="Instalación de climatización por conductos de alta eficiencia" className="h-96 w-full" fittingType="fill" />
+              <Image src={CONDUCTOS_IMG} alt="Unidades condensadoras exteriores de un sistema de climatización por conductos" className="h-96 w-full" fittingType="fill" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron">Eficiencia energética</p>

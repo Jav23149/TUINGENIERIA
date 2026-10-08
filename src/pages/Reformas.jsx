@@ -16,7 +16,7 @@ const PROYECTOS_REFORMAS = [
     titulo: "Cocina a medida en Valencia",
     tipo: "Reforma de cocina",
     zona: "Valencia capital",
-    resultado: "Cocina open space con isla, nueva electricidad y carpintería a medida. Llave en mano en 6 semanas con dirección de obra.",
+    resultado: "Cocina open space con isla, nueva electricidad y carpintería a medida. Llave en mano en 10 días con dirección de obra.",
     metricas: [
       { label: "Plazo", value: "10 días" },
       { label: "Superficie", value: "18 m²" },
@@ -28,7 +28,7 @@ const PROYECTOS_REFORMAS = [
     titulo: "Baño principal en Alzira",
     tipo: "Reforma de baño",
     zona: "Alzira, Valencia",
-    resultado: "Baño completo con plato de ducha de resina, mobiliario suspendido e iluminación LED. Acabados premium en 3 semanas.",
+    resultado: "Baño completo con bañera exenta, mobiliario suspendido e iluminación LED. Acabados premium en 7 días.",
     metricas: [
       { label: "Plazo", value: "7 días" },
       { label: "Superficie", value: "8 m²" },
@@ -37,13 +37,13 @@ const PROYECTOS_REFORMAS = [
   },
   {
     imagen: REFORMAS_IMG,
-    titulo: "Cocina y baño en Torrent",
-    tipo: "Reforma cocina + baño",
+    titulo: "Cocina con isla en Torrent",
+    tipo: "Reforma de cocina",
     zona: "Torrent, Valencia",
-    resultado: "Reforma integral de cocina y baño con electricidad, fontanería y acabados a medida. Un único responsable para todo.",
+    resultado: "Reforma integral de cocina con isla, nueva electricidad, fontanería y carpintería a medida. Llave en mano en 2 semanas.",
     metricas: [
       { label: "Plazo", value: "14 días" },
-      { label: "Estancias", value: "2" },
+      { label: "Superficie", value: "22 m²" },
       { label: "Garantía", value: "3 años" },
     ],
   },
