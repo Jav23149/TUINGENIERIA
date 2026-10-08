@@ -18,7 +18,7 @@ const PROYECTOS_REFORMAS = [
     zona: "Valencia capital",
     resultado: "Cocina open space con isla, nueva electricidad y carpintería a medida. Llave en mano en 6 semanas con dirección de obra.",
     metricas: [
-      { label: "Plazo", value: "6 sem" },
+      { label: "Plazo", value: "10 días" },
       { label: "Superficie", value: "18 m²" },
       { label: "Garantía", value: "3 años" },
     ],
@@ -30,7 +30,7 @@ const PROYECTOS_REFORMAS = [
     zona: "Alzira, Valencia",
     resultado: "Baño completo con plato de ducha de resina, mobiliario suspendido e iluminación LED. Acabados premium en 3 semanas.",
     metricas: [
-      { label: "Plazo", value: "3 sem" },
+      { label: "Plazo", value: "7 días" },
       { label: "Superficie", value: "8 m²" },
       { label: "Garantía", value: "2 años" },
     ],
@@ -42,7 +42,7 @@ const PROYECTOS_REFORMAS = [
     zona: "Torrent, Valencia",
     resultado: "Reforma integral de cocina y baño con electricidad, fontanería y acabados a medida. Un único responsable para todo.",
     metricas: [
-      { label: "Plazo", value: "7 sem" },
+      { label: "Plazo", value: "14 días" },
       { label: "Estancias", value: "2" },
       { label: "Garantía", value: "3 años" },
     ],
@@ -167,7 +167,7 @@ export default function Reformas() {
         fondoCard
       />
 
-      <ServiceCTA title="¿Vamos a reformar tu baño o cocina?" subtitle="Presupuesto gratis y sin compromiso en menos de 2 horas." />
+      <ServiceCTA title="¿Vamos a reformar tu baño o cocina?" subtitle="Presupuesto gratis y sin compromiso en menos de 24 horas." />
 
       {/* FAQ SEO */}
       <section className="border-b border-border">
@@ -179,8 +179,8 @@ export default function Reformas() {
           <div className="mt-12 space-y-8">
             {[
               { q: `¿Hacéis reformas de baños y cocinas en ${siteConfig.provincia}?`, a: "Sí. Somos especialistas en reforma de baños y cocinas en toda la provincia, con un único responsable y dirección de obra de ingeniería." },
-              { q: "¿Cuánto tarda una reforma de baño?", a: "Una reforma completa de baño suele tardar entre 2 y 4 semanas según el alcance. Te damos un calendario detallado antes de empezar." },
-              { q: "¿Cuánto tarda una reforma de cocina?", a: "Una reforma de cocina a medida suele tardar entre 5 y 8 semanas, incluyendo electricidad, fontanería, carpintería y acabados." },
+              { q: "¿Cuánto tarda una reforma de baño?", a: "Una reforma completa de baño suele tardar 7 días. Te damos un calendario detallado antes de empezar." },
+              { q: "¿Cuánto tarda una reforma de cocina?", a: "Una reforma de cocina a medida tarda un poco más que el baño, normalmente entre 10 y 14 días, incluyendo electricidad, fontanería, carpintería y acabados." },
               { q: "¿Qué garantía tiene la obra?", a: "Todas nuestras reformas cuentan con 2 años de garantía en la ejecución de la obra, además de las garantías de fábrica de los materiales instalados." },
               { q: `¿Dónde trabajáis en la provincia de ${siteConfig.provincia}?`, a: `Damos servicio en toda la provincia: ${siteConfig.localidades.slice(0, 5).join(", ")} y resto de localidades.` },
             ].map((f) => (
@@ -200,7 +200,7 @@ export default function Reformas() {
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron">Solicita tu presupuesto</p>
               <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu reforma empieza aquí</h2>
-              <p className="mt-4 text-muted-foreground">Déjanos tus datos y te llamamos con un presupuesto sin compromiso en menos de 2 horas.</p>
+              <p className="mt-4 text-muted-foreground">Déjanos tus datos y te llamamos con un presupuesto sin compromiso en menos de 24 horas.</p>
               <div className="mt-8 space-y-4">
                 <a href={telLink} className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
                   <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><Phone className="h-5 w-5 text-citron" /></div>

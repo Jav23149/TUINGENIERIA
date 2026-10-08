@@ -29,6 +29,7 @@ export default function Footer() {
                 <Linkedin className="h-4 w-4" />
               </a>
             </div>
+            <Link to="/nosotros" className="mt-5 inline-block text-sm font-semibold text-citron transition hover:underline">Conoce TU INGENIERIA →</Link>
           </div>
 
           <div>

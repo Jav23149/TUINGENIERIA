@@ -47,7 +47,7 @@ const PROYECTOS = [
     zona: "Valencia capital",
     resultado: "Cocina open space con isla, nueva electricidad y carpintería a medida. Llave en mano en 6 semanas con dirección de obra.",
     metricas: [
-      { label: "Plazo", value: "6 sem" },
+      { label: "Plazo", value: "10 días" },
       { label: "Superficie", value: "18 m²" },
       { label: "Garantía", value: "3 años" },
     ],
@@ -59,7 +59,7 @@ const PROYECTOS = [
     zona: "Alzira, Valencia",
     resultado: "Baño completo con plato de ducha de resina, mobiliario suspendido e iluminación LED. Acabados premium en 3 semanas.",
     metricas: [
-      { label: "Plazo", value: "3 sem" },
+      { label: "Plazo", value: "7 días" },
       { label: "Superficie", value: "8 m²" },
       { label: "Garantía", value: "2 años" },
     ],
@@ -91,7 +91,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               Especialistas en aire acondicionado (splits y conductos) y reformas de baños y cocinas.
-              Ingenieros certificados, presupuesto gratis en 2 horas y garantía en todas las obras.
+              Ingenieros certificados, presupuesto gratis en 24 horas y garantía en todas las obras.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <WhatsAppButton label="Presupuesto por WhatsApp" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-7 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
               <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-citron" /> Ingenieros certificados</span>
-              <span className="flex items-center gap-1.5"><Clock className="h-4 w-4 text-citron" /> Presupuesto en 2 horas</span>
+              <span className="flex items-center gap-1.5"><Clock className="h-4 w-4 text-citron" /> Presupuesto en 24 horas</span>
               <span className="flex items-center gap-1.5"><Euro className="h-4 w-4 text-citron" /> Equipos clase A+++</span>
               <span className="flex items-center gap-1.5"><Wrench className="h-4 w-4 text-citron" /> Garantía 5 años</span>
             </div>
@@ -158,7 +158,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-4 py-10 sm:px-6 lg:grid-cols-4 lg:px-8">
           {[
             { icon: ShieldCheck, label: "Ingenieros certificados", value: "ISO 9001" },
-            { icon: Clock, label: "Presupuesto en", value: "2 horas" },
+            { icon: Clock, label: "Presupuesto en", value: "24 horas" },
             { icon: Euro, label: "Equipos", value: "Clase A+++" },
             { icon: Wrench, label: "Garantía de obra", value: "5 años" },
           ].map((s) => (
@@ -225,7 +225,7 @@ export default function Home() {
                 {[
                   { icon: Snowflake, title: "Eficiencia real", desc: "Calculamos la carga térmica antes de proponer nada." },
                   { icon: ShieldCheck, title: "Garantía total", desc: "Materiales premium y mano de obra certificada." },
-                  { icon: Clock, title: "Respuesta rápida", desc: "Presupuesto en 2 horas, obra en días." },
+                  { icon: Clock, title: "Respuesta rápida", desc: "Presupuesto en 24 horas, obra en días." },
                   { icon: Euro, title: "Sin sorpresas", desc: "Presupuesto cerrado y plazos cumplidos." },
                 ].map((f) => (
                   <div key={f.title} className="flex gap-3">

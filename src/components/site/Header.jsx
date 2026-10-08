@@ -5,6 +5,7 @@ import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 
 const navLinks = [
   { label: "Inicio", to: "/" },
+  { label: "Nosotros", to: "/nosotros" },
   { label: "Climatización", to: "/climatizacion" },
   { label: "Reformas", to: "/reformas" },
   { label: "Contacto", to: "/#contacto" },

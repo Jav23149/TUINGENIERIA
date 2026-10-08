@@ -40,7 +40,7 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
         <CheckCircle2 className="h-12 w-12 text-citron" />
         <h3 className="font-display text-xl font-bold text-foreground">¡Solicitud enviada!</h3>
         <p className="text-sm text-muted-foreground">
-          Gracias {form.nombre}. Te contactaremos en menos de 2 horas. Si prefieres, escríbenos ahora por WhatsApp.
+          Gracias {form.nombre}. Te contactaremos en menos de 24 horas. Si prefieres, escríbenos ahora por WhatsApp.
         </p>
         <a
           href={whatsappLink(`Hola, soy ${form.nombre}. He enviado un formulario desde la web.`)}
@@ -113,7 +113,7 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
         {loading ? "Enviando..." : "Solicitar presupuesto gratis"}
       </button>
       <p className="text-center text-xs text-muted-foreground">
-        Respuesta garantizada en menos de 2 horas en horario de {siteConfig.horario.split("·")[0].trim()}
+        Respuesta garantizada en menos de 24 horas en horario de {siteConfig.horario.split("·")[0].trim()}
       </p>
     </form>
   );

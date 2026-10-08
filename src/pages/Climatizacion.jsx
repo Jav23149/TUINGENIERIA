@@ -175,7 +175,7 @@ export default function Climatizacion() {
         fondoCard
       />
 
-      <ServiceCTA title="¿Listo para tu instalación de climatización?" subtitle="Presupuesto gratis y sin compromiso en menos de 2 horas." />
+      <ServiceCTA title="¿Listo para tu instalación de climatización?" subtitle="Presupuesto gratis y sin compromiso en menos de 24 horas." />
 
       {/* FAQ SEO */}
       <section className="border-b border-border">
@@ -186,7 +186,7 @@ export default function Climatizacion() {
           </div>
           <div className="mt-12 space-y-8">
             {[
-              { q: `¿Cuánto cuesta instalar aire acondicionado split en ${siteConfig.provincia}?`, a: "El precio depende del equipo y la complejidad de la instalación. Un split inverter instalado puede partir de 600-900€. Te damos presupuesto cerrado en 2 horas." },
+              { q: `¿Cuánto cuesta instalar aire acondicionado split en ${siteConfig.provincia}?`, a: "El precio depende del equipo y la complejidad de la instalación. Un split inverter instalado puede partir de 600-900€. Te damos presupuesto cerrado en 24 horas." },
               { q: "¿Qué es mejor, split o conductos?", a: "El split es más económico y rápido de instalar, ideal para estancias concretas. Los conductos quedan ocultos y climatizan toda la vivienda de forma uniforme. Te asesoramos según tu espacio." },
               { q: "¿Qué marcas de aire acondicionado instaláis?", a: "Trabajamos con las mejores marcas del mercado (Daikin, Mitsubishi, LG, Samsung, etc.) siempre con equipos inverter de clase A+++ para garantizar eficiencia y durabilidad." },
               { q: "¿Hacéis mantenimiento y reparación?", a: "Sí, contamos con servicio técnico para mantenimiento periódico, recargas de gas y reparación de todas las marcas principales." },
@@ -208,7 +208,7 @@ export default function Climatizacion() {
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron">Solicita tu presupuesto</p>
               <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu instalación de climatización empieza aquí</h2>
-              <p className="mt-4 text-muted-foreground">Déjanos tus datos y te llamamos con un presupuesto sin compromiso en menos de 2 horas.</p>
+              <p className="mt-4 text-muted-foreground">Déjanos tus datos y te llamamos con un presupuesto sin compromiso en menos de 24 horas.</p>
               <div className="mt-8 space-y-4">
                 <a href={telLink} className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
                   <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><Phone className="h-5 w-5 text-citron" /></div>

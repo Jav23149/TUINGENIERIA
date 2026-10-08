@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from '@/pages/Home';
 import Climatizacion from '@/pages/Climatizacion';
 import Reformas from '@/pages/Reformas';
+import Nosotros from '@/pages/Nosotros';
 import SiteLayout from '@/components/site/SiteLayout';
 // Add page imports here
 
@@ -42,6 +43,7 @@ const AuthenticatedApp = () => {
         <Route path="/" element={<Home />} />
         <Route path="/climatizacion" element={<Climatizacion />} />
         <Route path="/reformas" element={<Reformas />} />
+        <Route path="/nosotros" element={<Nosotros />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

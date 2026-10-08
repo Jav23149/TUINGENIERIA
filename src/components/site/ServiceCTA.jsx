@@ -2,7 +2,7 @@ import React from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { whatsappLink, telLink } from "@/lib/siteConfig";
 
-export default function ServiceCTA({ title = "¿Hablamos de tu proyecto?", subtitle = "Presupuesto gratis y sin compromiso en menos de 2 horas." }) {
+export default function ServiceCTA({ title = "¿Hablamos de tu proyecto?", subtitle = "Presupuesto gratis y sin compromiso en menos de 24 horas." }) {
   return (
     <section className="border-y border-border bg-citron">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 py-10 sm:px-6 lg:flex-row lg:px-8">
