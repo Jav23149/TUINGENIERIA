@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Wind, Hammer, Phone, ArrowRight, CheckCircle2, Snowflake, AirVent, Bath, ChefHat, ShieldCheck, Clock, Wrench, Euro, Star, MapPin } from "lucide-react";
+import { Wind, Hammer, Phone, ArrowRight, CheckCircle2, Snowflake, ShieldCheck, Clock, Wrench, Euro, Star, MapPin } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
