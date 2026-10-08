@@ -10,6 +10,9 @@ import Home from '@/pages/Home';
 import Climatizacion from '@/pages/Climatizacion';
 import Reformas from '@/pages/Reformas';
 import Nosotros from '@/pages/Nosotros';
+import ReformaIntegral from '@/pages/ReformaIntegral';
+import ReformaBano from '@/pages/ReformaBano';
+import ReformaCocina from '@/pages/ReformaCocina';
 import SiteLayout from '@/components/site/SiteLayout';
 // Add page imports here
 
@@ -44,6 +47,9 @@ const AuthenticatedApp = () => {
         <Route path="/climatizacion" element={<Climatizacion />} />
         <Route path="/reformas" element={<Reformas />} />
         <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/reforma-integral" element={<ReformaIntegral />} />
+        <Route path="/reforma-bano" element={<ReformaBano />} />
+        <Route path="/reforma-cocina" element={<ReformaCocina />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

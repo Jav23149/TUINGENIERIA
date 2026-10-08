@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Nosotros", to: "/nosotros" },
   { label: "Climatización", to: "/climatizacion" },
   { label: "Reformas", to: "/reformas" },
+  { label: "Reforma integral", to: "/reforma-integral" },
   { label: "Contacto", to: "/#contacto" },
 ];
 
