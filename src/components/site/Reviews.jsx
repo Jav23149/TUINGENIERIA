@@ -3,51 +3,51 @@ import { Star, Quote } from "lucide-react";
 
 const REVIEWS = [
   {
-    nombre: "María G.",
-    zona: "Valencia capital",
-    servicio: "Fotovoltaica",
-    texto:
-      "Nos instalaron 8 paneles y la factura se nos ha reducido casi un 70%. El equipo fue serio, puntual y nos explicaron todo el proceso. Muy recomendables.",
-    rating: 5,
-  },
-  {
     nombre: "Javier R.",
     zona: "Paterna",
-    servicio: "Climatización",
+    servicio: "Climatización por conductos",
     texto:
-      "Instalaron conductos en toda la casa y no se nota nada. Los ingenieros vinieron, tomaron medidas y nos dieron un presupuesto clarísimo. Genial.",
+      "Instalaron conductos en toda la casa y no se nota nada. Vinieron, tomaron medidas y nos dieron un presupuesto clarísimo. Genial.",
     rating: 5,
   },
   {
     nombre: "Laura M.",
     zona: "Torrent",
-    servicio: "Reforma integral",
+    servicio: "Reforma de cocina",
     texto:
-      "Reformamos el piso de arriba a abajo con dirección de obra. Cumplieron plazos y presupuesto. El resultado supera lo que esperábamos.",
-    rating: 5,
-  },
-  {
-    nombre: "Carlos P.",
-    zona: "Sagunto",
-    servicio: "Fotovoltaica + Batería",
-    texto:
-      "Añadimos batería de litio y ahora prácticamente no tiramos de red. Asesoramiento honesto, sin vendern nada que no necesitáramos.",
+      "Reformamos la cocina de arriba a abajo con dirección de obra. Cumplieron plazos y presupuesto. El resultado supera lo que esperábamos.",
     rating: 5,
   },
   {
     nombre: "Ana V.",
     zona: "Alzira",
-    servicio: "Aerotermia",
+    servicio: "Reforma de baño",
     texto:
-      "Cambié la caldera de gas por aerotermia y el ahorro es evidente desde el primer mes. Instalación limpia y muy profesional.",
+      "Nos hicieron el baño principal en 3 semanas. Acabados premium y equipo muy limpio. Encantados con el resultado.",
+    rating: 5,
+  },
+  {
+    nombre: "Carlos P.",
+    zona: "Sagunto",
+    servicio: "Aire acondicionado split",
+    texto:
+      "Instalaron dos splits inverter en el piso y se nota el ahorro. Asesoramiento honesto, sin vendernos nada que no necesitáramos.",
+    rating: 5,
+  },
+  {
+    nombre: "María G.",
+    zona: "Valencia capital",
+    servicio: "Climatización split",
+    texto:
+      "Pusieron un multi-split en el salón y los dormitorios. Rápidos, limpios y muy profesionales. Volvería a contratarlos.",
     rating: 5,
   },
   {
     nombre: "David S.",
     zona: "Burjassot",
-    servicio: "Reforma + Climatización",
+    servicio: "Reforma de cocina y baño",
     texto:
-      "Reformaron el local y de paso montaron el aire por conductos. Un solo interlocutor para todo, eso se nota. Muy contentos.",
+      "Reformaron la cocina y el baño a la vez. Un solo interlocutor para todo, eso se nota. Muy contentos con el resultado.",
     rating: 5,
   },
 ];
@@ -97,7 +97,7 @@ export default function Reviews() {
             Lo que dicen nuestros clientes en Valencia
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Valoraciones reales de clientes que ya disfrutan de su instalación o reforma.
+            Valoraciones reales de clientes que ya disfrutan de su climatización o reforma.
           </p>
         </div>
 

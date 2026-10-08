@@ -1,13 +1,13 @@
-// Configuración central de NovaTech Ingenieros.
+// Configuración central de TU INGENIERIA.
 // Reemplaza estos valores con los datos reales de la empresa.
 export const siteConfig = {
-  brand: "NovaTech Ingeniería",
-  tagline: "Ingeniería Solar, Climatización y Reformas",
+  brand: "TU INGENIERIA",
+  tagline: "Climatización y Reformas",
   phone: "+34 600 123 456",
   phoneRaw: "+34600123456",
   whatsapp: "34600123456",
-  whatsappMsg: "Hola, quiero información sobre vuestros servicios de ingeniería.",
-  email: "info@novatech-ingenieros.es",
+  whatsappMsg: "Hola, quiero información sobre vuestros servicios de climatización y reformas.",
+  email: "info@tuingenieria.es",
   provincia: "Valencia",
   provinciaSlug: "valencia",
   direccion: "Polígono Industrial, Valencia",

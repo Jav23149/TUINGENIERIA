@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Wind, Phone, MessageCircle, CheckCircle2, ArrowRight, Snowflake, Flame, Wrench, AirVent, Thermometer, Euro } from "lucide-react";
+import { Wind, Phone, MessageCircle, Snowflake, Wrench, AirVent, Thermometer, Euro } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
@@ -8,10 +7,11 @@ import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
 const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/bb853e33f_generated_image.png";
+const CONDUCTOS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/b0b980a42_generated_image.png";
 
 const PROYECTOS_HVAC = [
   {
-    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/b0b980a42_generated_image.png",
+    imagen: CONDUCTOS_IMG,
     titulo: "Piso de 110 m² en Valencia",
     tipo: "Conductos + Inverter A+++",
     zona: "Valencia capital",
@@ -23,21 +23,9 @@ const PROYECTOS_HVAC = [
     ],
   },
   {
-    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1f1c1492d_generated_image.png",
-    titulo: "Reforma con aerotermia en Torrent",
-    tipo: "Aerotermia",
-    zona: "Torrent, Valencia",
-    resultado: "Sustitución de caldera de gas por aerotermia. Calefacción, agua caliente y aire acondicionado en un solo equipo eficiente.",
-    metricas: [
-      { label: "Ahorro", value: "45%" },
-      { label: "Energía", value: "A+++" },
-      { label: "Cobertura", value: "100%" },
-    ],
-  },
-  {
-    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/bb853e33f_generated_image.png",
+    imagen: HVAC_IMG,
     titulo: "Local comercial en Paterna",
-    tipo: "Multi-split",
+    tipo: "Multi-split inverter",
     zona: "Paterna, Valencia",
     resultado: "3 splits inverter para local de 120 m². Climatización diferenciada por zonas y bajo consumo en horario comercial.",
     metricas: [
@@ -46,13 +34,25 @@ const PROYECTOS_HVAC = [
       { label: "Consumo", value: "-40%" },
     ],
   },
+  {
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1f1c1492d_generated_image.png",
+    titulo: "Chalet en Torrent",
+    tipo: "Split + conductos",
+    zona: "Torrent, Valencia",
+    resultado: "Combinación de splits en dormitorios y conductos en zona de día. Climatización integral con un único proyecto técnico.",
+    metricas: [
+      { label: "Estancias", value: "6" },
+      { label: "Eficiencia", value: "A+++" },
+      { label: "Plazo", value: "3 días" },
+    ],
+  },
 ];
 
 const servicios = [
-  { icon: Snowflake, title: "Aire acondicionado split", desc: "Splits y multi-splits de marcas premium para cualquier estancia." },
-  { icon: AirVent, title: "Sistemas de conductos", desc: "Climatización invisible por conductos para viviendas y locales." },
-  { icon: Flame, title: "Bombas de calor y aerotermia", desc: "Calefacción, ACS y climatización con la máxima eficiencia." },
-  { icon: Wrench, title: "Mantenimiento y reparación", desc: "Servicio técnico oficial, recargas de gas y mantenimiento periódico." },
+  { icon: Snowflake, title: "Aire acondicionado split", desc: "Splits y multi-splits inverter de marcas premium para cualquier estancia." },
+  { icon: AirVent, title: "Climatización por conductos", desc: "Climatización invisible por conductos ocultos, ideal para toda la vivienda." },
+  { icon: Thermometer, title: "Proyecto y diseño técnico", desc: "Calculamos la carga térmica y diseñamos el sistema a medida para tu espacio." },
+  { icon: Wrench, title: "Mantenimiento y reparación", desc: "Servicio técnico, recargas de gas y mantenimiento periódico de todas las marcas." },
 ];
 
 const pasos = [
@@ -75,10 +75,10 @@ export default function Climatizacion() {
                 <Wind className="h-3.5 w-3.5" /> Climatización en {siteConfig.provincia}
               </span>
               <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
-                Instalación de aire acondicionado, splits y conductos en {siteConfig.provincia}
+                Aire acondicionado split y por conductos en {siteConfig.provincia}
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-                Climatización profesional para viviendas y empresas: splits, conductos, bombas de calor y aerotermia.
+                Climatización profesional para viviendas y locales: splits y conductos con tecnología inverter.
                 Confort durante todo el año con la máxima eficiencia energética.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -91,7 +91,7 @@ export default function Climatizacion() {
               </div>
             </div>
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={HVAC_IMG} alt="Instalación de aire acondicionado split en pared exterior" className="h-80 w-full lg:h-96" fittingType="fill" />
+              <Image src={HVAC_IMG} alt="Instalación de aire acondicionado split en pared" className="h-80 w-full lg:h-96" fittingType="fill" />
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@ export default function Climatizacion() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={HVAC_IMG} alt="Equipo de aire acondicionado de alta eficiencia instalado" className="h-96 w-full" fittingType="fill" />
+              <Image src={CONDUCTOS_IMG} alt="Instalación de climatización por conductos de alta eficiencia" className="h-96 w-full" fittingType="fill" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron">Eficiencia energética</p>
@@ -171,7 +171,7 @@ export default function Climatizacion() {
         proyectos={PROYECTOS_HVAC}
         eyebrow="Proyectos reales"
         titulo="Instalaciones de climatización terminadas"
-        subtitulo="Ejemplos reales de splits, conductos y aerotermia en la provincia de Valencia."
+        subtitulo="Ejemplos reales de splits y conductos en la provincia de Valencia."
         fondoCard
       />
 
@@ -186,9 +186,9 @@ export default function Climatizacion() {
           </div>
           <div className="mt-12 space-y-8">
             {[
-              { q: `¿Cuánto cuesta instalar aire acondicionado en ${siteConfig.provincia}?`, a: "El precio depende del equipo y la complejidad de la instalación. Un split estándar instalado puede partir de 600-900€. Te damos presupuesto cerrado en 2 horas." },
-              { q: "¿Qué es mejor, split o conductos?", a: "El split es más económico y rápido de instalar. Los conductos son más estéticos al quedar ocultos y climatizan toda la vivienda de forma uniforme. Te asesoramos según tu espacio." },
-              { q: "¿Instaláis aerotermia y bombas de calor?", a: "Sí. La aerotermia es una de las soluciones más eficientes para calefacción, agua caliente y aire acondicionado en una sola instalación." },
+              { q: `¿Cuánto cuesta instalar aire acondicionado split en ${siteConfig.provincia}?`, a: "El precio depende del equipo y la complejidad de la instalación. Un split inverter instalado puede partir de 600-900€. Te damos presupuesto cerrado en 2 horas." },
+              { q: "¿Qué es mejor, split o conductos?", a: "El split es más económico y rápido de instalar, ideal para estancias concretas. Los conductos quedan ocultos y climatizan toda la vivienda de forma uniforme. Te asesoramos según tu espacio." },
+              { q: "¿Qué marcas de aire acondicionado instaláis?", a: "Trabajamos con las mejores marcas del mercado (Daikin, Mitsubishi, LG, Samsung, etc.) siempre con equipos inverter de clase A+++ para garantizar eficiencia y durabilidad." },
               { q: "¿Hacéis mantenimiento y reparación?", a: "Sí, contamos con servicio técnico para mantenimiento periódico, recargas de gas y reparación de todas las marcas principales." },
               { q: `¿Dónde instaláis en la provincia de ${siteConfig.provincia}?`, a: `Damos servicio en toda la provincia: ${siteConfig.localidades.slice(0, 5).join(", ")} y resto de localidades.` },
             ].map((f) => (

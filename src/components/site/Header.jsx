@@ -5,7 +5,6 @@ import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 
 const navLinks = [
   { label: "Inicio", to: "/" },
-  { label: "Fotovoltaica", to: "/fotovoltaica" },
   { label: "Climatización", to: "/climatizacion" },
   { label: "Reformas", to: "/reformas" },
   { label: "Contacto", to: "/#contacto" },
@@ -19,10 +18,10 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <span className="flex h-9 w-9 items-center justify-center bg-citron font-display text-sm font-black text-graphite">
-          N
+          T
           </span>
           <span className="font-display text-base font-bold tracking-tight text-foreground">
-          NovaTech<span className="text-citron"> Ingeniería</span>
+          TU<span className="text-citron"> INGENIERIA</span>
           </span>
         </Link>
 

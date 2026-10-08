@@ -10,13 +10,13 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center bg-citron font-display text-sm font-black text-graphite">N</span>
+              <span className="flex h-9 w-9 items-center justify-center bg-citron font-display text-sm font-black text-graphite">T</span>
               <span className="font-display text-base font-bold text-foreground">
-                NovaTech<span className="text-citron"> Ingeniería</span>
+                TU<span className="text-citron"> INGENIERIA</span>
               </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Ingeniería especializada en energía solar fotovoltaica y climatización en {siteConfig.provincia} y alrededores.
+              Especialistas en climatización (splits y conductos) y reformas de baños y cocinas en {siteConfig.provincia} y alrededores.
             </p>
             <div className="mt-6 flex gap-3">
               <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-9 w-9 items-center justify-center rounded-sm border border-border text-muted-foreground transition hover:border-citron hover:text-citron">
@@ -34,11 +34,10 @@ export default function Footer() {
           <div>
             <h3 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">Servicios</h3>
             <ul className="mt-4 space-y-3 text-sm">
-              <li><Link to="/fotovoltaica" className="text-muted-foreground transition hover:text-citron">Fotovoltaica</Link></li>
-              <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron">Climatización</Link></li>
-              <li><Link to="/reformas" className="text-muted-foreground transition hover:text-citron">Reformas</Link></li>
-              <li><Link to="/fotovoltaica" className="text-muted-foreground transition hover:text-citron">Autoconsumo solar</Link></li>
-              <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron">Splits y conductos</Link></li>
+              <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron">Climatización split</Link></li>
+              <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron">Climatización por conductos</Link></li>
+              <li><Link to="/reformas" className="text-muted-foreground transition hover:text-citron">Reforma de baños</Link></li>
+              <li><Link to="/reformas" className="text-muted-foreground transition hover:text-citron">Reforma de cocinas</Link></li>
             </ul>
           </div>
 
@@ -71,7 +70,7 @@ export default function Footer() {
 
           <div>
             <h3 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">Zonas de trabajo</h3>
-            <p className="mt-4 text-xs text-muted-foreground">Instalaciones en {siteConfig.provincia} y comarcas:</p>
+            <p className="mt-4 text-xs text-muted-foreground">Trabajamos en {siteConfig.provincia} y comarcas:</p>
             <ul className="mt-3 flex flex-wrap gap-2">
               {siteConfig.localidades.map((loc) => (
                 <li key={loc}>
@@ -84,7 +83,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row">
           <p>© {new Date().getFullYear()} {siteConfig.brand}. Todos los derechos reservados.</p>
-          <p>Ingeniería solar y climatización · {siteConfig.provincia}</p>
+          <p>Climatización y reformas · {siteConfig.provincia}</p>
         </div>
       </div>
     </footer>
