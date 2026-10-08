@@ -118,7 +118,7 @@ export default function Home() {
           <div className="grid gap-6 lg:grid-cols-2">
             <Link to="/climatizacion" className="group relative overflow-hidden rounded-sm border border-border bg-background">
               <div className="relative h-56 overflow-hidden">
-                <Image src={HVAC_IMG} alt="Instalación de aire acondicionado split y conductos" className="h-full w-full" fittingType="fill" />
+                <Image src={HVAC_IMG} alt="Aire acondicionado split instalado en un salón reformado" className="h-full w-full" fittingType="fill" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
                   <Wind className="h-3.5 w-3.5" /> CLIMATIZACIÓN
@@ -135,7 +135,7 @@ export default function Home() {
 
             <Link to="/reformas" className="group relative overflow-hidden rounded-sm border border-border bg-background">
               <div className="relative h-56 overflow-hidden">
-                <Image src={COCINA_IMG} alt="Reforma de cocina y baño a medida" className="h-full w-full" fittingType="fill" />
+                <Image src={COCINA_IMG} alt="Reforma de cocina a medida con isla de mármol" className="h-full w-full" fittingType="fill" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
                   <Hammer className="h-3.5 w-3.5" /> REFORMAS
