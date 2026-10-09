@@ -6,11 +6,11 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
-const HERO_IMG = "https://images.unsplash.com/photo-1778731660083-60d60e6817ca?auto=format&fit=crop&w=1600&q=80";
+const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2a7226264_WhatsAppImage2026-10-09at1739161.jpeg";
 
 const PROYECTOS = [
   {
-    imagen: "https://images.unsplash.com/photo-1778731660083-60d60e6817ca?auto=format&fit=crop&w=1600&q=80",
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/8d60b16ef_WhatsAppImage2026-10-09at173916.jpeg",
     titulo: "Baño principal en Alzira",
     tipo: "Reforma de baño",
     zona: "Alzira, Valencia",
@@ -22,7 +22,7 @@ const PROYECTOS = [
     ],
   },
   {
-    imagen: "https://images.unsplash.com/photo-1787539386512-e7d727dc5c1a?auto=format&fit=crop&w=1600&q=80",
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2a7226264_WhatsAppImage2026-10-09at1739161.jpeg",
     titulo: "Baño de visitas en Valencia",
     tipo: "Reforma de baño",
     zona: "Valencia capital",
