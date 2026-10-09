@@ -10,7 +10,7 @@ const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f
 const CONDUCTOS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/eb1c621eb_generated_image.png";
 const FACHADA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/60243de9d_generated_image.png";
 const TECH_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/0c7b806ef_generated_image.png";
-const LIFT_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/d4f09fcb6_generated_image.png";
+const LIFT_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/5b92a4983_generated_image.png";
 
 const PROYECTOS_HVAC = [
   {
