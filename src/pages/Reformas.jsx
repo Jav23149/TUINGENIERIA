@@ -7,7 +7,7 @@ import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
 const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6c54a998_generated_image.png";
-const REFORMAS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/729b39a79_WhatsAppImage2026-10-09at173915.jpeg";
+const REFORMAS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/c6bd5e91e_generated_image.png";
 const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/e429d50fc_WhatsAppImage2026-10-09at1739162.jpeg";
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2a7226264_WhatsAppImage2026-10-09at1739161.jpeg";
 

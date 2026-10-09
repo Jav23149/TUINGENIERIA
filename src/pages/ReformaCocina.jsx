@@ -22,7 +22,7 @@ const PROYECTOS = [
     ],
   },
   {
-    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/729b39a79_WhatsAppImage2026-10-09at173915.jpeg",
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/c6bd5e91e_generated_image.png",
     titulo: "Cocina con isla en Torrent",
     tipo: "Reforma de cocina",
     zona: "Torrent, Valencia",
