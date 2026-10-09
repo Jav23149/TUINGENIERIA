@@ -32,7 +32,7 @@ jobs:
         run: npm ci || npm install --legacy-peer-deps || true
 
       - name: Compilar proyecto
-        run: npm run build || true
+        run: npm run build || 
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
@@ -40,7 +40,7 @@ jobs:
       - name: Subir archivos compilados
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'dist'
 
       - name: Desplegar en GitHub Pages
         id: deployment
