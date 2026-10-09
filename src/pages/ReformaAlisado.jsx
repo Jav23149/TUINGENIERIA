@@ -10,7 +10,7 @@ const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f
 
 const PROYECTOS = [
   {
-    imagen: "https://images.unsplash.com/photo-1581094288338-2314dddb7e14?auto=format&fit=crop&w=1600&q=80",
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/67f1536a9_generated_image.png",
     titulo: "Alisado de paredes en salón",
     tipo: "Alisado de paredes",
     zona: "Valencia capital",
@@ -22,7 +22,7 @@ const PROYECTOS = [
     ],
   },
   {
-    imagen: "https://images.unsplash.com/photo-1503387762-592e58447610?auto=format&fit=crop&w=1600&q=80",
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/bf504ee73_generated_image.png",
     titulo: "Paredes lisas en piso completo",
     tipo: "Alisado de paredes",
     zona: "Paterna, Valencia",
@@ -34,7 +34,7 @@ const PROYECTOS = [
     ],
   },
   {
-    imagen: "https://images.unsplash.com/photo-1562259949-8a3c685f8567?auto=format&fit=crop&w=1600&q=80",
+    imagen: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/fba0c9826_generated_image.png",
     titulo: "Alisado y pintura en Torrent",
     tipo: "Alisado + pintura",
     zona: "Torrent, Valencia",
