@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Hammer, Bath, ChefHat, Ruler, Wrench, Clock, ShieldCheck, ArrowRight, CheckCircle2, Home, Phone } from "lucide-react";
+import { Hammer, Bath, ChefHat, Ruler, Wrench, Clock, ShieldCheck, CheckCircle2, Home, Phone } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
@@ -100,47 +99,41 @@ export default function ReformaIntegral() {
         </div>
       </section>
 
-      {/* DERIVA A BAÑO Y COCINA */}
+      {/* BAÑO Y COCINA */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Elige tu reforma</p>
-            <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">¿Baño, cocina o las dos?</h2>
-            <p className="mt-4 text-muted-foreground">Si buscas reformar una estancia concreta, tenemos páginas específicas para cada servicio.</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Reformas de baño y cocina</p>
+            <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Baño y cocina, reformados a medida</h2>
+            <p className="mt-4 text-muted-foreground">Diseñamos y ejecutamos tu baño y tu cocina en una misma reforma integral, con un único proyecto técnico y un único responsable de obra.</p>
           </div>
           <div className="mt-14 grid gap-8 lg:grid-cols-2">
-            <Link to="/reforma-bano" className="group relative overflow-hidden rounded-sm border border-border bg-background">
+            <div className="overflow-hidden rounded-sm border border-border bg-background">
               <div className="relative h-56 overflow-hidden">
                 <Image src={BANO_IMG} alt="Reforma de baño a medida" className="h-full w-full" fittingType="fill" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
-                  <Bath className="h-3.5 w-3.5" /> REFORMA DE BAÑO
+                  <Bath className="h-3.5 w-3.5" /> BAÑO
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="font-display text-2xl font-bold text-foreground">Reforma de baño</h3>
                 <p className="mt-2 text-sm text-muted-foreground">Baño completo en 7 días, llave en mano y con acabados premium. Plato de ducha o bañera, mobiliario e iluminación.</p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-citron transition group-hover:gap-2">
-                  Ver reforma de baño <ArrowRight className="h-4 w-4" />
-                </span>
               </div>
-            </Link>
-            <Link to="/reforma-cocina" className="group relative overflow-hidden rounded-sm border border-border bg-background">
+            </div>
+            <div className="overflow-hidden rounded-sm border border-border bg-background">
               <div className="relative h-56 overflow-hidden">
                 <Image src={COCINA_IMG} alt="Reforma de cocina a medida" className="h-full w-full" fittingType="fill" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
-                  <ChefHat className="h-3.5 w-3.5" /> REFORMA DE COCINA
+                  <ChefHat className="h-3.5 w-3.5" /> COCINA
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="font-display text-2xl font-bold text-foreground">Reforma de cocina</h3>
                 <p className="mt-2 text-sm text-muted-foreground">Cocina a medida en 10-14 días, con nueva electricidad, fontanería y carpintería. Proyecto y dirección de obra.</p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-citron transition group-hover:gap-2">
-                  Ver reforma de cocina <ArrowRight className="h-4 w-4" />
-                </span>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
