@@ -6,9 +6,9 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import WhatsAppButton from "@/components/site/WhatsAppButton";
 
-const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1edcf7b66_generated_image.png";
-const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f4f6cb92c_generated_image.png";
-const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/87c1293d8_generated_image.png";
+const HERO_VIDEO = "https://media.base44.com/videos/public/6ac2c61f7c5f2c6d856595f5/86fee036d_Hero_reforma.mp4";
+const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cd9d37de6_generated_image.png";
+const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/03cb3f616_generated_image.png";
 
 const incluye = [
   { icon: Bath, title: "Baño completo", desc: "Plato de ducha o bañera, mobiliario, iluminación y acabados premium." },
@@ -30,7 +30,14 @@ export default function ReformaIntegral() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0">
-          <Image src={HERO_IMG} alt="Salón reformado en una reforma integral" className="h-full w-full" fittingType="fill" />
+          <video
+            src={HERO_VIDEO}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="h-full w-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-graphite/85 via-graphite/60 to-transparent" />
           <div className="blueprint-grid absolute inset-0 opacity-20" />
         </div>
