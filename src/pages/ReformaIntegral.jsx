@@ -11,10 +11,10 @@ const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f
 const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/03cb3f616_generated_image.png";
 
 const incluye = [
-  { icon: Bath, title: "Baño completo", desc: "Plato de ducha o bañera, mobiliario, iluminación y acabados premium." },
-  { icon: ChefHat, title: "Cocina a medida", desc: "Carpintería, electrodomésticos, electricidad y fontanería nueva." },
-  { icon: Wrench, title: "Instalaciones", desc: "Electricidad, fontanería, pladur y climatización revisadas." },
-  { icon: Home, title: "Acabados", desc: "Solados, alicatados, pintura y carpintería a tu estilo." },
+  { icon: Bath, title: "Baño completo", desc: "Plato de ducha o bañera, mobiliario, iluminación y acabados premium.", img: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/3068d76bc_generated_image.png" },
+  { icon: ChefHat, title: "Cocina a medida", desc: "Carpintería, electrodomésticos, electricidad y fontanería nueva.", img: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/828773082_generated_image.png" },
+  { icon: Wrench, title: "Instalaciones", desc: "Electricidad, fontanería, pladur y climatización revisadas.", img: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2f63a592f_generated_image.png" },
+  { icon: Home, title: "Acabados", desc: "Solados, alicatados, pintura y carpintería a tu estilo.", img: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/ebf8575c0_generated_image.png" },
 ];
 
 const pasos = [
@@ -77,10 +77,16 @@ export default function ReformaIntegral() {
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {incluye.map((i) => (
-              <div key={i.title} className="rounded-sm border border-border bg-card p-6">
-                <i.icon className="h-9 w-9 text-citron" />
-                <h3 className="mt-4 font-display text-lg font-bold text-foreground">{i.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{i.desc}</p>
+              <div key={i.title} className="group overflow-hidden rounded-sm border border-border bg-card">
+                <div className="relative h-44 overflow-hidden">
+                  <Image src={i.img} alt={i.title} className="h-full w-full transition-transform duration-300 group-hover:scale-105" fittingType="fill" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+                  <i.icon className="absolute left-4 top-4 h-8 w-8 text-citron drop-shadow" />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-display text-lg font-bold text-foreground">{i.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{i.desc}</p>
+                </div>
               </div>
             ))}
           </div>
