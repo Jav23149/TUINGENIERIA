@@ -6,19 +6,20 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
-const HVAC_IMG = "https://images.unsplash.com/photo-1757219525975-03b5984bc6e8?auto=format&fit=crop&w=1600&q=80";
-const CONDUCTOS_IMG = "https://images.unsplash.com/photo-1724958337802-2ac3cd31baa6?auto=format&fit=crop&w=1600&q=80";
-const SPLIT_IMG = "https://images.unsplash.com/photo-1759772238012-9d5ad59ae637?auto=format&fit=crop&w=1600&q=80";
-const MULTISPLIT_IMG = "https://images.unsplash.com/photo-1776860150250-757406c52438?auto=format&fit=crop&w=1600&q=80";
-const DUCT_IMG = "https://images.unsplash.com/photo-1770816306659-adcf99a11aeb?auto=format&fit=crop&w=1600&q=80";
+const HVAC_IMG = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=80";
+const CONDUCTOS_IMG = "https://images.unsplash.com/photo-1642749776312-aa42ce20c9f5?auto=format&fit=crop&w=1600&q=80";
+const INSTALADOR_IMG = "https://images.unsplash.com/photo-1660330589693-99889d60181e?auto=format&fit=crop&w=1600&q=80";
+const TECH_IMG = "https://images.unsplash.com/photo-1758101755915-462eddc23f57?auto=format&fit=crop&w=1600&q=80";
+const POWER_IMG = "https://images.unsplash.com/photo-1625148230889-8195e85aae6b?auto=format&fit=crop&w=1600&q=80";
+const LIFT_IMG = "https://images.unsplash.com/photo-1785682118449-21da8825754d?auto=format&fit=crop&w=1600&q=80";
 
 const PROYECTOS_HVAC = [
   {
     imagen: CONDUCTOS_IMG,
-    titulo: "Edificio de viviendas en Valencia",
+    titulo: "Instalación en cubierta de edificio",
     tipo: "Conductos + Inverter A+++",
     zona: "Valencia capital",
-    resultado: "Unidades condensadoras exteriores en fachada para un sistema por conductos con 4 zonas independientes, control por app y silencio absoluto en el interior.",
+    resultado: "Nuestros instaladores montando las unidades condensadoras exteriores en cubierta para un sistema por conductos con 4 zonas independientes.",
     metricas: [
       { label: "Eficiencia", value: "A+++" },
       { label: "Zonas", value: "4" },
@@ -27,10 +28,10 @@ const PROYECTOS_HVAC = [
   },
   {
     imagen: HVAC_IMG,
-    titulo: "Salón en piso de Paterna",
+    titulo: "Montaje de split inverter en salón",
     tipo: "Split inverter",
     zona: "Paterna, Valencia",
-    resultado: "Split inverter instalado en el salón de la vivienda. Climatización silenciosa de la zona de día con bajo consumo.",
+    resultado: "Instalador montando el split inverter en el salón de la vivienda: fijación, conexionado eléctrico y prueba de la unidad interior.",
     metricas: [
       { label: "Superficie", value: "35 m²" },
       { label: "Equipos", value: "1" },
@@ -38,27 +39,27 @@ const PROYECTOS_HVAC = [
     ],
   },
   {
-    imagen: MULTISPLIT_IMG,
-    titulo: "Vivienda en Torrent",
-    tipo: "Multi-split inverter",
+    imagen: LIFT_IMG,
+    titulo: "Conductos ocultos en falso techo",
+    tipo: "Climatización por conductos",
     zona: "Torrent, Valencia",
-    resultado: "Varios splits inverter distribuidos por las estancias para climatizar cada habitación de forma independiente, con eficiencia A+++.",
+    resultado: "Montaje de la red de conductos oculta en falso techo desde plataforma elevada, para climatización uniforme sin equipos visibles.",
     metricas: [
       { label: "Estancias", value: "6" },
       { label: "Eficiencia", value: "A+++" },
-      { label: "Plazo", value: "3 días" },
+      { label: "Plazo", value: "5 días" },
     ],
   },
   {
-    imagen: DUCT_IMG,
-    titulo: "Local comercial en Valencia",
-    tipo: "Conductos ocultos",
+    imagen: TECH_IMG,
+    titulo: "Puesta en marcha y verificación",
+    tipo: "Service técnico",
     zona: "Valencia capital",
-    resultado: "Red de conductos oculta en falso techo con difusores circulares, para climatización uniforme sin equipos visibles en el interior.",
+    resultado: "Técnico verificando el sistema con multímetro durante la puesta en marcha: presión de gas, conexionado eléctrico y rendimiento.",
     metricas: [
-      { label: "Difusores", value: "8" },
-      { label: "Eficiencia", value: "A++" },
-      { label: "Plazo", value: "5 días" },
+      { label: "Verificación", value: "100%" },
+      { label: "Garantía", value: "5 años" },
+      { label: "Plazo", value: "1 día" },
     ],
   },
 ];
@@ -106,7 +107,7 @@ export default function Climatizacion() {
               </div>
             </div>
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={HVAC_IMG} alt="Salón con equipo de aire acondicionado split instalado en la pared" className="h-80 w-full lg:h-96" fittingType="fill" />
+              <Image src={HVAC_IMG} alt="Instalador montando un equipo de aire acondicionado con herramientas" className="h-80 w-full lg:h-96" fittingType="fill" />
             </div>
           </div>
         </div>
@@ -155,7 +156,7 @@ export default function Climatizacion() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={CONDUCTOS_IMG} alt="Unidades condensadoras exteriores de un sistema de climatización por conductos" className="h-96 w-full" fittingType="fill" />
+              <Image src={CONDUCTOS_IMG} alt="Instaladores montando unidades condensadoras exteriores en la cubierta de un edificio" className="h-96 w-full" fittingType="fill" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron">Eficiencia energética</p>
