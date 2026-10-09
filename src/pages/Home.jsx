@@ -130,7 +130,7 @@ export default function Home() {
               { icon: ShieldCheck, label: "Ingenieros certificados", value: "ISO 9001" },
               { icon: Clock, label: "Presupuesto en", value: "24 horas" },
               { icon: Euro, label: "Equipos", value: "Clase A+++" },
-              { icon: Wrench, label: "Garantía de obra", value: "5 años" },
+              { icon: Wrench, label: "Garantía de obra", value: "3 años" },
             ].map((s) => (
               <div key={s.label} className="text-center">
                 <s.icon className="mx-auto h-7 w-7 text-citron" />
@@ -150,7 +150,7 @@ export default function Home() {
               <Image src={BANO_PRO} alt="Baño reformado con bañera exenta y acabados premium" className="h-[420px] w-full lg:h-[520px]" fittingType="fill" />
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">Por qué NovaTech</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">Por qué TU INGENIERIA</p>
               <h2 className="mt-4 font-heading text-3xl font-normal text-foreground sm:text-4xl">Ingeniería precisa, resultados medibles</h2>
               <div className="mt-5 h-px w-12 bg-citron" />
               <p className="mt-6 text-muted-foreground">No somos instaladores improvisados. Somos ingenieros que dimensionan cada sistema y planifican cada obra con datos reales, para que el resultado sea el que esperas.</p>

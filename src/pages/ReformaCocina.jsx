@@ -74,7 +74,7 @@ export default function ReformaCocina() {
                 <ChefHat className="h-3.5 w-3.5" /> Reforma de cocina en {siteConfig.provincia}
               </span>
               <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
-                Reforma de cocina a medida en 10-14 días
+                Reforma de cocina a medida en Valencia: 10-14 días
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
                 Diseñamos y ejecutamos tu cocina a medida: carpintería, electrodomésticos, nueva electricidad y fontanería. Proyecto técnico, dirección de obra y entrega llave en mano.

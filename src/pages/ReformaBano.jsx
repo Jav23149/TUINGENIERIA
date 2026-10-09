@@ -18,7 +18,7 @@ const PROYECTOS = [
     metricas: [
       { label: "Plazo", value: "7 días" },
       { label: "Superficie", value: "5 m²" },
-      { label: "Garantía", value: "2 años" },
+      { label: "Garantía", value: "3 años" },
     ],
   },
   {
@@ -30,7 +30,7 @@ const PROYECTOS = [
     metricas: [
       { label: "Plazo", value: "7 días" },
       { label: "Superficie", value: "10 m²" },
-      { label: "Garantía", value: "2 años" },
+      { label: "Garantía", value: "3 años" },
     ],
   },
 ];
@@ -46,7 +46,7 @@ const pasos = [
   { n: "01", title: "Visita y presupuesto", desc: "Acudimos a tu baño, escuchamos tus necesidades y entregamos presupuesto cerrado." },
   { n: "02", title: "Proyecto y planificación", desc: "Diseñamos el baño y planificamos plazos y fases de obra." },
   { n: "03", title: "Ejecución de obra", desc: "Realizamos la reforma en 7 días con equipos propios y control de calidad." },
-  { n: "04", title: "Entrega y garantía", desc: "Entregamos llave en mano, limpio y con 2 años de garantía." },
+  { n: "04", title: "Entrega y garantía", desc: "Entregamos llave en mano, limpio y con 3 años de garantía." },
 ];
 
 export default function ReformaBano() {
@@ -62,7 +62,7 @@ export default function ReformaBano() {
                 <Bath className="h-3.5 w-3.5" /> Reforma de baño en {siteConfig.provincia}
               </span>
               <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
-                Reforma de baño en 7 días, llave en mano
+                Reforma de baño en Valencia: 7 días, llave en mano
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
                 Renovamos tu baño de principio a fin: plato de ducha o bañera, mobiliario, iluminación y acabados premium. Un único responsable y dirección de obra de ingeniería.
@@ -143,7 +143,7 @@ export default function ReformaBano() {
             {[
               { q: `¿Cuánto tarda una reforma de baño en ${siteConfig.provincia}?`, a: "Una reforma completa de baño suele tardar 7 días. Te damos un calendario detallado antes de empezar." },
               { q: "¿Trabajáis con plato de ducha y con bañera?", a: "Sí. Instalamos plato de ducha de resina o porcelánico, mamparas de cristal y también bañeras exentas. Te asesoramos según tu espacio." },
-              { q: "¿Qué garantía tiene la obra?", a: "Todas nuestras reformas de baño cuentan con 2 años de garantía en la ejecución, además de las garantías de fábrica de los materiales." },
+              { q: "¿Qué garantía tiene la obra?", a: "Todas nuestras reformas de baño cuentan con 3 años de garantía en la ejecución, además de las garantías de fábrica de los materiales." },
               { q: `¿Dónde reformáis baños en la provincia de ${siteConfig.provincia}?`, a: `Damos servicio en toda la provincia: ${siteConfig.localidades.slice(0, 5).join(", ")} y resto de localidades.` },
             ].map((f) => (
               <div key={f.q} className="rounded-sm border border-border bg-card p-6">

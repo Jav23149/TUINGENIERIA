@@ -49,7 +49,7 @@ const pasos = [
   { n: "01", title: "Visita y presupuesto", desc: "Acudimos a tu espacio, escuchamos tus necesidades y entregamos presupuesto cerrado." },
   { n: "02", title: "Proyecto y planificación", desc: "Diseñamos la reforma y planificamos plazos y fases de obra." },
   { n: "03", title: "Ejecución de obra", desc: "Realizamos la reforma con equipos propios y control de calidad." },
-  { n: "04", title: "Entrega y garantía", desc: "Entregamos llave en mano con garantía de 2 años en la obra." },
+  { n: "04", title: "Entrega y garantía", desc: "Entregamos llave en mano con garantía de 3 años en la obra." },
 ];
 
 export default function Reformas() {
@@ -170,7 +170,7 @@ export default function Reformas() {
               { q: `¿Hacéis reformas de baños y cocinas en ${siteConfig.provincia}?`, a: "Sí. Somos especialistas en reforma de baños y cocinas en toda la provincia, con un único responsable y dirección de obra de ingeniería." },
               { q: "¿Cuánto tarda una reforma de baño?", a: "Una reforma completa de baño suele tardar 7 días. Te damos un calendario detallado antes de empezar." },
               { q: "¿Cuánto tarda una reforma de cocina?", a: "Una reforma de cocina a medida tarda un poco más que el baño, normalmente entre 10 y 14 días, incluyendo electricidad, fontanería, carpintería y acabados." },
-              { q: "¿Qué garantía tiene la obra?", a: "Todas nuestras reformas cuentan con 2 años de garantía en la ejecución de la obra, además de las garantías de fábrica de los materiales instalados." },
+              { q: "¿Qué garantía tiene la obra?", a: "Todas nuestras reformas cuentan con 3 años de garantía en la ejecución de la obra, además de las garantías de fábrica de los materiales instalados." },
               { q: `¿Dónde trabajáis en la provincia de ${siteConfig.provincia}?`, a: `Damos servicio en toda la provincia: ${siteConfig.localidades.slice(0, 5).join(", ")} y resto de localidades.` },
             ].map((f) => (
               <div key={f.q} className="rounded-sm border border-border bg-card p-6">

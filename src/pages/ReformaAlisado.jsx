@@ -18,7 +18,7 @@ const PROYECTOS = [
     metricas: [
       { label: "Plazo", value: "2 días" },
       { label: "Superficie", value: "45 m²" },
-      { label: "Garantía", value: "2 años" },
+      { label: "Garantía", value: "3 años" },
     ],
   },
   {
@@ -30,7 +30,7 @@ const PROYECTOS = [
     metricas: [
       { label: "Plazo", value: "4 días" },
       { label: "Superficie", value: "120 m²" },
-      { label: "Garantía", value: "2 años" },
+      { label: "Garantía", value: "3 años" },
     ],
   },
   {
@@ -42,7 +42,7 @@ const PROYECTOS = [
     metricas: [
       { label: "Plazo", value: "5 días" },
       { label: "Superficie", value: "90 m²" },
-      { label: "Garantía", value: "2 años" },
+      { label: "Garantía", value: "3 años" },
     ],
   },
 ];
@@ -58,7 +58,7 @@ const pasos = [
   { n: "01", title: "Visita y presupuesto", desc: "Acudimos a tu vivienda, medimos las paredes y entregamos presupuesto cerrado." },
   { n: "02", title: "Preparación", desc: "Protegemos mobiliario y suelos, y eliminamos el gotelé existente." },
   { n: "03", title: "Alisado", desc: "Aplicamos el alisado de yeso en capas hasta lograr una pared totalmente lisa." },
-  { n: "04", title: "Entrega y garantía", desc: "Entregamos la pared lisa, limpia y lista para pintar, con 2 años de garantía." },
+  { n: "04", title: "Entrega y garantía", desc: "Entregamos la pared lisa, limpia y lista para pintar, con 3 años de garantía." },
 ];
 
 export default function ReformaAlisado() {
@@ -74,7 +74,7 @@ export default function ReformaAlisado() {
                 <Hammer className="h-3.5 w-3.5" /> Alisado de paredes en {siteConfig.provincia}
               </span>
               <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
-                Alisado de paredes: quita el gotelé y deja paredes lisas
+                Alisado de paredes en Valencia: quita el gotelé y deja paredes lisas
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
                 Eliminamos el gotelé y alisamos tus paredes con yeso para un acabado liso y uniforme, listo para pintar. Trabajo limpio, rápido y con garantía.
