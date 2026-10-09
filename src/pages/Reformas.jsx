@@ -25,18 +25,6 @@ const PROYECTOS_REFORMAS = [
     ],
   },
   {
-    imagen: BANO_IMG,
-    titulo: "Baño principal en Alzira",
-    tipo: "Reforma de baño",
-    zona: "Alzira, Valencia",
-    resultado: "Baño completo con bañera exenta, mobiliario suspendido e iluminación LED. Acabados premium en 7 días.",
-    metricas: [
-      { label: "Plazo", value: "7 días" },
-      { label: "Superficie", value: "8 m²" },
-      { label: "Garantía", value: "2 años" },
-    ],
-  },
-  {
     imagen: REFORMAS_IMG,
     titulo: "Cocina con isla en Torrent",
     tipo: "Reforma de cocina",
