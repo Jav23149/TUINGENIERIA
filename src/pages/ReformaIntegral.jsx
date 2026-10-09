@@ -6,7 +6,7 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import WhatsAppButton from "@/components/site/WhatsAppButton";
 
-const HERO_VIDEO = "https://media.base44.com/videos/public/6ac2c61f7c5f2c6d856595f5/86fee036d_Hero_reforma.mp4";
+const HERO_VIDEO = "https://media.base44.com/videos/public/6ac2c61f7c5f2c6d856595f5/a307ce60f_Hero_alicatado_nuevo.mp4";
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cd9d37de6_generated_image.png";
 const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/03cb3f616_generated_image.png";
 
