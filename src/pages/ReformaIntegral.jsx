@@ -1,5 +1,6 @@
 import React from "react";
-import { Hammer, Bath, ChefHat, Ruler, Wrench, Clock, ShieldCheck, CheckCircle2, Home, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Hammer, Bath, ChefHat, Ruler, Wrench, Clock, ShieldCheck, CheckCircle2, Home, Phone, ArrowRight, PaintBucket } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
@@ -9,6 +10,7 @@ import WhatsAppButton from "@/components/site/WhatsAppButton";
 const HERO_VIDEO = "https://media.base44.com/videos/public/6ac2c61f7c5f2c6d856595f5/a307ce60f_Hero_alicatado_nuevo.mp4";
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cd9d37de6_generated_image.png";
 const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/03cb3f616_generated_image.png";
+const ALISADO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/b9a50dfc4_generated_image.png";
 
 const incluye = [
   { icon: Bath, title: "Baño completo", desc: "Plato de ducha o bañera, mobiliario, iluminación y acabados premium.", img: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/3068d76bc_generated_image.png" },
@@ -112,18 +114,18 @@ export default function ReformaIntegral() {
         </div>
       </section>
 
-      {/* BAÑO Y COCINA */}
+      {/* BAÑO, COCINA Y ALISADO */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Reformas de baño y cocina</p>
-            <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Baño y cocina, reformados a medida</h2>
-            <p className="mt-4 text-muted-foreground">Diseñamos y ejecutamos tu baño y tu cocina en una misma reforma integral, con un único proyecto técnico y un único responsable de obra.</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Nuestras especialidades</p>
+            <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Baño, cocina y alisado de paredes</h2>
+            <p className="mt-4 text-muted-foreground">Tres servicios especializados, cada uno con su propio equipo y presupuesto. Elige el tuyo y te damos presupuesto en 24 horas.</p>
           </div>
-          <div className="mt-14 grid gap-8 lg:grid-cols-2">
-            <div className="overflow-hidden rounded-sm border border-border bg-background">
+          <div className="mt-14 grid gap-8 lg:grid-cols-3">
+            <Link to="/reforma-bano" className="group overflow-hidden rounded-sm border border-border bg-background transition hover:border-citron">
               <div className="relative h-56 overflow-hidden">
-                <Image src={BANO_IMG} alt="Reforma de baño a medida" className="h-full w-full" fittingType="fill" />
+                <Image src={BANO_IMG} alt="Reforma de baño a medida" className="h-full w-full transition-transform duration-500 group-hover:scale-105" fittingType="fill" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
                   <Bath className="h-3.5 w-3.5" /> BAÑO
@@ -132,11 +134,14 @@ export default function ReformaIntegral() {
               <div className="p-6">
                 <h3 className="font-display text-2xl font-bold text-foreground">Reforma de baño</h3>
                 <p className="mt-2 text-sm text-muted-foreground">Baño completo en 7 días, llave en mano y con acabados premium. Plato de ducha o bañera, mobiliario e iluminación.</p>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
+                  Ver servicio <ArrowRight className="h-4 w-4" />
+                </span>
               </div>
-            </div>
-            <div className="overflow-hidden rounded-sm border border-border bg-background">
+            </Link>
+            <Link to="/reforma-cocina" className="group overflow-hidden rounded-sm border border-border bg-background transition hover:border-citron">
               <div className="relative h-56 overflow-hidden">
-                <Image src={COCINA_IMG} alt="Reforma de cocina a medida" className="h-full w-full" fittingType="fill" />
+                <Image src={COCINA_IMG} alt="Reforma de cocina a medida" className="h-full w-full transition-transform duration-500 group-hover:scale-105" fittingType="fill" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
                   <ChefHat className="h-3.5 w-3.5" /> COCINA
@@ -145,8 +150,27 @@ export default function ReformaIntegral() {
               <div className="p-6">
                 <h3 className="font-display text-2xl font-bold text-foreground">Reforma de cocina</h3>
                 <p className="mt-2 text-sm text-muted-foreground">Cocina a medida en 10-14 días, con nueva electricidad, fontanería y carpintería. Proyecto y dirección de obra.</p>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
+                  Ver servicio <ArrowRight className="h-4 w-4" />
+                </span>
               </div>
-            </div>
+            </Link>
+            <Link to="/reforma-alisado" className="group overflow-hidden rounded-sm border border-border bg-background transition hover:border-citron">
+              <div className="relative h-56 overflow-hidden">
+                <Image src={ALISADO_IMG} alt="Alisado de paredes y eliminación de gotelé" className="h-full w-full transition-transform duration-500 group-hover:scale-105" fittingType="fill" />
+                <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
+                <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
+                  <PaintBucket className="h-3.5 w-3.5" /> ALISADO
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-display text-2xl font-bold text-foreground">Alisado de paredes</h3>
+                <p className="mt-2 text-sm text-muted-foreground">Quitamos el gotelé y alisamos tus paredes con yeso. Acabado liso y uniforme, listo para pintar, en 2-5 días.</p>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
+                  Ver servicio <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
