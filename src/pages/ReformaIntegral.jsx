@@ -6,9 +6,9 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import WhatsAppButton from "@/components/site/WhatsAppButton";
 
-const HERO_IMG = "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1600&q=80";
-const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2a7226264_WhatsAppImage2026-10-09at1739161.jpeg";
-const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/e429d50fc_WhatsAppImage2026-10-09at1739162.jpeg";
+const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/1edcf7b66_generated_image.png";
+const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f4f6cb92c_generated_image.png";
+const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/87c1293d8_generated_image.png";
 
 const incluye = [
   { icon: Bath, title: "Baño completo", desc: "Plato de ducha o bañera, mobiliario, iluminación y acabados premium." },

@@ -6,6 +6,7 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
+const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6c54a998_generated_image.png";
 const REFORMAS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/729b39a79_WhatsAppImage2026-10-09at173915.jpeg";
 const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/e429d50fc_WhatsAppImage2026-10-09at1739162.jpeg";
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2a7226264_WhatsAppImage2026-10-09at1739161.jpeg";
@@ -92,7 +93,7 @@ export default function Reformas() {
               </div>
             </div>
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={COCINA_IMG} alt="Reforma de cocina a medida recién terminada" className="h-80 w-full lg:h-96" fittingType="fill" />
+              <Image src={HERO_IMG} alt="Reforma de cocina a medida recién terminada" className="h-80 w-full lg:h-96" fittingType="fill" />
             </div>
           </div>
         </div>

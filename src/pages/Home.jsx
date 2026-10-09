@@ -9,11 +9,13 @@ import Reviews from "@/components/site/Reviews";
 import ProjectGallery from "@/components/site/ProjectGallery";
 import WhatsAppButton, { WhatsAppGlyph } from "@/components/site/WhatsAppButton";
 
-const HERO_IMG = "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1600&q=80";
-const HVAC_IMG = "https://images.unsplash.com/photo-1761330440311-16e160cad236?auto=format&fit=crop&w=1600&q=80";
+const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/4c9930142_generated_image.png";
+const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cdce1e44c_generated_image.png";
 const CONDUCTOS_IMG = "https://images.unsplash.com/photo-1776860154052-d91c90b25c59?auto=format&fit=crop&w=1600&q=80";
 const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/e429d50fc_WhatsAppImage2026-10-09at1739162.jpeg";
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2a7226264_WhatsAppImage2026-10-09at1739161.jpeg";
+const COCINA_PRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6c54a998_generated_image.png";
+const BANO_PRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f4f6cb92c_generated_image.png";
 
 const PROYECTOS = [
   {
@@ -135,7 +137,7 @@ export default function Home() {
 
             <Link to="/reformas" className="group relative overflow-hidden rounded-sm border border-border bg-background">
               <div className="relative h-56 overflow-hidden">
-                <Image src={COCINA_IMG} alt="Reforma de cocina a medida con isla de mármol" className="h-full w-full" fittingType="fill" />
+                <Image src={COCINA_PRO} alt="Reforma de cocina a medida con isla de mármol" className="h-full w-full" fittingType="fill" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
                   <Hammer className="h-3.5 w-3.5" /> REFORMAS
@@ -215,7 +217,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={BANO_IMG} alt="Baño reformado con bañera exenta y acabados premium" className="h-80 w-full" fittingType="fill" />
+              <Image src={BANO_PRO} alt="Baño reformado con bañera exenta y acabados premium" className="h-80 w-full" fittingType="fill" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron">Por qué TU INGENIERIA</p>

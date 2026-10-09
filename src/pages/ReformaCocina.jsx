@@ -6,7 +6,7 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
-const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/e429d50fc_WhatsAppImage2026-10-09at1739162.jpeg";
+const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/87c1293d8_generated_image.png";
 
 const PROYECTOS = [
   {

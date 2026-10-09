@@ -30,9 +30,9 @@ export default function ProjectGallery({
         <div className="mt-14 grid gap-8 lg:grid-cols-3">
           {proyectos.map((p) => (
             <article key={p.titulo} className="flex flex-col overflow-hidden rounded-sm border border-border bg-background">
-              <div className="relative h-52 overflow-hidden">
-                <Image src={p.imagen} alt={p.titulo} className="h-full w-full" fittingType="fill" />
-                <div className="absolute inset-0 bg-gradient-to-t from-graphite/50 to-transparent" />
+              <div className="relative h-64 overflow-hidden bg-graphite">
+                <Image src={p.imagen} alt={p.titulo} className="h-full w-full" fittingType="fit" />
+                <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 to-transparent" />
                 <span className="absolute left-4 top-4 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
                   {p.tipo}
                 </span>
