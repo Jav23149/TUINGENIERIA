@@ -10,7 +10,7 @@ import WhatsAppButton, { WhatsAppGlyph } from "@/components/site/WhatsAppButton"
 
 const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cfa6a38fe_generated_02362836.png";
 const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cdce1e44c_generated_image.png";
-const CONDUCTOS_IMG = "https://images.unsplash.com/photo-1776860154052-d91c90b25c59?auto=format&fit=crop&w=1600&q=80";
+const CONDUCTOS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/7a3a251f1_generated_image.png";
 const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/e429d50fc_WhatsAppImage2026-10-09at1739162.jpeg";
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2a7226264_WhatsAppImage2026-10-09at1739161.jpeg";
 const COCINA_PRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6c54a998_generated_image.png";
