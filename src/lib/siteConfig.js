@@ -3,9 +3,9 @@
 export const siteConfig = {
   brand: "TU INGENIERIA",
   tagline: "Climatización y Reformas",
-  phone: "+34 600 123 456",
-  phoneRaw: "+34600123456",
-  whatsapp: "34600123456",
+  phone: "",
+  phoneRaw: "",
+  whatsapp: "",
   whatsappMsg: "Hola, quiero información sobre vuestros servicios de climatización y reformas.",
   email: "info@tuingenieria.es",
   provincia: "Valencia",
@@ -32,7 +32,7 @@ export const siteConfig = {
 };
 
 export const whatsappLink = (msg = siteConfig.whatsappMsg) =>
-  `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(msg)}`;
+  siteConfig.whatsapp ? `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(msg)}` : "#";
 
-export const telLink = `tel:${siteConfig.phoneRaw}`;
+export const telLink = siteConfig.phoneRaw ? `tel:${siteConfig.phoneRaw}` : "#";
 export const mailLink = `mailto:${siteConfig.email}`;

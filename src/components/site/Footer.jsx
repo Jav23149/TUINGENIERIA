@@ -47,7 +47,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 <a href={telLink} className="flex items-start gap-2 text-muted-foreground transition hover:text-citron">
-                  <Phone className="mt-0.5 h-4 w-4 shrink-0" /> {siteConfig.phone}
+                  <Phone className="mt-0.5 h-4 w-4 shrink-0" /> {siteConfig.phone || "Próximamente"}
                 </a>
               </li>
               <li>
