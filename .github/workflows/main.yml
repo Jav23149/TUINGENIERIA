@@ -2,7 +2,8 @@ name: Desplegar Web a GitHub Pages
 
 on:
   push:
-    branches: ["PRINCIPAL", "main"]
+    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -29,10 +30,10 @@ jobs:
           node-version: 20
 
       - name: Instalar dependencias
-        run: npm ci || npm install --legacy-peer-deps || true
+        run: npm install --legacy-peer-deps
 
       - name: Compilar proyecto
-        run: npm run build || 
+        run: npm run build
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
