@@ -26,6 +26,17 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
         servicio,
         origen,
       });
+      const resumen = [
+        "Nuevo formulario recibido desde la web",
+        "",
+        `Nombre: ${form.nombre}`,
+        `Teléfono: ${form.telefono}`,
+        `Email: ${form.email || "—"}`,
+        `Servicio: ${servicio}`,
+        `Origen: ${origen}`,
+        `Mensaje: ${form.mensaje || "—"}`,
+      ].join("\n");
+      window.open(whatsappLink(resumen), "_blank");
       setDone(true);
     } catch (err) {
       setError("No se pudo enviar el formulario. Inténtalo de nuevo o escríbenos por WhatsApp.");
