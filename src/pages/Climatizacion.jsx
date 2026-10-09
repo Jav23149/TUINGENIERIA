@@ -6,8 +6,11 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
-const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cdce1e44c_generated_image.png";
-const CONDUCTOS_IMG = "https://images.unsplash.com/photo-1776860154052-d91c90b25c59?auto=format&fit=crop&w=1600&q=80";
+const HVAC_IMG = "https://images.unsplash.com/photo-1757219525975-03b5984bc6e8?auto=format&fit=crop&w=1600&q=80";
+const CONDUCTOS_IMG = "https://images.unsplash.com/photo-1724958337802-2ac3cd31baa6?auto=format&fit=crop&w=1600&q=80";
+const SPLIT_IMG = "https://images.unsplash.com/photo-1759772238012-9d5ad59ae637?auto=format&fit=crop&w=1600&q=80";
+const MULTISPLIT_IMG = "https://images.unsplash.com/photo-1776860150250-757406c52438?auto=format&fit=crop&w=1600&q=80";
+const DUCT_IMG = "https://images.unsplash.com/photo-1770816306659-adcf99a11aeb?auto=format&fit=crop&w=1600&q=80";
 
 const PROYECTOS_HVAC = [
   {
@@ -15,7 +18,7 @@ const PROYECTOS_HVAC = [
     titulo: "Edificio de viviendas en Valencia",
     tipo: "Conductos + Inverter A+++",
     zona: "Valencia capital",
-    resultado: "Unidades condensadoras exteriores en cubierta para un sistema por conductos con 4 zonas independientes, control por app y silencio absoluto en el interior.",
+    resultado: "Unidades condensadoras exteriores en fachada para un sistema por conductos con 4 zonas independientes, control por app y silencio absoluto en el interior.",
     metricas: [
       { label: "Eficiencia", value: "A+++" },
       { label: "Zonas", value: "4" },
@@ -35,7 +38,7 @@ const PROYECTOS_HVAC = [
     ],
   },
   {
-    imagen: "https://images.unsplash.com/photo-1667983453881-4992fe86ab1b?auto=format&fit=crop&w=1600&q=80",
+    imagen: MULTISPLIT_IMG,
     titulo: "Vivienda en Torrent",
     tipo: "Multi-split inverter",
     zona: "Torrent, Valencia",
@@ -44,6 +47,18 @@ const PROYECTOS_HVAC = [
       { label: "Estancias", value: "6" },
       { label: "Eficiencia", value: "A+++" },
       { label: "Plazo", value: "3 días" },
+    ],
+  },
+  {
+    imagen: DUCT_IMG,
+    titulo: "Local comercial en Valencia",
+    tipo: "Conductos ocultos",
+    zona: "Valencia capital",
+    resultado: "Red de conductos oculta en falso techo con difusores circulares, para climatización uniforme sin equipos visibles en el interior.",
+    metricas: [
+      { label: "Difusores", value: "8" },
+      { label: "Eficiencia", value: "A++" },
+      { label: "Plazo", value: "5 días" },
     ],
   },
 ];
