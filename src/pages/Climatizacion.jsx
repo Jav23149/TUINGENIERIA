@@ -6,12 +6,11 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
-const HVAC_IMG = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=80";
-const CONDUCTOS_IMG = "https://images.unsplash.com/photo-1642749776312-aa42ce20c9f5?auto=format&fit=crop&w=1600&q=80";
-const INSTALADOR_IMG = "https://images.unsplash.com/photo-1660330589693-99889d60181e?auto=format&fit=crop&w=1600&q=80";
-const TECH_IMG = "https://images.unsplash.com/photo-1758101755915-462eddc23f57?auto=format&fit=crop&w=1600&q=80";
-const POWER_IMG = "https://images.unsplash.com/photo-1625148230889-8195e85aae6b?auto=format&fit=crop&w=1600&q=80";
-const LIFT_IMG = "https://images.unsplash.com/photo-1785682118449-21da8825754d?auto=format&fit=crop&w=1600&q=80";
+const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/47365688d_generated_image.png";
+const CONDUCTOS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/eb1c621eb_generated_image.png";
+const FACHADA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/60243de9d_generated_image.png";
+const TECH_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/0c7b806ef_generated_image.png";
+const LIFT_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/d4f09fcb6_generated_image.png";
 
 const PROYECTOS_HVAC = [
   {
@@ -43,7 +42,7 @@ const PROYECTOS_HVAC = [
     titulo: "Conductos ocultos en falso techo",
     tipo: "Climatización por conductos",
     zona: "Torrent, Valencia",
-    resultado: "Montaje de la red de conductos oculta en falso techo desde plataforma elevada, para climatización uniforme sin equipos visibles.",
+    resultado: "Nuestro equipo montando la red de conductos oculta en falso techo, para climatización uniforme sin equipos visibles.",
     metricas: [
       { label: "Estancias", value: "6" },
       { label: "Eficiencia", value: "A+++" },
@@ -53,9 +52,9 @@ const PROYECTOS_HVAC = [
   {
     imagen: TECH_IMG,
     titulo: "Puesta en marcha y verificación",
-    tipo: "Service técnico",
+    tipo: "Servicio técnico",
     zona: "Valencia capital",
-    resultado: "Técnico verificando el sistema con multímetro durante la puesta en marcha: presión de gas, conexionado eléctrico y rendimiento.",
+    resultado: "Técnico comprobando la temperatura de impulsión del split recién instalado durante la puesta en marcha: presión de gas, conexionado y rendimiento.",
     metricas: [
       { label: "Verificación", value: "100%" },
       { label: "Garantía", value: "5 años" },
@@ -107,7 +106,7 @@ export default function Climatizacion() {
               </div>
             </div>
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={HVAC_IMG} alt="Instalador montando un equipo de aire acondicionado con herramientas" className="h-80 w-full lg:h-96" fittingType="fill" />
+              <Image src={HVAC_IMG} alt="Instalador montando un split de aire acondicionado en la pared de un salón" className="h-80 w-full lg:h-96" fittingType="fill" />
             </div>
           </div>
         </div>
@@ -156,7 +155,7 @@ export default function Climatizacion() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={CONDUCTOS_IMG} alt="Instaladores montando unidades condensadoras exteriores en la cubierta de un edificio" className="h-96 w-full" fittingType="fill" />
+              <Image src={FACHADA_IMG} alt="Instalador fijando una unidad exterior de aire acondicionado en la fachada de un edificio" className="h-96 w-full" fittingType="fill" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron">Eficiencia energética</p>
