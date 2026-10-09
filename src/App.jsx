@@ -62,7 +62,7 @@ function App() {
   return (
     <AuthProvider>
       <QueryClientProvider client={queryClientInstance}>
-        <Router basename="/TUINGENIERIA">
+        <Router basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
           <ScrollToTop />
           <AuthenticatedApp />
         </Router>
