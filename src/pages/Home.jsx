@@ -73,7 +73,7 @@ export default function Home() {
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0">
           <Image src={HERO_IMG} alt="Salón reformado, luminoso y amplio" className="h-full w-full" fittingType="fill" />
-          <div className="absolute inset-0 bg-gradient-to-br from-graphite/70 via-graphite/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-br from-graphite/85 via-graphite/60 to-transparent" />
           <div className="blueprint-grid absolute inset-0 opacity-20" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-28">
@@ -89,7 +89,7 @@ export default function Home() {
             <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl lg:text-6xl">
               Climatización y reformas con ingeniería en {siteConfig.provincia}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/90">
               Especialistas en aire acondicionado (splits y conductos) y reformas de baños y cocinas.
               Ingenieros certificados, presupuesto gratis en 24 horas y garantía en todas las obras.
             </p>

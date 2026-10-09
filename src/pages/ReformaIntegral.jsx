@@ -32,7 +32,7 @@ export default function ReformaIntegral() {
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0">
           <Image src={HERO_IMG} alt="Salón reformado en una reforma integral" className="h-full w-full" fittingType="fill" />
-          <div className="absolute inset-0 bg-gradient-to-br from-graphite/75 via-graphite/45 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-br from-graphite/85 via-graphite/60 to-transparent" />
           <div className="blueprint-grid absolute inset-0 opacity-20" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-28">
@@ -43,7 +43,7 @@ export default function ReformaIntegral() {
             <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
               Reforma integral de tu vivienda con dirección de ingeniería
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/90">
               Un único responsable para toda tu reforma: baño, cocina, instalaciones y acabados. Proyecto técnico, dirección de obra y entrega llave en mano en {siteConfig.provincia} y alrededores.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
