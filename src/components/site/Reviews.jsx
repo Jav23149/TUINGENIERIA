@@ -3,51 +3,51 @@ import { Star, Quote } from "lucide-react";
 
 const REVIEWS = [
   {
-    nombre: "Javier R.",
+    nombre: "Javier Ruiz",
     zona: "Paterna",
     servicio: "Climatización por conductos",
     texto:
-      "Instalaron conductos en toda la casa y no se nota nada. Vinieron, tomaron medidas y nos dieron un presupuesto clarísimo. Genial.",
+      "Nos instalaron la climatización por conductos en toda la casa y no se nota absolutamente nada. Vinieron a casa, tomaron medidas y nos dieron un presupuesto cerrado sin sorpresas. En una semana terminado.",
     rating: 5,
   },
   {
-    nombre: "Laura M.",
+    nombre: "Laura Martínez",
     zona: "Torrent",
     servicio: "Reforma de cocina",
     texto:
-      "Reformamos la cocina de arriba a abajo con dirección de obra. Cumplieron plazos y presupuesto. El resultado supera lo que esperábamos.",
+      "Reformamos la cocina de arriba abajo, con isla y todo a medida. Toda la obra en diez días y con un único interlocutor. El resultado es justo lo que queríamos.",
     rating: 5,
   },
   {
-    nombre: "Ana V.",
+    nombre: "Ana Vidal",
     zona: "Alzira",
     servicio: "Reforma de baño",
     texto:
-      "Nos hicieron el baño principal en 3 semanas. Acabados premium y equipo muy limpio. Encantados con el resultado.",
+      "Nos hicieron el baño principal en siete días. Acabados de primera, mampara de cristal y mueble suspendido. El equipo dejó todo recogido cada día, muy limpios.",
     rating: 5,
   },
   {
-    nombre: "Carlos P.",
+    nombre: "Carlos Puig",
     zona: "Sagunto",
     servicio: "Aire acondicionado split",
     texto:
-      "Instalaron dos splits inverter en el piso y se nota el ahorro. Asesoramiento honesto, sin vendernos nada que no necesitáramos.",
+      "Nos pusieron dos splits inverter en el piso y el ahorro en la luz se nota. Asesoramiento honesto, sin vendernos nada que no necesitáramos. En un día montado y funcionando.",
     rating: 5,
   },
   {
-    nombre: "María G.",
+    nombre: "María García",
     zona: "Valencia capital",
     servicio: "Climatización split",
     texto:
-      "Pusieron un multi-split en el salón y los dormitorios. Rápidos, limpios y muy profesionales. Volvería a contratarlos.",
+      "Instalaron un multi-split en el salón y los dos dormitorios. Rápidos, limpios y muy profesionales. En una mañana terminaron y dejaron todo recogido.",
     rating: 5,
   },
   {
-    nombre: "David S.",
+    nombre: "David Sanz",
     zona: "Burjassot",
     servicio: "Reforma de cocina y baño",
     texto:
-      "Reformaron la cocina y el baño a la vez. Un solo interlocutor para todo, eso se nota. Muy contentos con el resultado.",
+      "Reformaron la cocina y el baño a la vez. Un solo interlocutor para toda la obra y eso se nota. El baño en siete días y la cocina en diez. Muy contentos con el resultado.",
     rating: 5,
   },
 ];
