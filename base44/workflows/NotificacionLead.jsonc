@@ -1,0 +1,48 @@
+{
+  "name": "Notificaci\u00f3n de Lead",
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "notificacion_lead",
+      "version": "1.0",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "enviar_email": {
+          "call": "send_email",
+          "with": {
+            "template_name": "NuevoLead",
+            "to": "info@tuingenieria.es",
+            "description": "Notifica al negocio que ha entrado un nuevo lead desde la web con todos los datos de contacto del cliente",
+            "variables": {
+              "nombre": "${ .trigger.data.nombre }",
+              "telefono": "${ .trigger.data.telefono }",
+              "email": "${ .trigger.data.email // \"\u2014\" }",
+              "servicio": "${ .trigger.data.servicio }",
+              "origen": "${ .trigger.data.origen }",
+              "mensaje": "${ .trigger.data.mensaje // \"\u2014\" }",
+              "telefono_limpio": "${ .trigger.data.telefono | gsub(\"[^0-9]\"; \"\") }"
+            }
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "Enviar notificaci\u00f3n de lead",
+            "description": "Email con los datos del cliente a info@tuingenieria.es"
+          }
+        }
+      }
+    ]
+  },
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "entity",
+      "events": [
+        "create"
+      ],
+      "entity_name": "Lead"
+    }
+  },
+  "description": "Env\u00eda un email a info@tuingenieria.es cada vez que se crea un nuevo lead desde la web"
+}

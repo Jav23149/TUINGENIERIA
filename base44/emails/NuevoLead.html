@@ -1,0 +1,61 @@
+<mjml>
+  <mj-head>
+    <mj-title>Nuevo lead recibido desde la web — TU INGENIERIA</mj-title>
+    <mj-preview>Tienes una nueva solicitud de presupuesto de {{servicio}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-section background-color="#1a1b1e" padding="0 36px" />
+      <mj-text color="#f9fafb" font-size="15px" line-height="1.6" padding="0" />
+      <mj-button background-color="#25d366" border-radius="0px" font-weight="700" inner-padding="14px 28px" align="left" color="#000000" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#1a1b1e">
+    <mj-section padding="24px 36px" background-color="#25d366">
+      <mj-column>
+        <mj-text color="#000000" font-size="20px" font-weight="bold" padding="0">TU INGENIERIA</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="36px 36px 12px">
+      <mj-column>
+        <mj-text font-size="24px" font-weight="bold" color="#f9fafb" padding="0">Nuevo lead recibido</mj-text>
+        <mj-text color="#97a3b4" font-size="14px" padding="8px 0 0 0">Has recibido una nueva solicitud de presupuesto desde la web.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="12px 36px">
+      <mj-column>
+        <mj-divider border-color="#e5e7eb" border-width="1px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="12px 36px">
+      <mj-column>
+        <mj-text color="#97a3b4" font-size="12px" text-transform="uppercase" letter-spacing="1px" padding="0 0 4px 0">Nombre</mj-text>
+        <mj-text color="#f9fafb" font-size="16px" font-weight="bold" padding="0 0 16px 0">{{nombre}}</mj-text>
+
+        <mj-text color="#97a3b4" font-size="12px" text-transform="uppercase" letter-spacing="1px" padding="0 0 4px 0">Telefono</mj-text>
+        <mj-text color="#f9fafb" font-size="16px" font-weight="bold" padding="0 0 16px 0">{{telefono}}</mj-text>
+
+        <mj-text color="#97a3b4" font-size="12px" text-transform="uppercase" letter-spacing="1px" padding="0 0 4px 0">Email</mj-text>
+        <mj-text color="#f9fafb" font-size="16px" padding="0 0 16px 0">{{email}}</mj-text>
+
+        <mj-text color="#97a3b4" font-size="12px" text-transform="uppercase" letter-spacing="1px" padding="0 0 4px 0">Servicio</mj-text>
+        <mj-text color="#f9fafb" font-size="16px" padding="0 0 16px 0">{{servicio}}</mj-text>
+
+        <mj-text color="#97a3b4" font-size="12px" text-transform="uppercase" letter-spacing="1px" padding="0 0 4px 0">Origen</mj-text>
+        <mj-text color="#f9fafb" font-size="16px" padding="0 0 16px 0">{{origen}}</mj-text>
+
+        <mj-text color="#97a3b4" font-size="12px" text-transform="uppercase" letter-spacing="1px" padding="0 0 4px 0">Mensaje</mj-text>
+        <mj-text color="#f9fafb" font-size="15px" padding="0 0 16px 0">{{mensaje}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="12px 36px 36px">
+      <mj-column>
+        <mj-button background-color="#25d366" color="#000000" href="https://wa.me/{{telefono_limpio}}">Responder por WhatsApp</mj-button>
+        <mj-text color="#97a3b4" font-size="12px" padding="16px 0 0 0">Llama cuanto antes para no perder el lead. Respuesta garantizada en menos de 24 horas.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
