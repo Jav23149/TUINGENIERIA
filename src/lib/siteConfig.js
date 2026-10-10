@@ -7,7 +7,7 @@ export const siteConfig = {
   phoneRaw: "+34643084651",
   whatsapp: "34643084651",
   whatsappMsg: "Hola, quiero información sobre vuestros servicios de climatización y reformas.",
-  email: "info@tuingenieria.es",
+  email: "info@somostuingenieria.com",
   provincia: "Valencia",
   provinciaSlug: "valencia",
   direccion: "Polígono Industrial, Valencia",
