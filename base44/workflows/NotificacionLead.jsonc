@@ -1,5 +1,15 @@
 {
   "name": "Notificaci\u00f3n de Lead",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "entity",
+      "events": [
+        "create"
+      ],
+      "entity_name": "Lead"
+    }
+  },
   "definition": {
     "document": {
       "dsl": "1.0.0",
@@ -13,7 +23,7 @@
           "call": "send_email",
           "with": {
             "template_name": "NuevoLead",
-            "to": "info@tuingenieria.es",
+            "to": "info@somostuingenieria.com",
             "description": "Notifica al negocio que ha entrado un nuevo lead desde la web con todos los datos de contacto del cliente",
             "variables": {
               "nombre": "${ .trigger.data.nombre }",
@@ -28,21 +38,11 @@
           "then": "end",
           "x-base44": {
             "title": "Enviar notificaci\u00f3n de lead",
-            "description": "Email con los datos del cliente a info@tuingenieria.es"
+            "description": "Email con los datos del cliente a info@somostuingenieria.com"
           }
         }
       }
     ]
   },
-  "trigger": {
-    "condition": null,
-    "config": {
-      "trigger_type": "entity",
-      "events": [
-        "create"
-      ],
-      "entity_name": "Lead"
-    }
-  },
-  "description": "Env\u00eda un email a info@tuingenieria.es cada vez que se crea un nuevo lead desde la web"
+  "description": "Env\u00eda un email a info@somostuingenieria.com cada vez que se crea un nuevo lead desde la web"
 }
