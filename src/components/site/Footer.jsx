@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, Mail, MapPin, Clock, Instagram, Facebook, Linkedin } from "lucide-react";
+import { Phone, MessageCircle, Mail, MapPin, Clock } from "lucide-react";
 import { siteConfig, whatsappLink, telLink, mailLink } from "@/lib/siteConfig";
+import ValenciaMap from "@/components/site/ValenciaMap";
 
 export default function Footer() {
   return (
@@ -18,16 +19,9 @@ export default function Footer() {
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Especialistas en climatización, reformas integrales y energía solar fotovoltaica en {siteConfig.provincia} y alrededores.
             </p>
-            <div className="mt-6 flex gap-3">
-              <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-9 w-9 items-center justify-center rounded-sm border border-border text-muted-foreground transition hover:border-citron hover:text-citron">
-                <Instagram className="h-4 w-4" />
-              </a>
-              <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-9 w-9 items-center justify-center rounded-sm border border-border text-muted-foreground transition hover:border-citron hover:text-citron">
-                <Facebook className="h-4 w-4" />
-              </a>
-              <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex h-9 w-9 items-center justify-center rounded-sm border border-border text-muted-foreground transition hover:border-citron hover:text-citron">
-                <Linkedin className="h-4 w-4" />
-              </a>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Dónde encontrarnos</p>
+            <div className="mt-3">
+              <ValenciaMap />
             </div>
             <Link to="/nosotros" className="mt-5 inline-block text-sm font-semibold text-citron transition hover:underline">Conoce TU INGENIERIA →</Link>
           </div>

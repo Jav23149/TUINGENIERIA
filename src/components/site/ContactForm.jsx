@@ -19,16 +19,6 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
     e.preventDefault();
     setLoading(true);
     setError("");
-    const resumen = [
-      "Nuevo formulario recibido desde la web",
-      "",
-      `Nombre: ${form.nombre}`,
-      `Teléfono: ${form.telefono}`,
-      `Email: ${form.email || "—"}`,
-      `Servicio: ${servicio}`,
-      `Origen: ${origen}`,
-      `Mensaje: ${form.mensaje || "—"}`,
-    ].join("\n");
     // Guardar en Base44 y enviar email de notificación mediante backend function (service role)
     const datos = {
       nombre: form.nombre,
@@ -50,10 +40,8 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
         });
       }
     } catch (err) {
-      // Si falla, continuamos con WhatsApp e email
+      // Si falla la persistencia, el usuario aún puede contactar por WhatsApp/email
     }
-    // Abrir WhatsApp con los datos del formulario
-    window.open(whatsappLink(resumen), "_blank");
     setDone(true);
     setLoading(false);
   };
