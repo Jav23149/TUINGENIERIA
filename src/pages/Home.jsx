@@ -15,7 +15,7 @@ const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d85659
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2a7226264_WhatsAppImage2026-10-09at1739161.jpeg";
 const COCINA_PRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6c54a998_generated_image.png";
 const BANO_PRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f4f6cb92c_generated_image.png";
-const FOTOVOLTAICA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/4cc6c7cce_generated_image.png";
+const FOTOVOLTAICA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f7ac0b1e3_generated_image.png";
 
 const PROYECTOS = [
   {

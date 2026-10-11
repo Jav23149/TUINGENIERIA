@@ -6,11 +6,11 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
-const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/98e92d94c_generated_image.png";
-const PANELES_TEJADO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/fc314c46c_generated_image.png";
-const INSTALADOR_CONEXION = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f31ade8f3_generated_image.png";
-const INVERSOR_BATERIA = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/fd75588b5_generated_image.png";
-const PANELES_ATARDECER = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/4cc6c7cce_generated_image.png";
+const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/6eb2f2314_generated_image.png";
+const PANELES_TEJADO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/39b9369d7_generated_image.png";
+const INSTALADOR_CONEXION = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/c032c5824_generated_image.png";
+const INVERSOR_BATERIA = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/73a2243fa_generated_image.png";
+const PANELES_ATARDECER = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f7ac0b1e3_generated_image.png";
 
 const PROYECTOS_SOLAR = [
   {
