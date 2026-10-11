@@ -16,7 +16,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Especialistas en climatización (splits y conductos) y reformas de baños y cocinas en {siteConfig.provincia} y alrededores.
+              Especialistas en climatización, reformas integrales y energía solar fotovoltaica en {siteConfig.provincia} y alrededores.
             </p>
             <div className="mt-6 flex gap-3">
               <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-9 w-9 items-center justify-center rounded-sm border border-border text-muted-foreground transition hover:border-citron hover:text-citron">
@@ -37,8 +37,8 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm">
               <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron">Climatización split</Link></li>
               <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron">Climatización por conductos</Link></li>
-              <li><Link to="/reformas" className="text-muted-foreground transition hover:text-citron">Reforma de baños</Link></li>
-              <li><Link to="/reformas" className="text-muted-foreground transition hover:text-citron">Reforma de cocinas</Link></li>
+              <li><Link to="/reforma-integral" className="text-muted-foreground transition hover:text-citron">Reforma integral</Link></li>
+              <li><Link to="/fotovoltaica" className="text-muted-foreground transition hover:text-citron">Paneles solares</Link></li>
             </ul>
           </div>
 
@@ -84,7 +84,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row">
           <p>© {new Date().getFullYear()} {siteConfig.brand}. Todos los derechos reservados.</p>
-          <p>Climatización y reformas · {siteConfig.provincia}</p>
+          <p>Climatización, reformas y energía solar · {siteConfig.provincia}</p>
         </div>
       </div>
     </footer>
