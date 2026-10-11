@@ -42,6 +42,10 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
     } catch (err) {
       // Si falla la persistencia, el usuario aún puede contactar por WhatsApp/email
     }
+    // Evento de conversión de Google Ads (envío de formulario)
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', { send_to: 'AW-18507380779/F_JZCI-_zpkdEKvwgPlE' });
+    }
     setDone(true);
     setLoading(false);
   };
