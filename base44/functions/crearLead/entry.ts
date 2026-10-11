@@ -26,21 +26,41 @@ export default async function(req: Request): Promise<Response> {
       origen: origen ? String(origen).slice(0, 100) : 'Web',
     });
 
-    // Enviar email de notificación al negocio
-    const telefonoLimpio = String(telefono).replace(/[^0-9]/g, '');
+    // Enviar email de notificación al negocio vía Gmail (desde la propia cuenta)
     try {
-      await base44.asServiceRole.integrations.Core.SendEmail({
-        template_name: 'NuevoLead',
-        to: 'tuingenieriasl@gmail.com',
-        variables: {
-          nombre: lead.nombre,
-          telefono: lead.telefono,
-          email: lead.email || '—',
-          servicio: lead.servicio,
-          origen: lead.origen || '—',
-          mensaje: lead.mensaje || '—',
-          telefono_limpio: telefonoLimpio,
+      const { accessToken } = await base44.asServiceRole.connectors.getConnection('gmail');
+      const subject = `Nuevo lead: ${lead.nombre} - ${lead.servicio}`;
+      const textBody = [
+        "Nuevo formulario recibido desde la web",
+        "",
+        `Nombre: ${lead.nombre}`,
+        `Telefono: ${lead.telefono}`,
+        `Email: ${lead.email || '—'}`,
+        `Servicio: ${lead.servicio}`,
+        `Origen: ${lead.origen || '—'}`,
+        `Mensaje: ${lead.mensaje || '—'}`,
+      ].join("\n");
+      const encodeHeader = (s) => /^[\x20-\x7E]*$/.test(s) ? s : `=?UTF-8?B?${btoa(unescape(encodeURIComponent(s)))}?=`;
+      const utf8ToBase64 = (s) => btoa(unescape(encodeURIComponent(s)));
+      const mimeMessage = [
+        `From: TU INGENIERIA <tuingenieriasl@gmail.com>`,
+        `To: tuingenieriasl@gmail.com`,
+        `Subject: ${encodeHeader(subject)}`,
+        `MIME-Version: 1.0`,
+        `Content-Type: text/plain; charset=UTF-8`,
+        `Content-Transfer-Encoding: base64`,
+        ``,
+        utf8ToBase64(textBody),
+      ].join("\r\n");
+      const raw = btoa(mimeMessage).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+      await fetch('https://gmail.googleapis.com/gmail/v1/users/me/messages/send', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${accessToken}`,
+          'Content-Type': 'application/json',
         },
+        body: JSON.stringify({ raw }),
+        signal: AbortSignal.timeout(15000),
       });
     } catch (emailErr) {
       // El lead se guardó aunque el email falle
