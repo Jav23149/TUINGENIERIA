@@ -14,6 +14,7 @@ import ReformaIntegral from '@/pages/ReformaIntegral';
 import ReformaBano from '@/pages/ReformaBano';
 import ReformaCocina from '@/pages/ReformaCocina';
 import ReformaAlisado from '@/pages/ReformaAlisado';
+import Fotovoltaica from '@/pages/Fotovoltaica';
 import SiteLayout from '@/components/site/SiteLayout';
 // Add page imports here
 
@@ -52,6 +53,7 @@ const AuthenticatedApp = () => {
         <Route path="/reforma-bano" element={<ReformaBano />} />
         <Route path="/reforma-cocina" element={<ReformaCocina />} />
         <Route path="/reforma-alisado" element={<ReformaAlisado />} />
+        <Route path="/fotovoltaica" element={<Fotovoltaica />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

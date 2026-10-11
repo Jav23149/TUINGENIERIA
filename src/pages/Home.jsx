@@ -15,6 +15,7 @@ const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d85659
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/2a7226264_WhatsAppImage2026-10-09at1739161.jpeg";
 const COCINA_PRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6c54a998_generated_image.png";
 const BANO_PRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f4f6cb92c_generated_image.png";
+const FOTOVOLTAICA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/4cc6c7cce_generated_image.png";
 
 const PROYECTOS = [
   {
@@ -69,11 +70,11 @@ export default function Home() {
             <Snowflake className="h-3.5 w-3.5" /> Climatización y reformas
           </span>
           <h1 className="mt-8 max-w-4xl font-heading text-4xl font-normal leading-[1.1] text-foreground text-balance sm:text-5xl lg:text-6xl">
-            Climatización y reformas con ingeniería en {siteConfig.provincia}
+            Climatización, reformas y energía solar con ingeniería en {siteConfig.provincia}
           </h1>
           <div className="mx-auto mt-6 h-px w-16 bg-citron" />
           <p className="mt-6 max-w-xl text-base font-light text-foreground/80 sm:text-lg">
-            Especialistas en aire acondicionado y reformas integrales. Ingenieros certificados, presupuesto gratis en 24 horas.
+            Especialistas en aire acondicionado, reformas integrales y paneles solares. Ingenieros certificados, presupuesto gratis en 24 horas.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <WhatsAppButton label="Presupuesto por WhatsApp" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-8 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
@@ -90,7 +91,7 @@ export default function Home() {
       {/* SERVICIOS — tarjetas contenidas con aire */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-          <div className="grid gap-6 lg:grid-cols-2">
+          <div className="grid gap-6 lg:grid-cols-3">
             <Link to="/climatizacion" className="group relative h-[300px] overflow-hidden rounded-sm border border-border lg:h-[360px]">
               <Image src={HVAC_IMG} alt="Aire acondicionado split instalado en salón reformado" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
               <div className="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/30 to-transparent" />
@@ -113,6 +114,20 @@ export default function Home() {
                 <h2 className="mt-2 font-heading text-2xl font-normal text-foreground sm:text-3xl">Reformas Integrales</h2>
                 <div className="mt-3 h-px w-10 bg-citron" />
                 <p className="mt-3 max-w-xs text-sm text-foreground/80">Reformas integrales con dirección de ingeniería: baños, cocinas, alisado y acabados. Proyecto, obra y llave en mano.</p>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
+                  Ver servicio <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
+            </Link>
+
+            <Link to="/fotovoltaica" className="group relative h-[300px] overflow-hidden rounded-sm border border-border lg:h-[360px]">
+              <Image src={FOTOVOLTAICA_IMG} alt="Instalador montando paneles solares fotovoltaicos en un tejado" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
+              <div className="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/30 to-transparent" />
+              <div className="absolute bottom-0 left-0 p-6 lg:p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">03 — Fotovoltaica</p>
+                <h2 className="mt-2 font-heading text-2xl font-normal text-foreground sm:text-3xl">Paneles Solares</h2>
+                <div className="mt-3 h-px w-10 bg-citron" />
+                <p className="mt-3 max-w-xs text-sm text-foreground/80">Autoconsumo fotovoltaico con baterías y compensación de excedentes. Reduce hasta un 70% tu factura eléctrica.</p>
                 <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
                   Ver servicio <ArrowRight className="h-4 w-4" />
                 </span>

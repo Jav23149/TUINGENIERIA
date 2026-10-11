@@ -19,6 +19,7 @@
       "enum": [
         "climatizacion",
         "reformas",
+        "fotovoltaica",
         "general"
       ],
       "default": "general",
