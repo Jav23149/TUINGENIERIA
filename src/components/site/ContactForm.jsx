@@ -3,6 +3,8 @@ import { base44 } from "@/api/base44Client";
 import { Send, Loader2, CheckCircle2 } from "lucide-react";
 import { siteConfig, whatsappLink } from "@/lib/siteConfig";
 
+const LEAD_ENDPOINT = "https://nonchalant-nova-tech-flow.base44.app/functions/crearLead";
+
 export default function ContactForm({ servicio = "general", origen = "Home" }) {
   const [form, setForm] = useState({ nombre: "", telefono: "", email: "", mensaje: "" });
   const [loading, setLoading] = useState(false);
@@ -28,15 +30,25 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
       `Mensaje: ${form.mensaje || "—"}`,
     ].join("\n");
     // Guardar en Base44 y enviar email de notificación mediante backend function (service role)
+    const datos = {
+      nombre: form.nombre,
+      telefono: form.telefono,
+      email: form.email,
+      mensaje: form.mensaje,
+      servicio,
+      origen,
+    };
     try {
-      await base44.functions.invoke('crearLead', {
-        nombre: form.nombre,
-        telefono: form.telefono,
-        email: form.email,
-        mensaje: form.mensaje,
-        servicio,
-        origen,
-      });
+      if (import.meta.env.VITE_BASE44_APP_ID) {
+        await base44.functions.invoke('crearLead', datos);
+      } else {
+        // Web alojada fuera de Base44 (GitHub Pages): llamar a la función directamente
+        await fetch(LEAD_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(datos),
+        });
+      }
     } catch (err) {
       // Si falla, continuamos con WhatsApp e email
     }
