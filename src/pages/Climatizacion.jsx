@@ -85,7 +85,7 @@ export default function Climatizacion() {
         <div className="blueprint-grid absolute inset-0 opacity-40" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
+            <div className="order-2 lg:order-1">
               <span className="inline-flex items-center gap-2 rounded-full border border-citron/40 bg-citron/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron">
                 <Wind className="h-3.5 w-3.5" /> Climatización en {siteConfig.provincia}
               </span>
@@ -105,7 +105,7 @@ export default function Climatizacion() {
                 </a>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-sm border border-border">
+            <div className="order-1 lg:order-2 relative overflow-hidden rounded-sm border border-border">
               <Image src={HVAC_IMG} alt="Instalador montando un split de aire acondicionado en la pared de un salón" className="h-80 w-full lg:h-96" fittingType="fill" />
             </div>
           </div>

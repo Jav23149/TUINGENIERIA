@@ -72,7 +72,7 @@ export default function ReformaCocina() {
         <div className="blueprint-grid absolute inset-0 opacity-40" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
+            <div className="order-2 lg:order-1">
               <span className="inline-flex items-center gap-2 rounded-full border border-citron/40 bg-citron/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron">
                 <ChefHat className="h-3.5 w-3.5" /> Reforma de cocina en {siteConfig.provincia}
               </span>
@@ -91,14 +91,16 @@ export default function ReformaCocina() {
                 </a>
               </div>
             </div>
-            <HeroCollage
-              main={HERO_IMG}
-              mainAlt="Cocina reformada a medida con isla de cuarzo en Valencia"
-              topLeft={HERO_IMG_2}
-              topLeftAlt="Isla de cocina con encimera de cuarzo y campana integrada en Valencia"
-              bottomRight={HERO_IMG_3}
-              bottomRightAlt="Carpintería lacada a medida con iluminación LED en cocina reformada en Valencia"
-            />
+            <div className="order-1 lg:order-2">
+              <HeroCollage
+                main={HERO_IMG}
+                mainAlt="Cocina reformada a medida con isla de cuarzo en Valencia"
+                topLeft={HERO_IMG_2}
+                topLeftAlt="Isla de cocina con encimera de cuarzo y campana integrada en Valencia"
+                bottomRight={HERO_IMG_3}
+                bottomRightAlt="Carpintería lacada a medida con iluminación LED en cocina reformada en Valencia"
+              />
+            </div>
           </div>
         </div>
       </section>

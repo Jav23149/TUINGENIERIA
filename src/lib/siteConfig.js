@@ -3,9 +3,9 @@
 export const siteConfig = {
   brand: "TU INGENIERIA",
   tagline: "Climatización y Reformas",
-  phone: "+34 643 084 651",
-  phoneRaw: "+34643084651",
-  whatsapp: "34643084651",
+  phone: "+34 663 845 355",
+  phoneRaw: "+34663845355",
+  whatsapp: "34663845355",
   whatsappMsg: "Hola, quiero información sobre vuestros servicios de climatización y reformas.",
   email: "info@somostuingenieria.com",
   provincia: "Valencia",

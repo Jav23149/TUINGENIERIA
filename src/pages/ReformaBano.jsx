@@ -60,7 +60,7 @@ export default function ReformaBano() {
         <div className="blueprint-grid absolute inset-0 opacity-40" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
+            <div className="order-2 lg:order-1">
               <span className="inline-flex items-center gap-2 rounded-full border border-citron/40 bg-citron/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron">
                 <Bath className="h-3.5 w-3.5" /> Reforma de baño en {siteConfig.provincia}
               </span>
@@ -79,14 +79,16 @@ export default function ReformaBano() {
                 </a>
               </div>
             </div>
-            <HeroCollage
-              main={HERO_IMG}
-              mainAlt="Baño reformado con bañera exenta y acabados premium en Valencia"
-              topLeft={HERO_IMG_2}
-              topLeftAlt="Plato de ducha de resina con mampara de cristal en reforma de baño"
-              bottomRight={HERO_IMG_3}
-              bottomRightAlt="Mobiliario suspendido y sanitarios en baño reformado en Valencia"
-            />
+            <div className="order-1 lg:order-2">
+              <HeroCollage
+                main={HERO_IMG}
+                mainAlt="Baño reformado con bañera exenta y acabados premium en Valencia"
+                topLeft={HERO_IMG_2}
+                topLeftAlt="Plato de ducha de resina con mampara de cristal en reforma de baño"
+                bottomRight={HERO_IMG_3}
+                bottomRightAlt="Mobiliario suspendido y sanitarios en baño reformado en Valencia"
+              />
+            </div>
           </div>
         </div>
       </section>
