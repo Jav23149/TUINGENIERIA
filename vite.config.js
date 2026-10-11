@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   // Subcarpeta solo al compilar en GitHub Actions (GitHub Pages); aquí y en Base44 la web vive en "/"
-  base: process.env.GITHUB_ACTIONS ? '/TUINGENIERIA/' : '/',
+  base: '/',
   plugins: [
     base44({
       // Support for legacy code that imports the base44 SDK with @/integrations, @/entities, etc.
