@@ -27,9 +27,9 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
       `Origen: ${origen}`,
       `Mensaje: ${form.mensaje || "—"}`,
     ].join("\n");
-    // Guardar en Base44 (mejor esfuerzo: si no está disponible, el formulario sigue funcionando)
+    // Guardar en Base44 y enviar email de notificación mediante backend function (service role)
     try {
-      await base44.entities.Lead.create({
+      await base44.functions.invoke('crearLead', {
         nombre: form.nombre,
         telefono: form.telefono,
         email: form.email,
@@ -38,7 +38,7 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
         origen,
       });
     } catch (err) {
-      // Base44 no disponible: continuamos con WhatsApp e email
+      // Si falla, continuamos con WhatsApp e email
     }
     // Abrir WhatsApp con los datos del formulario
     window.open(whatsappLink(resumen), "_blank");
