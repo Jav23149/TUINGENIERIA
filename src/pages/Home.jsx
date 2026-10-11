@@ -62,7 +62,7 @@ export default function Home() {
       <section className="relative h-screen min-h-[640px] overflow-hidden">
         <div className="absolute inset-0">
           <Image src={HERO_IMG} alt="Cocina reformada a medida con isla de mármol y acabados premium" className="h-full w-full ken-burns" fittingType="fill" />
-          <div className="absolute inset-0 bg-gradient-to-b from-graphite/50 via-graphite/25 to-graphite/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-graphite/70 via-graphite/45 to-graphite/95" />
         </div>
         <div className="relative flex h-full flex-col items-center justify-center px-4 text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-citron/30 bg-graphite/40 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-citron backdrop-blur">
