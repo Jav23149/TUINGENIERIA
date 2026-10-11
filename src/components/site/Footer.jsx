@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="mt-3">
               <ValenciaMap />
             </div>
-            <Link to="/nosotros" className="mt-5 inline-block text-sm font-semibold text-citron transition hover:underline">Conoce TU INGENIERIA →</Link>
+
           </div>
 
           <div>
