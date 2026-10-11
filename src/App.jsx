@@ -16,6 +16,10 @@ import ReformaCocina from '@/pages/ReformaCocina';
 import ReformaAlisado from '@/pages/ReformaAlisado';
 import Fotovoltaica from '@/pages/Fotovoltaica';
 import SiteLayout from '@/components/site/SiteLayout';
+import Login from '@/pages/Login';
+import Register from '@/pages/Register';
+import ForgotPassword from '@/pages/ForgotPassword';
+import ResetPassword from '@/pages/ResetPassword';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -44,6 +48,10 @@ const AuthenticatedApp = () => {
   // Render the main app
   return (
     <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
       <Route element={<SiteLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/climatizacion" element={<Climatizacion />} />
