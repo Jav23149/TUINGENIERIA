@@ -5,8 +5,11 @@ import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
+import HeroCollage from "@/components/site/HeroCollage";
 
 const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f4f6cb92c_generated_image.png";
+const HERO_IMG_2 = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/05ff4b863_generated_image.png";
+const HERO_IMG_3 = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/55b17d60c_generated_image.png";
 
 const PROYECTOS = [
   {
@@ -76,9 +79,14 @@ export default function ReformaBano() {
                 </a>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={HERO_IMG} alt="Baño reformado con bañera exenta y acabados premium" className="h-80 w-full lg:h-96" fittingType="fill" />
-            </div>
+            <HeroCollage
+              main={HERO_IMG}
+              mainAlt="Baño reformado con bañera exenta y acabados premium en Valencia"
+              topLeft={HERO_IMG_2}
+              topLeftAlt="Plato de ducha de resina con mampara de cristal en reforma de baño"
+              bottomRight={HERO_IMG_3}
+              bottomRightAlt="Mobiliario suspendido y sanitarios en baño reformado en Valencia"
+            />
           </div>
         </div>
       </section>

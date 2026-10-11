@@ -5,8 +5,11 @@ import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
+import HeroCollage from "@/components/site/HeroCollage";
 
 const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/87c1293d8_generated_image.png";
+const HERO_IMG_2 = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/4f2141522_generated_image.png";
+const HERO_IMG_3 = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/ba5c71800_generated_image.png";
 
 const PROYECTOS = [
   {
@@ -88,9 +91,14 @@ export default function ReformaCocina() {
                 </a>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={HERO_IMG} alt="Cocina reformada a medida con isla de mármol" className="h-80 w-full lg:h-96" fittingType="fill" />
-            </div>
+            <HeroCollage
+              main={HERO_IMG}
+              mainAlt="Cocina reformada a medida con isla de cuarzo en Valencia"
+              topLeft={HERO_IMG_2}
+              topLeftAlt="Isla de cocina con encimera de cuarzo y campana integrada en Valencia"
+              bottomRight={HERO_IMG_3}
+              bottomRightAlt="Carpintería lacada a medida con iluminación LED en cocina reformada en Valencia"
+            />
           </div>
         </div>
       </section>
