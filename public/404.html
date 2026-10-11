@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <title>TU INGENIERIA</title>
     <script>
-      // Redirección SPA para GitHub Pages (proyecto en subcarpeta /TUINGENIERIA/).
-      // Conserva la ruta relativa codificándola en el query string para que
-      // index.html la restaure antes de que arranque el router.
-      var pathSegmentsToKeep = 1;
+      // Redirección SPA para GitHub Pages con dominio personalizado (sirve desde la raíz).
+      // Codifica la ruta en el query string para que index.html la restaure
+      // antes de que arranque el router.
+      var pathSegmentsToKeep = 0;
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
