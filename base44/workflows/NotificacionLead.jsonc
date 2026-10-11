@@ -23,7 +23,7 @@
           "call": "send_email",
           "with": {
             "template_name": "NuevoLead",
-            "to": "info@somostuingenieria.com",
+            "to": "tuingenieriasl@gmail.com",
             "description": "Notifica al negocio que ha entrado un nuevo lead desde la web con todos los datos de contacto del cliente",
             "variables": {
               "nombre": "${ .trigger.data.nombre }",
@@ -38,11 +38,11 @@
           "then": "end",
           "x-base44": {
             "title": "Enviar notificaci\u00f3n de lead",
-            "description": "Email con los datos del cliente a info@somostuingenieria.com"
+            "description": "Email con los datos del cliente a tuingenieriasl@gmail.com"
           }
         }
       }
     ]
   },
-  "description": "Env\u00eda un email a info@somostuingenieria.com cada vez que se crea un nuevo lead desde la web"
+  "description": "Env\u00eda un email a tuingenieriasl@gmail.com cada vez que se crea un nuevo lead desde la web"
 }

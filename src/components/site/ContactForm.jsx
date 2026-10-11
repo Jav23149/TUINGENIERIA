@@ -17,6 +17,17 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
     e.preventDefault();
     setLoading(true);
     setError("");
+    const resumen = [
+      "Nuevo formulario recibido desde la web",
+      "",
+      `Nombre: ${form.nombre}`,
+      `Teléfono: ${form.telefono}`,
+      `Email: ${form.email || "—"}`,
+      `Servicio: ${servicio}`,
+      `Origen: ${origen}`,
+      `Mensaje: ${form.mensaje || "—"}`,
+    ].join("\n");
+    // Guardar en Base44 (mejor esfuerzo: si no está disponible, el formulario sigue funcionando)
     try {
       await base44.entities.Lead.create({
         nombre: form.nombre,
@@ -26,32 +37,23 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
         servicio,
         origen,
       });
-      const resumen = [
-        "Nuevo formulario recibido desde la web",
-        "",
-        `Nombre: ${form.nombre}`,
-        `Teléfono: ${form.telefono}`,
-        `Email: ${form.email || "—"}`,
-        `Servicio: ${servicio}`,
-        `Origen: ${origen}`,
-        `Mensaje: ${form.mensaje || "—"}`,
-      ].join("\n");
-      window.open(whatsappLink(resumen), "_blank");
-      setDone(true);
     } catch (err) {
-      setError("No se pudo enviar el formulario. Inténtalo de nuevo o escríbenos por WhatsApp.");
-    } finally {
-      setLoading(false);
+      // Base44 no disponible: continuamos con WhatsApp e email
     }
+    // Abrir WhatsApp con los datos del formulario
+    window.open(whatsappLink(resumen), "_blank");
+    setDone(true);
+    setLoading(false);
   };
 
   if (done) {
+    const mailtoLink = `mailto:${siteConfig.email}?subject=${encodeURIComponent(`Nuevo lead: ${form.nombre} - ${servicio}`)}&body=${encodeURIComponent(`Nombre: ${form.nombre}\nTeléfono: ${form.telefono}\nEmail: ${form.email || "—"}\nServicio: ${servicio}\nOrigen: ${origen}\nMensaje: ${form.mensaje || "—"}`)}`;
     return (
       <div className="flex flex-col items-center justify-center gap-4 rounded-sm border border-citron/40 bg-card p-8 text-center">
         <CheckCircle2 className="h-12 w-12 text-citron" />
         <h3 className="font-display text-xl font-bold text-foreground">¡Solicitud enviada!</h3>
         <p className="text-sm text-muted-foreground">
-          Gracias {form.nombre}. Te contactaremos en menos de 24 horas. Si prefieres, escríbenos ahora por WhatsApp.
+          Gracias {form.nombre}. Te contactaremos en menos de 24 horas. Si prefieres, escríbenos ahora por WhatsApp o email.
         </p>
         <a
           href={whatsappLink(`Hola, soy ${form.nombre}. He enviado un formulario desde la web.`)}
@@ -60,6 +62,12 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
           className="mt-2 rounded-sm bg-citron px-6 py-3 text-sm font-bold text-graphite"
         >
           Escribir por WhatsApp
+        </a>
+        <a
+          href={mailtoLink}
+          className="rounded-sm border border-border px-6 py-3 text-sm font-bold text-foreground transition hover:border-citron hover:text-citron"
+        >
+          Enviar por email
         </a>
       </div>
     );
