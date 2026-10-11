@@ -22,7 +22,7 @@ const PROYECTOS_SOLAR = [
     metricas: [
       { label: "Potencia", value: "6 kWp" },
       { label: "Paneles", value: "14" },
-      { label: "Ahorro", value: "-70%" },
+      { label: "Ahorro", value: "-100%" },
     ],
   },
   {
@@ -93,7 +93,7 @@ export default function Fotovoltaica() {
                 Instalación de paneles solares fotovoltaicos en {siteConfig.provincia}
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-                Autoconsumo fotovoltaico para viviendas y negocios. Reduce hasta un 70% tu factura eléctrica
+                Autoconsumo fotovoltaico para viviendas y negocios. Reduce hasta el 100% de tu factura eléctrica
                 con paneles de alta eficiencia, baterías de almacenamiento y compensación de excedentes.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -160,10 +160,10 @@ export default function Fotovoltaica() {
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron">Ahorro energético</p>
               <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu tejado produce energía</h2>
-              <p className="mt-4 text-muted-foreground">Una instalación fotovoltaica bien dimensionada puede reducir hasta un 70% tu factura eléctrica. Con batería de almacenamiento, aprovechas la energía solar también por la noche, y con la compensación de excedentes, la red te paga lo que no consumes.</p>
+              <p className="mt-4 text-muted-foreground">Una instalación fotovoltaica bien dimensionada puede reducir hasta el 100% de tu factura eléctrica. Con batería de almacenamiento, aprovechas la energía solar también por la noche, y con la compensación de excedentes, la red te paga lo que no consumes.</p>
               <ul className="mt-8 space-y-4">
                 {[
-                  { icon: Euro, title: "Ahorro real desde el primer día", desc: "Hasta 70% menos en tu factura eléctrica." },
+                  { icon: Euro, title: "Ahorro real desde el primer día", desc: "Hasta el 100% de tu factura eléctrica con batería de almacenamiento." },
                   { icon: Battery, title: "Almacenamiento inteligente", desc: "Baterías de litio para usar la solar 24 horas." },
                   { icon: Plug, title: "Compensación de excedentes", desc: "La red te paga por la energía que no consumes." },
                 ].map((f) => (
@@ -202,7 +202,7 @@ export default function Fotovoltaica() {
           <div className="mt-12 space-y-8">
             {[
               { q: `¿Cuánto cuesta instalar paneles solares en ${siteConfig.provincia}?`, a: "El precio depende de la potencia y el número de paneles. Una instalación de 4-6 kWp para una vivienda puede partir de 4.000-6.000€ con subvenciones. Te damos presupuesto cerrado en 24 horas." },
-              { q: "¿Cuánto se ahorra con paneles solares?", a: "Una instalación bien dimensionada puede reducir hasta un 70% tu factura eléctrica. Con compensación de excedentes, la red te paga por la energía que no consumes. La amortización suele ser de 5-7 años." },
+              { q: "¿Cuánto se ahorra con paneles solares?", a: "Una instalación bien dimensionada puede reducir hasta el 100% de tu factura eléctrica. Con compensación de excedentes, la red te paga por la energía que no consumes. La amortización suele ser de 5-7 años." },
               { q: "¿Necesito batería de almacenamiento?", a: "No es obligatoria, pero permite aprovechar la energía solar también por la noche, maximizando el autoconsumo. Te asesoramos según tu perfil de consumo y presupuesto." },
               { q: "¿Cuánto dura la instalación?", a: "La instalación de paneles en una vivienda unifamiliar suele tardar 1-2 días. Incluye montaje, conexionado, inversor y puesta en marcha con monitorización por app." },
               { q: `¿Dónde instaláis en la provincia de ${siteConfig.provincia}?`, a: `Damos servicio en toda la provincia: ${siteConfig.localidades.slice(0, 5).join(", ")} y resto de localidades.` },

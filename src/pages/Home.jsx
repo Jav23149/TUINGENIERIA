@@ -127,7 +127,7 @@ export default function Home() {
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">03 — Fotovoltaica</p>
                 <h2 className="mt-2 font-heading text-2xl font-normal text-foreground sm:text-3xl">Paneles Solares</h2>
                 <div className="mt-3 h-px w-10 bg-citron" />
-                <p className="mt-3 max-w-xs text-sm text-foreground/80">Autoconsumo fotovoltaico con baterías y compensación de excedentes. Reduce hasta un 70% tu factura eléctrica.</p>
+                <p className="mt-3 max-w-xs text-sm text-foreground/80">Autoconsumo fotovoltaico con baterías y compensación de excedentes. Reduce hasta el 100% de tu factura eléctrica.</p>
                 <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
                   Ver servicio <ArrowRight className="h-4 w-4" />
                 </span>
