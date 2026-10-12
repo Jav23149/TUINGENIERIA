@@ -1,6 +1,22 @@
 import base44 from "@base44/vite-plugin"
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import { copyFileSync } from 'fs'
+import { resolve } from 'path'
+
+// Rutas SPA que necesitan su propio archivo HTML para que GitHub Pages devuelva 200
+const SPA_ROUTES = ['climatizacion', 'reformas', 'nosotros', 'reforma-integral', 'reforma-bano', 'reforma-cocina', 'reforma-alisado', 'fotovoltaica']
+
+function spaRoutePages() {
+  return {
+    name: 'spa-route-pages',
+    closeBundle() {
+      for (const route of SPA_ROUTES) {
+        copyFileSync(resolve('dist/index.html'), resolve(`dist/${route}.html`))
+      }
+    }
+  }
+}
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -17,5 +33,6 @@ export default defineConfig({
       visualEditAgent: true
     }),
     react(),
+    spaRoutePages()
   ]
 });
