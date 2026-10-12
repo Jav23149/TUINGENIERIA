@@ -31,7 +31,28 @@ export const siteConfig = {
   },
 };
 
-export const whatsappLink = (msg = siteConfig.whatsappMsg) =>
+// Mensaje de WhatsApp personalizado según la página actual (ruta).
+const PAGE_WHATSAPP_MESSAGES = {
+  "/": "Hola, quiero información sobre climatización y reformas en Valencia.",
+  "/climatizacion": "Hola, quiero información sobre climatización en Valencia.",
+  "/reformas": "Hola, quiero un presupuesto de reforma de baño o cocina en Valencia.",
+  "/reforma-integral": "Hola, quiero un presupuesto de reforma integral en Valencia.",
+  "/reforma-bano": "Hola, quiero un presupuesto de reforma de baño en Valencia.",
+  "/reforma-cocina": "Hola, quiero un presupuesto de reforma de cocina en Valencia.",
+  "/reforma-alisado": "Hola, quiero un presupuesto de alisado de paredes en Valencia.",
+  "/fotovoltaica": "Hola, quiero información sobre paneles solares en Valencia.",
+  "/nosotros": "Hola, quiero información sobre TU INGENIERIA.",
+};
+
+export const pageWhatsAppMsg = () => {
+  if (typeof window === "undefined") return siteConfig.whatsappMsg;
+  const base = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
+  let route = window.location.pathname.replace(base, "") || "/";
+  if (route.length > 1 && route.endsWith("/")) route = route.slice(0, -1);
+  return PAGE_WHATSAPP_MESSAGES[route] || siteConfig.whatsappMsg;
+};
+
+export const whatsappLink = (msg = pageWhatsAppMsg()) =>
   siteConfig.whatsapp ? `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(msg)}` : "#";
 
 export const telLink = siteConfig.phoneRaw ? `tel:${siteConfig.phoneRaw}` : "#";
