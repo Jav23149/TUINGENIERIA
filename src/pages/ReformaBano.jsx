@@ -7,15 +7,15 @@ import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
 // Fotos reales de baños reformados (Unsplash) — URLs verificadas (HTTP 200)
-const HERO_IMG = "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1600&q=80";
+const HERO_IMG = "https://images.unsplash.com/photo-1587527901949-ab0341697c1e?auto=format&fit=crop&w=1600&q=80";
 
 const PROYECTOS = [
   {
-    imagen: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
-    titulo: "Baño moderno con plato de ducha",
+    imagen: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1600&q=80",
+    titulo: "Baño sencillo renovado",
     tipo: "Reforma de baño",
     zona: "Valencia capital",
-    resultado: "Plato de ducha de resina, mampara de cristal y revestimiento de piedra natural.",
+    resultado: "Lavabo de pie, sanitario nuevo, suelo cerámico y paredes en blanco. Fontanería renovada.",
     metricas: [
       { label: "Plazo", value: "7 días" },
       { label: "Superficie", value: "5 m²" },
@@ -35,11 +35,11 @@ const PROYECTOS = [
     ],
   },
   {
-    imagen: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80",
-    titulo: "Baño con bañera exenta",
+    imagen: "https://images.unsplash.com/photo-1586798271654-0471bb1b0517?auto=format&fit=crop&w=1600&q=80",
+    titulo: "Baño con bañera",
     tipo: "Reforma de baño",
     zona: "Paterna, Valencia",
-    resultado: "Bañera exenta, mobiliario suspendido y iluminación LED ambiental.",
+    resultado: "Bañera nueva, alicatado blanco y grifería renovada. Limpio y luminoso.",
     metricas: [
       { label: "Plazo", value: "8 días" },
       { label: "Superficie", value: "8 m²" },
