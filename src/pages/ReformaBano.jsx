@@ -5,7 +5,6 @@ import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
-import HeroCollage from "@/components/site/HeroCollage";
 
 // Fotos reales de baños reformados (Unsplash)
 const HERO_IMG = "https://images.unsplash.com/photo-1620626011761-99f3da9a4d88?auto=format&fit=crop&w=1600&q=80";
@@ -68,44 +67,43 @@ const pasos = [
 export default function ReformaBano() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative overflow-hidden border-b border-border">
-        <div className="blueprint-grid absolute inset-0 opacity-40" />
-        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-          <div className="grid items-center gap-10 lg:grid-cols-2">
-            <div className="order-2 lg:order-1">
-              <span className="inline-flex items-center gap-2 rounded-full border border-citron/50 bg-citron/15 px-4 py-2 text-xs font-bold uppercase tracking-wider text-citron">
+      {/* HERO con imagen de fondo a pantalla completa */}
+      <section className="relative min-h-[88vh] overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={HERO_IMG}
+            alt="Reforma de baño real en Valencia con plato de ducha y acabados premium"
+            className="h-full w-full"
+            fittingType="fill"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/30" />
+        <div className="relative flex min-h-[88vh] items-center">
+          <div className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+            <div className="max-w-2xl">
+              <span className="inline-flex items-center gap-2 rounded-full border border-citron/50 bg-citron/15 px-4 py-2 text-xs font-bold uppercase tracking-wider text-citron backdrop-blur-sm">
                 <Bath className="h-4 w-4" /> Reforma de baño en {siteConfig.provincia}
               </span>
-              <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)] sm:text-5xl lg:text-6xl">
                 Reforma de baño en Valencia: <span className="text-citron">7 días</span>, llave en mano
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-foreground/90">
+              <p className="mt-6 text-lg leading-relaxed text-foreground/95 drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]">
                 Renovamos tu baño de principio a fin: plato de ducha o bañera, mobiliario, iluminación y acabados premium. Un único responsable y dirección de obra de ingeniería.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a href={whatsappLink("Hola, quiero un presupuesto de reforma de baño.")} target="_blank" rel="noopener noreferrer" className="flex h-14 items-center justify-center gap-2 rounded-sm bg-citron px-8 text-base font-extrabold text-graphite shadow-lg shadow-citron/20 transition hover:brightness-95">
+                <a href={whatsappLink("Hola, quiero un presupuesto de reforma de baño.")} target="_blank" rel="noopener noreferrer" className="flex h-14 items-center justify-center gap-2 rounded-sm bg-citron px-8 text-base font-extrabold text-graphite shadow-lg shadow-citron/30 transition hover:brightness-95">
                   <MessageCircle className="h-5 w-5" /> Presupuesto gratis
                 </a>
-                <a href={telLink} className="flex h-14 items-center justify-center gap-2 rounded-sm border-2 border-citron/60 bg-card px-8 text-base font-extrabold text-foreground transition hover:border-citron hover:bg-citron hover:text-graphite">
+                <a href={telLink} className="flex h-14 items-center justify-center gap-2 rounded-sm border-2 border-citron/70 bg-background/40 px-8 text-base font-extrabold text-foreground backdrop-blur-sm transition hover:border-citron hover:bg-citron hover:text-graphite">
                   <Phone className="h-5 w-5" /> Llamar ahora
                 </a>
               </div>
-              <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+              <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-semibold text-foreground/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
                 <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-citron" /> 3 años de garantía</span>
                 <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-citron" /> Presupuesto cerrado</span>
                 <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-citron" /> Equipos propios</span>
               </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <HeroCollage
-                main={HERO_IMG}
-                mainAlt="Baño reformado con bañera exenta y acabados premium en Valencia"
-                topLeft={HERO_IMG_2}
-                topLeftAlt="Plato de ducha de resina con mampara de cristal en reforma de baño"
-                bottomRight={HERO_IMG_3}
-                bottomRightAlt="Mobiliario suspendido y sanitarios en baño reformado en Valencia"
-              />
             </div>
           </div>
         </div>
