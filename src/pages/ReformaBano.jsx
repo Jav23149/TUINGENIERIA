@@ -6,14 +6,12 @@ import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
 
-// Fotos reales de baños reformados (Unsplash)
-const HERO_IMG = "https://images.unsplash.com/photo-1620626011761-99f3da9a4d88?auto=format&fit=crop&w=1600&q=80";
-const HERO_IMG_2 = "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80";
-const HERO_IMG_3 = "https://images.unsplash.com/photo-1600488999389-78e1d9c8471c?auto=format&fit=crop&w=900&q=80";
+// Fotos reales de baños reformados (Unsplash) — URLs verificadas (HTTP 200)
+const HERO_IMG = "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1600&q=80";
 
 const PROYECTOS = [
   {
-    imagen: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef3c?auto=format&fit=crop&w=1600&q=80",
+    imagen: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
     titulo: "Baño moderno con plato de ducha",
     tipo: "Reforma de baño",
     zona: "Valencia capital",
