@@ -44,7 +44,7 @@ export default function Nosotros() {
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               TU INGENIERIA nace de un conjunto de ingenieros que buscan solucionar la vida de las personas y hacer que diariamente se sientan cómodos en espacios diseñados al estilo del cliente.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
               <WhatsAppButton label="Hablemos de tu proyecto" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-7 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
               <Link to="/#contacto" className="flex h-12 items-center justify-center gap-2 rounded-sm border border-citron/50 bg-citron/10 px-7 text-sm font-bold text-citron transition hover:bg-citron/20">
                 Solicitar presupuesto

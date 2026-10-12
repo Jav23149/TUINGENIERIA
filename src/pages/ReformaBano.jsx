@@ -89,7 +89,7 @@ export default function ReformaBano() {
               <p className="mt-6 text-lg leading-relaxed text-foreground/95 drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]">
                 Renovamos tu baño de principio a fin: plato de ducha o bañera, mobiliario, iluminación y acabados premium. Un único responsable y dirección de obra de ingeniería.
               </p>
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
                 <a href={whatsappLink("Hola, quiero un presupuesto de reforma de baño.")} target="_blank" rel="noopener noreferrer" className="flex h-14 items-center justify-center gap-2 rounded-sm bg-citron px-8 text-base font-extrabold text-graphite shadow-lg shadow-citron/30 transition hover:brightness-95">
                   <MessageCircle className="h-5 w-5" /> Presupuesto gratis
                 </a>

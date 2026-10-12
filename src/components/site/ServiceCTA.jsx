@@ -10,7 +10,7 @@ export default function ServiceCTA({ title = "¿Hablamos de tu proyecto?", subti
           <h2 className="font-display text-2xl font-black text-graphite sm:text-3xl">{title}</h2>
           <p className="mt-1 text-sm font-medium text-graphite/80">{subtitle}</p>
         </div>
-        <div className="flex flex-col gap-3 sm:flex-row">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
           <a
             href={telLink}
             className="flex h-12 items-center justify-center gap-2 rounded-sm bg-graphite px-6 text-sm font-bold text-foreground transition hover:bg-secondary"

@@ -79,7 +79,7 @@ export default function ReformaAlisado() {
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
                 Eliminamos el gotelé y alisamos tus paredes con yeso para un acabado liso y uniforme, listo para pintar. Trabajo limpio, rápido y con garantía.
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
                 <a href={whatsappLink("Hola, quiero un presupuesto de alisado de paredes.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-graphite transition hover:brightness-95">
                   <MessageCircle className="h-4 w-4" /> Presupuesto gratis
                 </a>

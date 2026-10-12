@@ -54,7 +54,7 @@ export default function ReformaIntegral() {
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/90">
               Un único responsable para toda tu reforma: baño, cocina, instalaciones y acabados. Proyecto técnico, dirección de obra y entrega llave en mano en {siteConfig.provincia} y alrededores.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
               <WhatsAppButton label="Presupuesto por WhatsApp" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-7 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
               <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border bg-card/60 px-7 text-sm font-bold text-foreground backdrop-blur transition hover:border-citron hover:text-citron">
                 <Phone className="h-4 w-4" /> Llamar

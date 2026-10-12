@@ -70,15 +70,15 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-border bg-background px-4 py-4 md:hidden">
+        <div className="border-t border-border bg-background px-4 pb-[calc(1rem+env(safe-area-inset-bottom))] pt-4 md:hidden">
           <nav className="flex flex-col gap-4">
             {navLinks.map((l) =>
               l.to.includes("#") ? (
-                <a key={l.label} href={l.to.replace("/", "")} className="text-base font-medium text-foreground" onClick={() => setOpen(false)}>
+                <a key={l.label} href={l.to.replace("/", "")} className="flex items-center py-2.5 text-base font-medium text-foreground" onClick={() => setOpen(false)}>
                   {l.label}
                 </a>
               ) : (
-                <Link key={l.label} to={l.to} className="text-base font-medium text-foreground" onClick={() => setOpen(false)}>
+                <Link key={l.label} to={l.to} className="flex items-center py-2.5 text-base font-medium text-foreground" onClick={() => setOpen(false)}>
                   {l.label}
                 </Link>
               )

@@ -14,7 +14,7 @@ export default function FloatingDock() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-[calc(1.25rem+env(safe-area-inset-bottom))] right-5 z-50 flex flex-col items-end gap-3">
       {open && (
         <div className="flex flex-col gap-2 rounded-sm border border-border bg-card p-2 shadow-2xl">
           <a href={telLink} className="flex items-center gap-3 rounded-sm px-4 py-3 text-sm font-semibold text-foreground transition hover:bg-secondary">

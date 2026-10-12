@@ -76,7 +76,7 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-base font-light text-foreground/80 sm:text-lg">
             Especialistas en aire acondicionado, reformas integrales y paneles solares. Ingenieros certificados, presupuesto gratis en 24 horas.
           </p>
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
             <WhatsAppButton label="Presupuesto por WhatsApp" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-8 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
             <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-foreground/20 bg-graphite/30 px-8 text-sm font-semibold text-foreground backdrop-blur transition hover:border-citron hover:text-citron">
               <Phone className="h-4 w-4" /> {siteConfig.phone || "Llamar"}

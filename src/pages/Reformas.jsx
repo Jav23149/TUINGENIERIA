@@ -71,7 +71,7 @@ export default function Reformas() {
                 Especialistas en reforma de baños y cocinas en Valencia. Un único responsable para todo el proceso:
                 proyecto, obra, instalaciones y acabados. Llave en mano y con garantía.
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
                 <a href={whatsappLink("Hola, quiero información sobre reforma de baño o cocina.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-graphite transition hover:brightness-95">
                   <MessageCircle className="h-4 w-4" /> Presupuesto gratis
                 </a>
