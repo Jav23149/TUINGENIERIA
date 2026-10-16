@@ -5,7 +5,7 @@ export const siteConfig = {
   tagline: "Climatización y Reformas",
   phone: "+34 671 191 421",
   phoneRaw: "+34671191421",
-  whatsapp: "34671191421",
+  whatsapp: "34643084651",
   whatsappMsg: "Hola, quiero información sobre vuestros servicios de climatización y reformas.",
   email: "tuingenieriasl@gmail.com",
   provincia: "Valencia",
