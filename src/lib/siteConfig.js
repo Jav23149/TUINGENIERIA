@@ -2,7 +2,7 @@
 // Reemplaza estos valores con los datos reales de la empresa.
 export const siteConfig = {
   brand: "TU INGENIERIA",
-  tagline: "Climatización y Reformas",
+  tagline: "Reformas Integrales",
   phone: "+34 643 084 651",
   phoneRaw: "+34643084651",
   whatsapp: "34643084651",
