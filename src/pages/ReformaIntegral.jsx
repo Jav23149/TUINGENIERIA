@@ -60,6 +60,7 @@ export default function ReformaIntegral() {
                 <Phone className="h-4 w-4" /> Llamar
               </a>
             </div>
+            <p className="mt-5 text-sm font-semibold text-citron">Te asesoramos sin compromiso</p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
               <span className="flex items-center gap-1.5"><Clock className="h-4 w-4 text-citron" /> Presupuesto en 24 horas</span>
               <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-citron" /> Garantía de obra</span>
