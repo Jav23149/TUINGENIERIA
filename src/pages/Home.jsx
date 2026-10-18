@@ -82,6 +82,7 @@ export default function Home() {
               <Phone className="h-4 w-4" /> {siteConfig.phone || "Llamar"}
             </a>
           </div>
+          <p className="mt-6 text-sm font-medium text-citron/90">Te asesoramos sin compromiso</p>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-foreground/50">
           <ChevronDown className="h-6 w-6 animate-bounce" />
