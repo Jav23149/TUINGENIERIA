@@ -8,7 +8,7 @@ import ServiceCTA from "@/components/site/ServiceCTA";
 import TrustTicker from "@/components/site/TrustTicker";
 import WhatsAppButton from "@/components/site/WhatsAppButton";
 
-const HERO_VIDEO = "https://media.base44.com/videos/public/6ac2c61f7c5f2c6d856595f5/a307ce60f_Hero_alicatado_nuevo.mp4";
+const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/c69a72b78_generated_image.png";
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cd9d37de6_generated_image.png";
 const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/03cb3f616_generated_image.png";
 const ALISADO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/b9a50dfc4_generated_image.png";
@@ -45,7 +45,7 @@ export default function ReformaIntegral() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0">
-          <video src={HERO_VIDEO} autoPlay muted loop playsInline className="h-full w-full object-cover" />
+          <Image src={HERO_IMG} alt="Reforma integral de una vivienda en Valencia: cocina abierta y acabados nuevos" className="h-full w-full object-cover" fittingType="fill" />
           <div className="absolute inset-0 bg-gradient-to-br from-graphite/90 via-graphite/70 to-graphite/30" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-28">
