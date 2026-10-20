@@ -6,33 +6,34 @@ import ValenciaMap from "@/components/site/ValenciaMap";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-graphite">
+    <footer className="border-t border-border bg-secondary/50">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2">
               <span className="flex h-9 w-9 items-center justify-center bg-citron font-display text-sm font-black text-graphite">T</span>
               <span className="font-display text-base font-bold text-foreground">
-                TU<span className="text-citron"> INGENIERIA</span>
+                TU<span className="text-citron-ink"> INGENIERIA</span>
               </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Especialistas en climatización, reformas integrales y energía solar fotovoltaica en {siteConfig.provincia} y alrededores.
+              Reformas integrales, climatización, energía solar y mantenimiento del hogar en {siteConfig.provincia} y alrededores. Un único equipo para todas tus necesidades.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Dónde encontrarnos</p>
             <div className="mt-3">
               <ValenciaMap />
             </div>
-
           </div>
 
           <div>
             <h3 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">Servicios</h3>
             <ul className="mt-4 space-y-3 text-sm">
-              <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron">Climatización split</Link></li>
-              <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron">Climatización por conductos</Link></li>
-              <li><Link to="/reforma-integral" className="text-muted-foreground transition hover:text-citron">Reforma integral</Link></li>
-              <li><Link to="/fotovoltaica" className="text-muted-foreground transition hover:text-citron">Paneles solares</Link></li>
+              <li><Link to="/reforma-integral" className="text-muted-foreground transition hover:text-citron-ink">Reformas integrales</Link></li>
+              <li><Link to="/reforma-bano" className="text-muted-foreground transition hover:text-citron-ink">Reforma de baño</Link></li>
+              <li><Link to="/reforma-cocina" className="text-muted-foreground transition hover:text-citron-ink">Reforma de cocina</Link></li>
+              <li><Link to="/reforma-alisado" className="text-muted-foreground transition hover:text-citron-ink">Alisado de paredes</Link></li>
+              <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron-ink">Climatización</Link></li>
+              <li><Link to="/fotovoltaica" className="text-muted-foreground transition hover:text-citron-ink">Paneles solares</Link></li>
             </ul>
           </div>
 
@@ -40,17 +41,17 @@ export default function Footer() {
             <h3 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">Contacto</h3>
             <ul className="mt-4 space-y-3 text-sm">
               <li>
-                <a href={telLink} className="flex items-start gap-2 text-muted-foreground transition hover:text-citron">
+                <a href={telLink} className="flex items-start gap-2 text-muted-foreground transition hover:text-citron-ink">
                   <Phone className="mt-0.5 h-4 w-4 shrink-0" /> {siteConfig.phone || "Próximamente"}
                 </a>
               </li>
               <li>
-                <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-muted-foreground transition hover:text-citron">
+                <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-muted-foreground transition hover:text-citron-ink">
                   <MessageCircle className="mt-0.5 h-4 w-4 shrink-0" /> WhatsApp directo
                 </a>
               </li>
               <li>
-                <a href={mailLink} className="flex items-start gap-2 text-muted-foreground transition hover:text-citron">
+                <a href={mailLink} className="flex items-start gap-2 text-muted-foreground transition hover:text-citron-ink">
                   <Mail className="mt-0.5 h-4 w-4 shrink-0" /> {siteConfig.email}
                 </a>
               </li>
@@ -69,7 +70,7 @@ export default function Footer() {
             <ul className="mt-3 flex flex-wrap gap-2">
               {siteConfig.localidades.map((loc) => (
                 <li key={loc}>
-                  <span className="inline-block rounded-sm border border-border px-2 py-1 text-xs text-muted-foreground">{loc}</span>
+                  <span className="inline-block rounded-sm border border-border bg-background px-2 py-1 text-xs text-muted-foreground">{loc}</span>
                 </li>
               ))}
             </ul>
@@ -78,7 +79,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row">
           <p>© {new Date().getFullYear()} {siteConfig.brand}. Todos los derechos reservados.</p>
-          <p>Climatización, reformas y energía solar · {siteConfig.provincia}</p>
+          <p>Reformas, climatización y energía solar · {siteConfig.provincia}</p>
         </div>
       </div>
     </footer>

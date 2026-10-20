@@ -22,7 +22,7 @@ export default function ProjectGallery({
     <section className={`border-b border-border ${fondoCard ? "bg-card" : ""}`}>
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-wider text-citron">{eyebrow}</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">{eyebrow}</p>
           <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">{titulo}</h2>
           <p className="mt-4 text-muted-foreground">{subtitulo}</p>
         </div>
@@ -43,14 +43,14 @@ export default function ProjectGallery({
               <div className="flex flex-1 flex-col p-6">
                 <h3 className="font-display text-lg font-bold text-foreground">{p.titulo}</h3>
                 <p className="mt-1 flex items-center gap-1 text-xs text-muted-foreground">
-                  <MapPin className="h-3.5 w-3.5 text-citron" /> {p.zona}
+                  <MapPin className="h-3.5 w-3.5 text-citron-ink" /> {p.zona}
                 </p>
                 <p className="mt-4 text-sm text-muted-foreground">{p.resultado}</p>
                 {p.metricas && p.metricas.length > 0 && (
                   <div className="mt-5 grid grid-cols-3 gap-2 border-t border-border pt-5">
                     {p.metricas.map((m) => (
                       <div key={m.label} className="text-center">
-                        <p className="font-display text-lg font-black text-citron">{m.value}</p>
+                        <p className="font-display text-lg font-black text-citron-ink">{m.value}</p>
                         <p className="text-[11px] uppercase tracking-wide text-muted-foreground">{m.label}</p>
                       </div>
                     ))}

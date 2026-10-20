@@ -18,13 +18,13 @@ export default function FloatingDock() {
       {open && (
         <div className="flex flex-col gap-2 rounded-sm border border-border bg-card p-2 shadow-2xl">
           <a href={telLink} className="flex items-center gap-3 rounded-sm px-4 py-3 text-sm font-semibold text-foreground transition hover:bg-secondary">
-            <Phone className="h-5 w-5 text-citron" /> Llamar ahora
+            <Phone className="h-5 w-5 text-citron-ink" /> Llamar ahora
           </a>
           <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-sm px-4 py-3 text-sm font-semibold text-foreground transition hover:bg-secondary">
             <WhatsAppIcon className="h-5 w-5 text-[#25D366]" /> WhatsApp
           </a>
           <a href="#contacto" onClick={() => setOpen(false)} className="flex items-center gap-3 rounded-sm px-4 py-3 text-sm font-semibold text-foreground transition hover:bg-secondary">
-            <ChevronUp className="h-5 w-5 text-citron" /> Formulario
+            <ChevronUp className="h-5 w-5 text-citron-ink" /> Formulario
           </a>
         </div>
       )}

@@ -61,7 +61,7 @@ export default function Reformas() {
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="order-2 lg:order-1">
-              <span className="inline-flex items-center gap-2 rounded-full border border-citron/40 bg-citron/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron">
+              <span className="inline-flex items-center gap-2 rounded-full border border-citron/40 bg-citron/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron-ink">
                 <Hammer className="h-3.5 w-3.5" /> Reformas en {siteConfig.provincia}
               </span>
               <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
@@ -75,7 +75,7 @@ export default function Reformas() {
                 <a href={whatsappLink("Hola, quiero información sobre reforma de baño o cocina.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-graphite transition hover:brightness-95">
                   <MessageCircle className="h-4 w-4" /> Presupuesto gratis
                 </a>
-                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-7 text-sm font-bold text-foreground transition hover:border-citron hover:text-citron">
+                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-7 text-sm font-bold text-foreground transition hover:border-citron hover:text-citron-ink">
                   <Phone className="h-4 w-4" /> Llamar
                 </a>
               </div>
@@ -91,13 +91,13 @@ export default function Reformas() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Qué reformamos</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Qué reformamos</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Reformas con cabeza de ingeniero</h2>
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {servicios.map((s) => (
               <div key={s.title} className="rounded-sm border border-border bg-card p-6">
-                <s.icon className="h-9 w-9 text-citron" />
+                <s.icon className="h-9 w-9 text-citron-ink" />
                 <h3 className="mt-4 font-display text-lg font-bold text-foreground">{s.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
               </div>
@@ -110,13 +110,13 @@ export default function Reformas() {
       <section className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Cómo trabajamos</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Cómo trabajamos</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu reforma en 4 pasos</h2>
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {pasos.map((p) => (
               <div key={p.n} className="rounded-sm border border-border bg-background p-6">
-                <span className="font-display text-3xl font-black text-citron/30">{p.n}</span>
+                <span className="font-display text-3xl font-black text-citron-ink/30">{p.n}</span>
                 <h3 className="mt-3 font-display text-lg font-bold text-foreground">{p.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
               </div>
@@ -128,7 +128,7 @@ export default function Reformas() {
       {/* WHY */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-wider text-citron">Por qué elegirnos</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Por qué elegirnos</p>
           <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">La diferencia de una reforma con ingeniería</h2>
           <p className="mt-4 text-muted-foreground">Muchas reformas salen mal por falta de dirección técnica. Nosotros lideramos la obra como ingenieros: planificamos, coordinamos oficios y controlamos la calidad en cada fase.</p>
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
@@ -138,7 +138,7 @@ export default function Reformas() {
               { icon: Clock, title: "Plazos cumplidos", desc: "Calendario real y sin sorpresas." },
             ].map((f) => (
               <div key={f.title} className="rounded-sm border border-border bg-card p-6">
-                <f.icon className="mx-auto h-8 w-8 text-citron" />
+                <f.icon className="mx-auto h-8 w-8 text-citron-ink" />
                 <h3 className="mt-4 font-bold text-foreground">{f.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{f.desc}</p>
               </div>
@@ -162,7 +162,7 @@ export default function Reformas() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Preguntas frecuentes</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Preguntas frecuentes</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Todo sobre reformas de baños y cocinas en {siteConfig.provincia}</h2>
           </div>
           <div className="mt-12 space-y-8">
@@ -187,16 +187,16 @@ export default function Reformas() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-citron">Solicita tu presupuesto</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Solicita tu presupuesto</p>
               <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu reforma empieza aquí</h2>
               <p className="mt-4 text-muted-foreground">Déjanos tus datos y te llamamos con un presupuesto sin compromiso en menos de 24 horas.</p>
               <div className="mt-8 space-y-4">
                 <a href={telLink} className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><Phone className="h-5 w-5 text-citron" /></div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><Phone className="h-5 w-5 text-citron-ink" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">Llámanos</p><p className="font-bold text-foreground">{siteConfig.phone || "Próximamente"}</p></div>
                 </a>
                 <a href={whatsappLink("Hola, quiero un presupuesto de reforma de baño o cocina.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><MessageCircle className="h-5 w-5 text-citron" /></div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><MessageCircle className="h-5 w-5 text-citron-ink" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</p><p className="font-bold text-foreground">Escríbenos ahora</p></div>
                 </a>
               </div>

@@ -86,7 +86,7 @@ export default function Climatizacion() {
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="order-2 lg:order-1">
-              <span className="inline-flex items-center gap-2 rounded-full border border-citron/40 bg-citron/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron">
+              <span className="inline-flex items-center gap-2 rounded-full border border-citron/40 bg-citron/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron-ink">
                 <Wind className="h-3.5 w-3.5" /> Climatización en {siteConfig.provincia}
               </span>
               <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
@@ -100,7 +100,7 @@ export default function Climatizacion() {
                 <a href={whatsappLink("Hola, quiero información sobre climatización.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-graphite transition hover:brightness-95">
                   <MessageCircle className="h-4 w-4" /> Presupuesto gratis
                 </a>
-                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-7 text-sm font-bold text-foreground transition hover:border-citron hover:text-citron">
+                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-7 text-sm font-bold text-foreground transition hover:border-citron hover:text-citron-ink">
                   <Phone className="h-4 w-4" /> Llamar
                 </a>
               </div>
@@ -116,13 +116,13 @@ export default function Climatizacion() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Sistemas de climatización</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Sistemas de climatización</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Confort para cada espacio</h2>
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {servicios.map((s) => (
               <div key={s.title} className="rounded-sm border border-border bg-card p-6">
-                <s.icon className="h-9 w-9 text-citron" />
+                <s.icon className="h-9 w-9 text-citron-ink" />
                 <h3 className="mt-4 font-display text-lg font-bold text-foreground">{s.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
               </div>
@@ -135,13 +135,13 @@ export default function Climatizacion() {
       <section className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Cómo trabajamos</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Cómo trabajamos</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Instalación de climatización en 4 pasos</h2>
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {pasos.map((p) => (
               <div key={p.n} className="rounded-sm border border-border bg-background p-6">
-                <span className="font-display text-3xl font-black text-citron/30">{p.n}</span>
+                <span className="font-display text-3xl font-black text-citron-ink/30">{p.n}</span>
                 <h3 className="mt-3 font-display text-lg font-bold text-foreground">{p.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
               </div>
@@ -158,7 +158,7 @@ export default function Climatizacion() {
               <Image src={FACHADA_IMG} alt="Instalador fijando una unidad exterior de aire acondicionado en la fachada de un edificio" className="h-96 w-full" fittingType="fill" />
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-citron">Eficiencia energética</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Eficiencia energética</p>
               <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Clima potente, consumo eficiente</h2>
               <p className="mt-4 text-muted-foreground">Trabajamos con equipos inverter de clase A+++ que reducen el consumo hasta un 40% frente a sistemas convencionales, con menor ruido y mayor durabilidad.</p>
               <ul className="mt-8 space-y-4">
@@ -168,7 +168,7 @@ export default function Climatizacion() {
                   { icon: Wrench, title: "Mantenimiento incluido", desc: "Revisión y servicio técnico postventa." },
                 ].map((f) => (
                   <li key={f.title} className="flex gap-4">
-                    <f.icon className="h-7 w-7 shrink-0 text-citron" />
+                    <f.icon className="h-7 w-7 shrink-0 text-citron-ink" />
                     <div>
                       <p className="font-bold text-foreground">{f.title}</p>
                       <p className="text-sm text-muted-foreground">{f.desc}</p>
@@ -196,7 +196,7 @@ export default function Climatizacion() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Preguntas frecuentes</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Preguntas frecuentes</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Todo sobre climatización en {siteConfig.provincia}</h2>
           </div>
           <div className="mt-12 space-y-8">
@@ -221,16 +221,16 @@ export default function Climatizacion() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-citron">Solicita tu presupuesto</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Solicita tu presupuesto</p>
               <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu instalación de climatización empieza aquí</h2>
               <p className="mt-4 text-muted-foreground">Déjanos tus datos y te llamamos con un presupuesto sin compromiso en menos de 24 horas.</p>
               <div className="mt-8 space-y-4">
                 <a href={telLink} className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><Phone className="h-5 w-5 text-citron" /></div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><Phone className="h-5 w-5 text-citron-ink" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">Llámanos</p><p className="font-bold text-foreground">{siteConfig.phone || "Próximamente"}</p></div>
                 </a>
                 <a href={whatsappLink("Hola, quiero un presupuesto de climatización.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><MessageCircle className="h-5 w-5 text-citron" /></div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><MessageCircle className="h-5 w-5 text-citron-ink" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</p><p className="font-bold text-foreground">Escríbenos ahora</p></div>
                 </a>
               </div>

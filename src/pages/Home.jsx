@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Phone, ArrowRight, Snowflake, ShieldCheck, Clock, Wrench, Euro, MapPin, ChevronDown } from "lucide-react";
+import { Phone, ArrowRight, Snowflake, ShieldCheck, Clock, Wrench, Euro, MapPin, ChevronDown, Zap, Droplets, Wind, PaintBucket, Hammer } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import Reviews from "@/components/site/Reviews";
+import TrustTicker from "@/components/site/TrustTicker";
 import WhatsAppButton, { WhatsAppGlyph } from "@/components/site/WhatsAppButton";
 
 const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cfa6a38fe_generated_02362836.png";
@@ -16,6 +17,15 @@ const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f
 const COCINA_PRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a6c54a998_generated_image.png";
 const BANO_PRO = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f4f6cb92c_generated_image.png";
 const FOTOVOLTAICA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/f7ac0b1e3_generated_image.png";
+
+const EXTRAS = [
+  { icon: Zap, label: "Electricidad" },
+  { icon: Droplets, label: "Fontanería" },
+  { icon: Wind, label: "Ventilación" },
+  { icon: PaintBucket, label: "Pintura" },
+  { icon: Wrench, label: "Pladur" },
+  { icon: Hammer, label: "Albañilería" },
+];
 
 const PROYECTOS = [
   {
@@ -59,48 +69,55 @@ const PROYECTOS = [
 export default function Home() {
   return (
     <>
-      {/* HERO — pantalla completa, cinemático */}
+      {/* HERO */}
       <section className="relative h-screen min-h-[640px] overflow-hidden">
         <div className="absolute inset-0">
-          <Image src={HERO_IMG} alt="Cocina reformada a medida con isla de mármol y acabados premium" className="h-full w-full ken-burns" fittingType="fill" />
-          <div className="absolute inset-0 bg-gradient-to-b from-graphite/70 via-graphite/45 to-graphite/95" />
+          <Image src={HERO_IMG} alt="Reforma integral de vivienda en Valencia con acabados premium" className="h-full w-full ken-burns" fittingType="fill" />
+          <div className="absolute inset-0 bg-gradient-to-b from-graphite/80 via-graphite/55 to-graphite/95" />
         </div>
         <div className="relative flex h-full flex-col items-center justify-center px-4 text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-citron/30 bg-graphite/40 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-citron backdrop-blur">
-            <Wrench className="h-3.5 w-3.5" /> Reformas Integrales en Valencia
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white backdrop-blur">
+            <Wrench className="h-3.5 w-3.5" /> Reformas, clima y solar en Valencia
           </span>
-          <h1 className="mt-8 max-w-4xl font-heading text-4xl font-normal leading-[1.1] text-foreground text-balance sm:text-5xl lg:text-6xl">
-            Reformas integrales con ingeniería en {siteConfig.provincia}
+          <h1 className="mt-8 max-w-4xl font-heading text-4xl font-normal leading-[1.1] text-white text-balance sm:text-5xl lg:text-6xl">
+            Todo lo que tu hogar necesita, con un único equipo
           </h1>
           <div className="mx-auto mt-6 h-px w-16 bg-citron" />
-          <p className="mt-6 max-w-xl text-base font-light text-foreground/80 sm:text-lg">
-            Reformas de baños, cocinas, alisado de paredes y reformas completas llave en mano. También climatización y energía solar. Ingenieros certificados, presupuesto gratis en 24 horas.
+          <p className="mt-6 max-w-xl text-base font-light text-white/85 sm:text-lg">
+            Reformas integrales, baños y cocinas, climatización y energía solar. Ingenieros propios, presupuesto cerrado y entrega llave en mano en {siteConfig.provincia} y alrededores.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
             <WhatsAppButton label="Presupuesto por WhatsApp" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-8 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
-            <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-foreground/20 bg-graphite/30 px-8 text-sm font-semibold text-foreground backdrop-blur transition hover:border-citron hover:text-citron">
+            <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-white/30 px-8 text-sm font-semibold text-white backdrop-blur transition hover:border-citron hover:text-citron">
               <Phone className="h-4 w-4" /> {siteConfig.phone || "Llamar"}
             </a>
           </div>
-          <p className="mt-6 text-sm font-medium text-citron/90">Te asesoramos sin compromiso</p>
+          <p className="mt-6 text-sm font-medium text-citron">Te asesoramos sin compromiso</p>
         </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-foreground/50">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60">
           <ChevronDown className="h-6 w-6 animate-bounce" />
         </div>
       </section>
 
-      {/* SERVICIOS — tarjetas contenidas con aire */}
-      <section className="border-b border-border">
+      <TrustTicker />
+
+      {/* SERVICIOS */}
+      <section className="border-b border-border bg-background">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-ink">A qué nos dedicamos</p>
+            <h2 className="mt-3 font-heading text-3xl font-normal text-foreground sm:text-4xl">Soluciones integrales para tu hogar y negocio</h2>
+            <p className="mt-4 text-muted-foreground">Un solo interlocutor para tu proyecto, de la visita al acabado. Sin subcontratas y con equipo propio.</p>
+          </div>
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
             <Link to="/reforma-integral" className="group relative h-[300px] overflow-hidden rounded-sm border border-border lg:h-[360px]">
               <Image src={COCINA_PRO} alt="Reforma de cocina a medida con isla de mármol" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
-              <div className="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-graphite/90 via-graphite/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 lg:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">01 — Reformas Integrales</p>
-                <h2 className="mt-2 font-heading text-2xl font-normal text-foreground sm:text-3xl">Baños, Cocinas y Reformas Completas</h2>
+                <h3 className="mt-2 font-heading text-2xl font-normal text-white sm:text-3xl">Baños, Cocinas y Reformas Completas</h3>
                 <div className="mt-3 h-px w-10 bg-citron" />
-                <p className="mt-3 max-w-xs text-sm text-foreground/80">Reformas integrales con dirección de ingeniería: baños, cocinas, alisado y acabados. Proyecto, obra y llave en mano.</p>
+                <p className="mt-3 max-w-xs text-sm text-white/85">Reformas integrales con dirección de ingeniería: baños, cocinas, alisado y acabados. Proyecto, obra y llave en mano.</p>
                 <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
                   Ver servicio <ArrowRight className="h-4 w-4" />
                 </span>
@@ -109,12 +126,12 @@ export default function Home() {
 
             <Link to="/climatizacion" className="group relative h-[300px] overflow-hidden rounded-sm border border-border lg:h-[360px]">
               <Image src={HVAC_IMG} alt="Aire acondicionado split instalado en salón reformado" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
-              <div className="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-graphite/90 via-graphite/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 lg:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">02 — Climatización</p>
-                <h2 className="mt-2 font-heading text-2xl font-normal text-foreground sm:text-3xl">Splits y Conductos</h2>
+                <h3 className="mt-2 font-heading text-2xl font-normal text-white sm:text-3xl">Splits y Conductos</h3>
                 <div className="mt-3 h-px w-10 bg-citron" />
-                <p className="mt-3 max-w-xs text-sm text-foreground/80">Aire acondicionado split y por conductos con tecnología inverter A+++. Confort total y bajo consumo.</p>
+                <p className="mt-3 max-w-xs text-sm text-white/85">Aire acondicionado split y por conductos con tecnología inverter A+++. Confort total y bajo consumo.</p>
                 <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
                   Ver servicio <ArrowRight className="h-4 w-4" />
                 </span>
@@ -123,12 +140,12 @@ export default function Home() {
 
             <Link to="/fotovoltaica" className="group relative h-[300px] overflow-hidden rounded-sm border border-border lg:h-[360px]">
               <Image src={FOTOVOLTAICA_IMG} alt="Instalador montando paneles solares fotovoltaicos en un tejado" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
-              <div className="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-graphite/90 via-graphite/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 lg:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">03 — Fotovoltaica</p>
-                <h2 className="mt-2 font-heading text-2xl font-normal text-foreground sm:text-3xl">Paneles Solares</h2>
+                <h3 className="mt-2 font-heading text-2xl font-normal text-white sm:text-3xl">Paneles Solares</h3>
                 <div className="mt-3 h-px w-10 bg-citron" />
-                <p className="mt-3 max-w-xs text-sm text-foreground/80">Autoconsumo fotovoltaico con baterías y compensación de excedentes. Reduce hasta el 100% de tu factura eléctrica.</p>
+                <p className="mt-3 max-w-xs text-sm text-white/85">Autoconsumo fotovoltaico con baterías y compensación de excedentes. Reduce hasta el 100% de tu factura eléctrica.</p>
                 <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
                   Ver servicio <ArrowRight className="h-4 w-4" />
                 </span>
@@ -138,18 +155,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRUST — minimal, aireado */}
+      {/* TAMBIÉN TRABAJAMOS */}
+      <section className="border-b border-border bg-secondary/50">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-ink">También trabajamos</p>
+            <h2 className="mt-3 font-heading text-3xl font-normal text-foreground sm:text-4xl">Un mismo equipo para todas tus necesidades</h2>
+            <p className="mt-4 text-muted-foreground">Además de nuestras especialidades, cubrimos también electricidad, fontanería, ventilación, pintura, pladur y albañilería.</p>
+          </div>
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            {EXTRAS.map((e) => (
+              <a key={e.label} href="#contacto" className="group flex flex-col items-center gap-3 rounded-sm border border-border bg-background px-4 py-6 text-center transition hover:border-citron-ink">
+                <e.icon className="h-6 w-6 text-citron-ink" />
+                <span className="text-sm font-semibold text-foreground">{e.label}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TRUST */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-10 lg:grid-cols-4">
             {[
-              { icon: ShieldCheck, label: "Ingenieros certificados", value: "ISO 9001" },
+              { icon: ShieldCheck, label: "Garantía por escrito", value: "3 años" },
               { icon: Clock, label: "Presupuesto en", value: "24 horas" },
               { icon: Euro, label: "Equipos", value: "Clase A+++" },
-              { icon: Wrench, label: "Garantía de obra", value: "3 años" },
+              { icon: Wrench, label: "Equipo propio", value: "Sin subcontratas" },
             ].map((s) => (
               <div key={s.label} className="text-center">
-                <s.icon className="mx-auto h-7 w-7 text-citron" />
+                <s.icon className="mx-auto h-7 w-7 text-citron-ink" />
                 <p className="mt-4 font-heading text-xl font-normal text-foreground">{s.value}</p>
                 <p className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">{s.label}</p>
               </div>
@@ -162,11 +198,11 @@ export default function Home() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
           <div className="grid items-center gap-16 lg:grid-cols-2">
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden rounded-sm">
               <Image src={BANO_PRO} alt="Baño reformado con bañera exenta y acabados premium" className="h-[420px] w-full lg:h-[520px]" fittingType="fill" />
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">Por qué TU INGENIERIA</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-ink">Por qué TU INGENIERIA</p>
               <h2 className="mt-4 font-heading text-3xl font-normal text-foreground sm:text-4xl">Ingeniería precisa, resultados medibles</h2>
               <div className="mt-5 h-px w-12 bg-citron" />
               <p className="mt-6 text-muted-foreground">No somos instaladores improvisados. Somos ingenieros que dimensionan cada sistema y planifican cada obra con datos reales, para que el resultado sea el que esperas.</p>
@@ -178,7 +214,7 @@ export default function Home() {
                   { icon: Euro, title: "Sin sorpresas", desc: "Presupuesto cerrado y plazos cumplidos." },
                 ].map((f) => (
                   <div key={f.title} className="flex gap-3">
-                    <f.icon className="h-6 w-6 shrink-0 text-citron" />
+                    <f.icon className="h-6 w-6 shrink-0 text-citron-ink" />
                     <div>
                       <p className="font-semibold text-foreground">{f.title}</p>
                       <p className="text-sm text-muted-foreground">{f.desc}</p>
@@ -191,11 +227,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROYECTOS — scroll horizontal */}
+      {/* PROYECTOS */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">Proyectos reales</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-ink">Proyectos reales</p>
             <h2 className="mt-4 font-heading text-3xl font-normal text-foreground sm:text-4xl">Proyectos reales en Valencia</h2>
             <div className="mx-auto mt-5 h-px w-12 bg-citron" />
             <p className="mt-6 text-sm text-muted-foreground">Desliza para ver más proyectos</p>
@@ -210,14 +246,14 @@ export default function Home() {
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="font-heading text-xl font-normal text-foreground">{p.titulo}</h3>
                   <p className="mt-2 flex items-center gap-1 text-xs text-muted-foreground">
-                    <MapPin className="h-3.5 w-3.5 text-citron" /> {p.zona}
+                    <MapPin className="h-3.5 w-3.5 text-citron-ink" /> {p.zona}
                   </p>
                   <p className="mt-4 text-sm text-muted-foreground">{p.resultado}</p>
                   {p.metricas && p.metricas.length > 0 && (
                     <div className="mt-5 grid grid-cols-3 gap-2 border-t border-border pt-5">
                       {p.metricas.map((m) => (
                         <div key={m.label} className="text-center">
-                          <p className="font-heading text-lg font-bold text-citron">{m.value}</p>
+                          <p className="font-heading text-lg font-bold text-citron-ink">{m.value}</p>
                           <p className="text-[11px] uppercase tracking-wide text-muted-foreground">{m.label}</p>
                         </div>
                       ))}
@@ -236,30 +272,30 @@ export default function Home() {
       <ServiceCTA />
 
       {/* CONTACTO */}
-      <section id="contacto" className="border-b border-border">
+      <section id="contacto" className="border-b border-border bg-secondary/40">
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
           <div className="grid gap-16 lg:grid-cols-2">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">Contacto</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-ink">Contacto</p>
               <h2 className="mt-4 font-heading text-3xl font-normal text-foreground sm:text-4xl">Pide tu presupuesto gratis</h2>
               <div className="mt-5 h-px w-12 bg-citron" />
-              <p className="mt-6 text-muted-foreground">Cuéntanos qué necesitas y te llamamos con un presupuesto sin compromiso.</p>
+              <p className="mt-6 text-muted-foreground">Cuéntanos qué necesitas y te llamamos con un presupuesto cerrado, sin compromiso.</p>
               <div className="mt-10 space-y-0">
-                <a href={telLink} className="flex items-center gap-4 border-b border-border py-4 transition hover:text-citron">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-citron/30"><Phone className="h-4 w-4 text-citron" /></div>
+                <a href={telLink} className="flex items-center gap-4 border-b border-border py-4 transition hover:text-citron-ink">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-border"><Phone className="h-4 w-4 text-citron-ink" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">Llámanos</p><p className="font-heading text-lg font-normal text-foreground">{siteConfig.phone || "Próximamente"}</p></div>
                 </a>
-                <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 border-b border-border py-4 transition hover:text-citron">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-citron/30"><WhatsAppGlyph className="h-5 w-5 text-[#25D366]" /></div>
+                <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 border-b border-border py-4 transition hover:text-citron-ink">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-border"><WhatsAppGlyph className="h-5 w-5 text-[#25D366]" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</p><p className="font-heading text-lg font-normal text-foreground">Escríbenos ahora</p></div>
                 </a>
                 <div className="flex items-center gap-4 border-b border-border py-4">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-citron/30"><MapPin className="h-4 w-4 text-citron" /></div>
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-border"><MapPin className="h-4 w-4 text-citron-ink" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">Zona de servicio</p><p className="font-heading text-lg font-normal text-foreground">{siteConfig.provincia} y alrededores</p></div>
                 </div>
               </div>
             </div>
-            <div className="rounded-sm border border-border bg-card p-6 sm:p-10">
+            <div className="rounded-sm border border-border bg-background p-6 sm:p-10">
               <ContactForm servicio="general" origen="Home" />
             </div>
           </div>

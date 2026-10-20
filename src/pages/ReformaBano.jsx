@@ -80,11 +80,11 @@ export default function ReformaBano() {
         <div className="relative flex min-h-[88vh] items-center">
           <div className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
             <div className="max-w-2xl">
-              <span className="inline-flex items-center gap-2 rounded-full border border-citron/50 bg-citron/15 px-4 py-2 text-xs font-bold uppercase tracking-wider text-citron backdrop-blur-sm">
+              <span className="inline-flex items-center gap-2 rounded-full border border-citron/50 bg-citron/15 px-4 py-2 text-xs font-bold uppercase tracking-wider text-citron-ink backdrop-blur-sm">
                 <Bath className="h-4 w-4" /> Reforma de baño en {siteConfig.provincia}
               </span>
               <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)] sm:text-5xl lg:text-6xl">
-                Reforma de baño en Valencia: <span className="text-citron">7 días</span>, llave en mano
+                Reforma de baño en Valencia: <span className="text-citron-ink">7 días</span>, llave en mano
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-foreground/95 drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]">
                 Renovamos tu baño de principio a fin: plato de ducha o bañera, mobiliario, iluminación y acabados premium. Un único responsable y dirección de obra de ingeniería.
@@ -111,13 +111,13 @@ export default function ReformaBano() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Qué incluye</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Qué incluye</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu baño renovado de principio a fin</h2>
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {incluye.map((i) => (
               <div key={i.title} className="rounded-sm border border-border bg-card p-6">
-                <i.icon className="h-9 w-9 text-citron" />
+                <i.icon className="h-9 w-9 text-citron-ink" />
                 <h3 className="mt-4 font-display text-lg font-bold text-foreground">{i.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{i.desc}</p>
               </div>
@@ -130,13 +130,13 @@ export default function ReformaBano() {
       <section className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Cómo trabajamos</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Cómo trabajamos</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu baño reformado en 4 pasos</h2>
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {pasos.map((p) => (
               <div key={p.n} className="rounded-sm border border-border bg-background p-6">
-                <span className="font-display text-3xl font-black text-citron/30">{p.n}</span>
+                <span className="font-display text-3xl font-black text-citron-ink/30">{p.n}</span>
                 <h3 className="mt-3 font-display text-lg font-bold text-foreground">{p.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
               </div>
@@ -160,7 +160,7 @@ export default function ReformaBano() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron">Preguntas frecuentes</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Preguntas frecuentes</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Todo sobre la reforma de baño en {siteConfig.provincia}</h2>
           </div>
           <div className="mt-12 space-y-8">
@@ -183,7 +183,7 @@ export default function ReformaBano() {
       <section id="contacto" className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto mb-12 max-w-2xl text-center">
-            <p className="text-sm font-bold uppercase tracking-wider text-citron">Solicita tu presupuesto gratis</p>
+            <p className="text-sm font-bold uppercase tracking-wider text-citron-ink">Solicita tu presupuesto gratis</p>
             <h2 className="mt-3 font-display text-4xl font-black text-foreground sm:text-5xl">Tu baño nuevo empieza aquí</h2>
             <p className="mt-4 text-lg text-muted-foreground">Déjanos tus datos y te llamamos con un presupuesto sin compromiso en menos de 24 horas.</p>
           </div>
@@ -198,7 +198,7 @@ export default function ReformaBano() {
                 <div><p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">WhatsApp directo</p><p className="font-display text-xl font-black text-foreground">Escríbenos ahora</p></div>
               </a>
               <div className="rounded-sm border border-border bg-background p-6">
-                <p className="text-sm font-bold uppercase tracking-wider text-citron">Por qué elegirnos</p>
+                <p className="text-sm font-bold uppercase tracking-wider text-citron-ink">Por qué elegirnos</p>
                 <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-citron" /> Presupuesto cerrado, sin sorpresas</li>
                   <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-citron" /> 3 años de garantía en la obra</li>

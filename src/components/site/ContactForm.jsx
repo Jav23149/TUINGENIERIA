@@ -54,7 +54,7 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
     const mailtoLink = `mailto:${siteConfig.email}?subject=${encodeURIComponent(`Nuevo lead: ${form.nombre} - ${servicio}`)}&body=${encodeURIComponent(`Nombre: ${form.nombre}\nTeléfono: ${form.telefono}\nEmail: ${form.email || "—"}\nServicio: ${servicio}\nOrigen: ${origen}\nMensaje: ${form.mensaje || "—"}`)}`;
     return (
       <div className="flex flex-col items-center justify-center gap-4 rounded-sm border border-citron/40 bg-card p-8 text-center">
-        <CheckCircle2 className="h-12 w-12 text-citron" />
+        <CheckCircle2 className="h-12 w-12 text-citron-ink" />
         <h3 className="font-display text-xl font-bold text-foreground">¡Solicitud enviada!</h3>
         <p className="text-sm text-muted-foreground">
           Gracias {form.nombre}. Te contactaremos en menos de 24 horas. Si prefieres, escríbenos ahora por WhatsApp o email.
@@ -69,7 +69,7 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
         </a>
         <a
           href={mailtoLink}
-          className="rounded-sm border border-border px-6 py-3 text-sm font-bold text-foreground transition hover:border-citron hover:text-citron"
+          className="rounded-sm border border-border px-6 py-3 text-sm font-bold text-foreground transition hover:border-citron hover:text-citron-ink"
         >
           Enviar por email
         </a>

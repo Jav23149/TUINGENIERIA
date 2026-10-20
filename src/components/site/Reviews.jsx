@@ -92,7 +92,7 @@ export default function Reviews() {
     <section className="border-b border-border">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-wider text-citron">Reseñas de Google</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Reseñas de Google</p>
           <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">
             Lo que dicen nuestros clientes en Valencia
           </h2>
@@ -110,11 +110,11 @@ export default function Reviews() {
             <article key={r.nombre} className="flex flex-col gap-4 rounded-sm border border-border bg-card p-6">
               <div className="flex items-center justify-between">
                 <GoogleStars rating={r.rating} />
-                <Quote className="h-6 w-6 text-citron/60" />
+                <Quote className="h-6 w-6 text-citron-ink/60" />
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">"{r.texto}"</p>
               <div className="mt-auto flex items-center gap-3 border-t border-border pt-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-citron/15 font-display text-sm font-bold text-citron">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-citron/15 font-display text-sm font-bold text-citron-ink">
                   {r.nombre.charAt(0)}
                 </div>
                 <div>

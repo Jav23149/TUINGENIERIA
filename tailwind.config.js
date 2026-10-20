@@ -45,6 +45,7 @@ module.exports = {
   				input: 'hsl(var(--input))',
   				ring: 'hsl(var(--ring))',
   				citron: 'hsl(var(--citron))',
+  				'citron-ink': 'hsl(var(--citron-ink))',
   				graphite: 'hsl(var(--graphite))',
   				steel: 'hsl(var(--steel))',
   			chart: {
