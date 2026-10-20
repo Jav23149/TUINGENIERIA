@@ -94,7 +94,7 @@ export default function ReformaAlisado() {
                 <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Trabajo limpio</span>
               </div>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
-                <a href={whatsappLink("Hola, quiero un presupuesto de alisado de paredes.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-graphite transition hover:brightness-95">
+                <a href={whatsappLink("Hola, quiero un presupuesto de alisado de paredes.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-primary-foreground transition hover:bg-citron-ink">
                   <MessageCircle className="h-4 w-4" /> Presupuesto gratis
                 </a>
                 <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-7 text-sm font-bold text-foreground transition hover:border-citron-ink hover:text-citron-ink">

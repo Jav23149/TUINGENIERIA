@@ -63,7 +63,7 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
           href={whatsappLink(`Hola, soy ${form.nombre}. He enviado un formulario desde la web.`)}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 rounded-sm bg-citron px-6 py-3 text-sm font-bold text-graphite"
+          className="mt-2 rounded-sm bg-citron px-6 py-3 text-sm font-bold text-primary-foreground"
         >
           Escribir por WhatsApp
         </a>
@@ -130,7 +130,7 @@ export default function ContactForm({ servicio = "general", origen = "Home" }) {
       <button
         type="submit"
         disabled={loading}
-        className="flex h-12 w-full items-center justify-center gap-2 rounded-sm bg-citron text-sm font-bold text-graphite transition hover:brightness-95 disabled:opacity-60"
+        className="flex h-12 w-full items-center justify-center gap-2 rounded-sm bg-citron text-sm font-bold text-primary-foreground transition hover:bg-citron-ink disabled:opacity-60"
       >
         {loading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Send className="h-4 w-4" />}
         {loading ? "Enviando..." : "Solicitar presupuesto gratis"}

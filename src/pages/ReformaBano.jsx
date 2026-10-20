@@ -104,7 +104,7 @@ export default function ReformaBano() {
                 <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Equipos propios</span>
               </div>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
-                <a href={whatsappLink("Hola, quiero un presupuesto de reforma de baño.")} target="_blank" rel="noopener noreferrer" className="flex h-14 items-center justify-center gap-2 rounded-sm bg-citron px-8 text-base font-extrabold text-graphite shadow-lg shadow-citron/30 transition hover:brightness-95">
+                <a href={whatsappLink("Hola, quiero un presupuesto de reforma de baño.")} target="_blank" rel="noopener noreferrer" className="flex h-14 items-center justify-center gap-2 rounded-sm bg-citron px-8 text-base font-extrabold text-primary-foreground shadow-lg shadow-citron/30 transition hover:bg-citron-ink">
                   <MessageCircle className="h-5 w-5" /> Presupuesto gratis
                 </a>
                 <a href={telLink} className="flex h-14 items-center justify-center gap-2 rounded-sm border border-border bg-background/70 px-8 text-base font-extrabold text-foreground backdrop-blur-sm transition hover:border-citron-ink hover:text-citron-ink">
@@ -211,11 +211,11 @@ export default function ReformaBano() {
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="space-y-4">
               <a href={telLink} className="flex items-center gap-4 rounded-sm border border-border bg-background p-6 transition hover:border-citron-ink">
-                <div className="flex h-14 w-14 items-center justify-center rounded-sm bg-citron"><Phone className="h-6 w-6 text-graphite" /></div>
+                <div className="flex h-14 w-14 items-center justify-center rounded-sm bg-citron"><Phone className="h-6 w-6 text-primary-foreground" /></div>
                 <div><p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Llámanos ahora</p><p className="font-display text-xl font-black text-foreground">{siteConfig.phone || "Próximamente"}</p></div>
               </a>
               <a href={whatsappLink("Hola, quiero un presupuesto de reforma de baño.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border border-border bg-background p-6 transition hover:border-citron-ink">
-                <div className="flex h-14 w-14 items-center justify-center rounded-sm bg-citron"><MessageCircle className="h-6 w-6 text-graphite" /></div>
+                <div className="flex h-14 w-14 items-center justify-center rounded-sm bg-citron"><MessageCircle className="h-6 w-6 text-primary-foreground" /></div>
                 <div><p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">WhatsApp directo</p><p className="font-display text-xl font-black text-foreground">Escríbenos ahora</p></div>
               </a>
               <div className="rounded-sm border border-border bg-background p-6">

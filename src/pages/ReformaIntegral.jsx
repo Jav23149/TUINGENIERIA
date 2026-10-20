@@ -50,7 +50,7 @@ export default function ReformaIntegral() {
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-28">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-citron/50 bg-citron/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron">
+            <span className="inline-flex items-center gap-2 rounded-full border border-citron-soft/40 bg-citron-soft/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron-soft">
               <Hammer className="h-3.5 w-3.5" /> Reformas integrales y parciales
             </span>
             <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-white text-balance sm:text-5xl">
@@ -60,17 +60,17 @@ export default function ReformaIntegral() {
               Un único equipo se encarga de toda tu reforma: baño, cocina, instalaciones y acabados. Sin subcontratas, sin sorpresas en el presupuesto y con un responsable de obra.
             </p>
             <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/85">
-              <li className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron" /> Coordinación de gremios con equipo propio</li>
-              <li className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron" /> Plazos cumplidos desde el primer día</li>
-              <li className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron" /> Presupuestos claros y cerrados</li>
+              <li className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-soft" /> Coordinación de gremios con equipo propio</li>
+              <li className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-soft" /> Plazos cumplidos desde el primer día</li>
+              <li className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-soft" /> Presupuestos claros y cerrados</li>
             </ul>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
               <WhatsAppButton label="Presupuesto por WhatsApp" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-7 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
-              <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-white/30 px-7 text-sm font-bold text-white backdrop-blur transition hover:border-citron hover:text-citron">
+              <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-white/30 px-7 text-sm font-bold text-white backdrop-blur transition hover:border-citron-soft hover:text-citron-soft">
                 <Phone className="h-4 w-4" /> Llamar
               </a>
             </div>
-            <p className="mt-5 text-sm font-semibold text-citron">Te asesoramos sin compromiso</p>
+            <p className="mt-5 text-sm font-semibold text-citron-soft">Te asesoramos sin compromiso</p>
           </div>
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function ReformaIntegral() {
               <div key={i.title} className="group overflow-hidden rounded-sm border border-border bg-card">
                 <div className="relative h-44 overflow-hidden">
                   <Image src={i.img} alt={i.title} className="h-full w-full transition-transform duration-300 group-hover:scale-105" fittingType="fill" />
-                  <i.icon className="absolute left-4 top-4 h-8 w-8 text-citron drop-shadow" />
+                  <i.icon className="absolute left-4 top-4 h-8 w-8 text-citron-soft drop-shadow" />
                 </div>
                 <div className="p-6">
                   <h3 className="font-display text-lg font-bold text-foreground">{i.title}</h3>
@@ -155,7 +155,7 @@ export default function ReformaIntegral() {
                 <div className="relative h-56 overflow-hidden">
                   <Image src={s.img} alt={s.title} className="h-full w-full transition-transform duration-500 group-hover:scale-105" fittingType="fill" />
                   <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
-                  <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
+                  <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-primary-foreground">
                     <s.icon className="h-3.5 w-3.5" /> {s.tag}
                   </div>
                 </div>
@@ -188,7 +188,7 @@ export default function ReformaIntegral() {
                 ))}
               </ul>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row [&>a]:w-full sm:[&>a]:w-auto">
-                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-6 text-sm font-bold text-graphite transition hover:brightness-95">
+                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-6 text-sm font-bold text-primary-foreground transition hover:bg-citron-ink">
                   <Phone className="h-4 w-4" /> Llamar ahora
                 </a>
                 <a href={whatsappLink("Hola, quiero un presupuesto de reforma integral en Valencia.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-6 text-sm font-bold text-foreground transition hover:border-citron-ink hover:text-citron-ink">

@@ -36,7 +36,7 @@ export default function ProjectGallery({
               <div className="relative h-64 overflow-hidden bg-graphite transition-all duration-300 group-hover:h-80">
                 <Image src={p.imagen} alt={p.titulo} className="h-full w-full transition-transform duration-300 group-hover:scale-105" fittingType="fit" />
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 to-transparent" />
-                <span className="absolute left-4 top-4 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">
+                <span className="absolute left-4 top-4 rounded-full bg-citron px-3 py-1 text-xs font-bold text-primary-foreground">
                   {p.tipo}
                 </span>
               </div>

@@ -82,17 +82,17 @@ export default function Home() {
           <h1 className="mt-8 max-w-4xl font-heading text-4xl font-normal leading-[1.1] text-white text-balance sm:text-5xl lg:text-6xl">
             Todo lo que tu hogar necesita, con un único equipo
           </h1>
-          <div className="mx-auto mt-6 h-px w-16 bg-citron" />
+          <div className="mx-auto mt-6 h-px w-16 bg-citron-soft" />
           <p className="mt-6 max-w-xl text-base font-light text-white/85 sm:text-lg">
             Reformas integrales, baños y cocinas, climatización y energía solar. Ingenieros propios, presupuesto cerrado y entrega llave en mano en {siteConfig.provincia} y alrededores.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
             <WhatsAppButton label="Presupuesto por WhatsApp" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-8 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
-            <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-white/30 px-8 text-sm font-semibold text-white backdrop-blur transition hover:border-citron hover:text-citron">
+            <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-white/30 px-8 text-sm font-semibold text-white backdrop-blur transition hover:border-citron-soft hover:text-citron-soft">
               <Phone className="h-4 w-4" /> {siteConfig.phone || "Llamar"}
             </a>
           </div>
-          <p className="mt-6 text-sm font-medium text-citron">Te asesoramos sin compromiso</p>
+          <p className="mt-6 text-sm font-medium text-citron-soft">Te asesoramos sin compromiso</p>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60">
           <ChevronDown className="h-6 w-6 animate-bounce" />
@@ -114,11 +114,11 @@ export default function Home() {
               <Image src={COCINA_PRO} alt="Reforma de cocina a medida con isla de mármol" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
               <div className="absolute inset-0 bg-gradient-to-t from-graphite/90 via-graphite/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 lg:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">01 — Reformas Integrales</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-soft">01 — Reformas Integrales</p>
                 <h3 className="mt-2 font-heading text-2xl font-normal text-white sm:text-3xl">Baños, Cocinas y Reformas Completas</h3>
-                <div className="mt-3 h-px w-10 bg-citron" />
+                <div className="mt-3 h-px w-10 bg-citron-soft" />
                 <p className="mt-3 max-w-xs text-sm text-white/85">Reformas integrales con dirección de ingeniería: baños, cocinas, alisado y acabados. Proyecto, obra y llave en mano.</p>
-                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron-soft transition group-hover:gap-3">
                   Ver servicio <ArrowRight className="h-4 w-4" />
                 </span>
               </div>
@@ -128,11 +128,11 @@ export default function Home() {
               <Image src={HVAC_IMG} alt="Aire acondicionado split instalado en salón reformado" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
               <div className="absolute inset-0 bg-gradient-to-t from-graphite/90 via-graphite/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 lg:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">02 — Climatización</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-soft">02 — Climatización</p>
                 <h3 className="mt-2 font-heading text-2xl font-normal text-white sm:text-3xl">Splits y Conductos</h3>
-                <div className="mt-3 h-px w-10 bg-citron" />
+                <div className="mt-3 h-px w-10 bg-citron-soft" />
                 <p className="mt-3 max-w-xs text-sm text-white/85">Aire acondicionado split y por conductos con tecnología inverter A+++. Confort total y bajo consumo.</p>
-                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron-soft transition group-hover:gap-3">
                   Ver servicio <ArrowRight className="h-4 w-4" />
                 </span>
               </div>
@@ -142,11 +142,11 @@ export default function Home() {
               <Image src={FOTOVOLTAICA_IMG} alt="Instalador montando paneles solares fotovoltaicos en un tejado" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
               <div className="absolute inset-0 bg-gradient-to-t from-graphite/90 via-graphite/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 lg:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron">03 — Fotovoltaica</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-soft">03 — Fotovoltaica</p>
                 <h3 className="mt-2 font-heading text-2xl font-normal text-white sm:text-3xl">Paneles Solares</h3>
-                <div className="mt-3 h-px w-10 bg-citron" />
+                <div className="mt-3 h-px w-10 bg-citron-soft" />
                 <p className="mt-3 max-w-xs text-sm text-white/85">Autoconsumo fotovoltaico con baterías y compensación de excedentes. Reduce hasta el 100% de tu factura eléctrica.</p>
-                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron transition group-hover:gap-3">
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-citron-soft transition group-hover:gap-3">
                   Ver servicio <ArrowRight className="h-4 w-4" />
                 </span>
               </div>
@@ -241,7 +241,7 @@ export default function Home() {
               <article key={p.titulo} className="flex w-[85vw] shrink-0 snap-center flex-col overflow-hidden rounded-sm border border-border bg-background sm:w-[400px]">
                 <div className="relative h-72 shrink-0 overflow-hidden bg-graphite">
                   <Image src={p.imagen} alt={p.titulo} className="h-full w-full" fittingType="fit" />
-                  <span className="absolute left-4 top-4 rounded-full bg-citron px-3 py-1 text-xs font-bold text-graphite">{p.tipo}</span>
+                  <span className="absolute left-4 top-4 rounded-full bg-citron px-3 py-1 text-xs font-bold text-primary-foreground">{p.tipo}</span>
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="font-heading text-xl font-normal text-foreground">{p.titulo}</h3>

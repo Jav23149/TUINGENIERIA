@@ -17,7 +17,7 @@ export default function TrustTicker() {
       <div className="flex w-max animate-marquee items-center gap-10 pr-10">
         {items.map((t, i) => (
           <span key={i} className="flex shrink-0 items-center gap-2 text-sm font-medium text-white/90">
-            <BadgeCheck className="h-4 w-4 text-citron" />
+            <BadgeCheck className="h-4 w-4 text-citron-soft" />
             {t}
           </span>
         ))}

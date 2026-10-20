@@ -19,7 +19,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <span className="flex h-9 w-9 items-center justify-center bg-citron font-display text-sm font-black text-graphite">
+          <span className="flex h-9 w-9 items-center justify-center bg-citron font-display text-sm font-black text-primary-foreground">
             T
           </span>
           <span className="font-display text-base font-bold tracking-tight text-foreground">
@@ -53,7 +53,7 @@ export default function Header() {
             href={whatsappLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-10 items-center gap-2 rounded-sm bg-citron px-4 text-sm font-bold text-graphite transition hover:brightness-95"
+            className="flex h-10 items-center gap-2 rounded-sm bg-citron px-4 text-sm font-bold text-primary-foreground transition hover:bg-citron-ink"
           >
             <MessageCircle className="h-4 w-4" />
             WhatsApp
@@ -87,7 +87,7 @@ export default function Header() {
               <a href={telLink} className="flex flex-1 items-center justify-center gap-2 rounded-sm border border-border py-3 text-sm font-semibold">
                 <Phone className="h-4 w-4" /> Llamar
               </a>
-              <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex flex-1 items-center justify-center gap-2 rounded-sm bg-citron py-3 text-sm font-bold text-graphite">
+              <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex flex-1 items-center justify-center gap-2 rounded-sm bg-citron py-3 text-sm font-bold text-primary-foreground">
                 <MessageCircle className="h-4 w-4" /> WhatsApp
               </a>
             </div>

@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center bg-citron font-display text-sm font-black text-graphite">T</span>
+              <span className="flex h-9 w-9 items-center justify-center bg-citron font-display text-sm font-black text-primary-foreground">T</span>
               <span className="font-display text-base font-bold text-foreground">
                 TU<span className="text-citron-ink"> INGENIERIA</span>
               </span>
