@@ -13,7 +13,7 @@ export default function ServiceCTA({ title = "¿Hablamos de tu proyecto?", subti
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
           <a
             href={telLink}
-            className="flex h-12 items-center justify-center gap-2 rounded-sm bg-graphite px-6 text-sm font-bold text-foreground transition hover:bg-secondary"
+            className="flex h-12 items-center justify-center gap-2 rounded-sm bg-background px-6 text-sm font-bold text-foreground transition hover:bg-graphite hover:text-white"
           >
             <Phone className="h-4 w-4" /> Llamar ahora
           </a>
@@ -21,7 +21,7 @@ export default function ServiceCTA({ title = "¿Hablamos de tu proyecto?", subti
             href={whatsappLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-12 items-center justify-center gap-2 rounded-sm bg-graphite px-6 text-sm font-bold text-foreground transition hover:bg-secondary"
+            className="flex h-12 items-center justify-center gap-2 rounded-sm bg-background px-6 text-sm font-bold text-foreground transition hover:bg-graphite hover:text-white"
           >
             <MessageCircle className="h-4 w-4" /> WhatsApp
           </a>

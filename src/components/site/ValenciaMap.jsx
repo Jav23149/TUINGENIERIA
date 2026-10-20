@@ -21,7 +21,7 @@ export default function ValenciaMap() {
         href={`https://www.openstreetmap.org/?mlat=39.4699&mlon=-0.3763#map=12/39.4699/-0.3763`}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center gap-1.5 bg-graphite px-3 py-2 text-xs font-semibold text-citron transition hover:bg-secondary"
+        className="flex items-center justify-center gap-1.5 bg-secondary px-3 py-2 text-xs font-semibold text-citron-ink transition hover:bg-citron/20"
       >
         <MapPin className="h-3.5 w-3.5" /> Ver en el mapa · {siteConfig.direccion}
       </a>
