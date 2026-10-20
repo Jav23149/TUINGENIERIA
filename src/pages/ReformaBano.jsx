@@ -1,10 +1,13 @@
 import React from "react";
-import { Bath, Phone, MessageCircle, Ruler, Wrench, Droplets } from "lucide-react";
+import { Bath, Phone, MessageCircle, Ruler, Wrench, Droplets, BadgeCheck, ShieldCheck, Handshake, FileText, Clock } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
+import TrustTicker from "@/components/site/TrustTicker";
+import Reviews from "@/components/site/Reviews";
+import GuaranteesSection from "@/components/site/GuaranteesSection";
 
 // Fotos reales de baños reformados (Unsplash) — URLs verificadas (HTTP 200)
 const HERO_IMG = "https://images.unsplash.com/photo-1587527901949-ab0341697c1e?auto=format&fit=crop&w=1600&q=80";
@@ -62,11 +65,17 @@ const pasos = [
   { n: "04", title: "Entrega y garantía", desc: "Entregamos llave en mano, limpio y con 3 años de garantía." },
 ];
 
+const garantias = [
+  { icon: Clock, title: "Baño en 7 días", desc: "Planificamos la obra para entregarte el baño terminado y limpio en una semana." },
+  { icon: ShieldCheck, title: "Garantía de 3 años", desc: "Cubrimos la ejecución de la obra por escrito, además de la garantía de los materiales." },
+  { icon: Handshake, title: "Un único responsable", desc: "Un ingeniero coordina todos los oficios y responde ante ti de principio a fin." },
+];
+
 export default function ReformaBano() {
   return (
     <>
       {/* HERO con imagen de fondo a pantalla completa */}
-      <section className="relative min-h-[88vh] overflow-hidden">
+      <section className="relative min-h-[85vh] overflow-hidden border-b border-border">
         <div className="absolute inset-0">
           <Image
             src={HERO_IMG}
@@ -75,37 +84,40 @@ export default function ReformaBano() {
             fittingType="fill"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/30" />
-        <div className="relative flex min-h-[88vh] items-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+        <div className="relative flex min-h-[85vh] items-center">
           <div className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
             <div className="max-w-2xl">
               <span className="inline-flex items-center gap-2 rounded-full border border-citron/50 bg-citron/15 px-4 py-2 text-xs font-bold uppercase tracking-wider text-citron-ink backdrop-blur-sm">
                 <Bath className="h-4 w-4" /> Reforma de baño en {siteConfig.provincia}
               </span>
-              <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)] sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
                 Reforma de baño en Valencia: <span className="text-citron-ink">7 días</span>, llave en mano
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-foreground/95 drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]">
+              <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
                 Renovamos tu baño de principio a fin: plato de ducha o bañera, mobiliario, iluminación y acabados premium. Un único responsable y dirección de obra de ingeniería.
               </p>
+              <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-semibold text-muted-foreground">
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> 3 años de garantía</span>
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Presupuesto cerrado</span>
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Equipos propios</span>
+              </div>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
                 <a href={whatsappLink("Hola, quiero un presupuesto de reforma de baño.")} target="_blank" rel="noopener noreferrer" className="flex h-14 items-center justify-center gap-2 rounded-sm bg-citron px-8 text-base font-extrabold text-graphite shadow-lg shadow-citron/30 transition hover:brightness-95">
                   <MessageCircle className="h-5 w-5" /> Presupuesto gratis
                 </a>
-                <a href={telLink} className="flex h-14 items-center justify-center gap-2 rounded-sm border-2 border-citron/70 bg-background/40 px-8 text-base font-extrabold text-foreground backdrop-blur-sm transition hover:border-citron hover:bg-citron hover:text-graphite">
-                  <Phone className="h-5 w-5" /> Llamar ahora
+                <a href={telLink} className="flex h-14 items-center justify-center gap-2 rounded-sm border border-border bg-background/70 px-8 text-base font-extrabold text-foreground backdrop-blur-sm transition hover:border-citron-ink hover:text-citron-ink">
+                  <Phone className="h-5 w-5" /> {siteConfig.phone || "Llamar ahora"}
                 </a>
               </div>
-              <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-semibold text-foreground/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
-                <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-citron" /> 3 años de garantía</span>
-                <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-citron" /> Presupuesto cerrado</span>
-                <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-citron" /> Equipos propios</span>
-              </div>
+              <p className="mt-5 text-sm font-semibold text-citron-ink">Te asesoramos sin compromiso</p>
             </div>
           </div>
         </div>
       </section>
+
+      <TrustTicker />
 
       {/* QUÉ INCLUYE */}
       <section className="border-b border-border">
@@ -113,6 +125,7 @@ export default function ReformaBano() {
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Qué incluye</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu baño renovado de principio a fin</h2>
+            <p className="mt-4 text-muted-foreground">Nos encargamos de todo: materiales, instalaciones y acabados. Tú solo eliges el estilo.</p>
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {incluye.map((i) => (
@@ -145,6 +158,12 @@ export default function ReformaBano() {
         </div>
       </section>
 
+      <GuaranteesSection
+        title="Tu baño, respaldado desde el primer día"
+        subtitle="Plazo, garantía y un único responsable: antes de empezar ya sabes a qué te comprometes."
+        items={garantias}
+      />
+
       {/* PROYECTOS */}
       <ProjectGallery
         proyectos={PROYECTOS}
@@ -154,7 +173,9 @@ export default function ReformaBano() {
         fondoCard
       />
 
-      <ServiceCTA title="¿Vamos a reformar tu baño?" subtitle="Presupuesto gratis y sin compromiso en menos de 24 horas." />
+      <Reviews />
+
+      <ServiceCTA title="¿Vamos a reformar tu baño?" subtitle="Te asesoramos sin compromiso. Presupuesto gratis en menos de 24 horas." />
 
       {/* FAQ */}
       <section className="border-b border-border">
@@ -180,7 +201,7 @@ export default function ReformaBano() {
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" className="border-b border-border bg-card">
+      <section id="contacto" className="border-b border-border bg-secondary/40">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <p className="text-sm font-bold uppercase tracking-wider text-citron-ink">Solicita tu presupuesto gratis</p>
@@ -189,11 +210,11 @@ export default function ReformaBano() {
           </div>
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="space-y-4">
-              <a href={telLink} className="flex items-center gap-4 rounded-sm border-2 border-citron/40 bg-background p-6 transition hover:border-citron hover:bg-citron/5">
+              <a href={telLink} className="flex items-center gap-4 rounded-sm border border-border bg-background p-6 transition hover:border-citron-ink">
                 <div className="flex h-14 w-14 items-center justify-center rounded-sm bg-citron"><Phone className="h-6 w-6 text-graphite" /></div>
                 <div><p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Llámanos ahora</p><p className="font-display text-xl font-black text-foreground">{siteConfig.phone || "Próximamente"}</p></div>
               </a>
-              <a href={whatsappLink("Hola, quiero un presupuesto de reforma de baño.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border-2 border-citron/40 bg-background p-6 transition hover:border-citron hover:bg-citron/5">
+              <a href={whatsappLink("Hola, quiero un presupuesto de reforma de baño.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border border-border bg-background p-6 transition hover:border-citron-ink">
                 <div className="flex h-14 w-14 items-center justify-center rounded-sm bg-citron"><MessageCircle className="h-6 w-6 text-graphite" /></div>
                 <div><p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">WhatsApp directo</p><p className="font-display text-xl font-black text-foreground">Escríbenos ahora</p></div>
               </a>
@@ -207,7 +228,7 @@ export default function ReformaBano() {
                 </ul>
               </div>
             </div>
-            <div className="rounded-sm border-2 border-citron/30 bg-background p-6 sm:p-8">
+            <div className="rounded-sm border border-border bg-background p-6 sm:p-8">
               <ContactForm servicio="reformas" origen="ReformaBano" />
             </div>
           </div>

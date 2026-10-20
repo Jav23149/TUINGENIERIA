@@ -1,15 +1,15 @@
 import React from "react";
-import { ChefHat, Phone, MessageCircle, Ruler, Wrench, Utensils } from "lucide-react";
+import { ChefHat, Phone, MessageCircle, Ruler, Wrench, Utensils, BadgeCheck, ShieldCheck, Handshake, FileText } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
-import HeroCollage from "@/components/site/HeroCollage";
+import TrustTicker from "@/components/site/TrustTicker";
+import Reviews from "@/components/site/Reviews";
+import GuaranteesSection from "@/components/site/GuaranteesSection";
 
 const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/87c1293d8_generated_image.png";
-const HERO_IMG_2 = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/4f2141522_generated_image.png";
-const HERO_IMG_3 = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/ba5c71800_generated_image.png";
 
 const PROYECTOS = [
   {
@@ -64,6 +64,12 @@ const pasos = [
   { n: "04", title: "Entrega y garantía", desc: "Entregamos llave en mano, limpia y con 3 años de garantía." },
 ];
 
+const garantias = [
+  { icon: ShieldCheck, title: "Garantía de 3 años", desc: "Cubrimos la ejecución de la obra por escrito, además de la garantía de los materiales." },
+  { icon: Handshake, title: "Proyecto y dirección", desc: "Diseñamos tu cocina y dirigimos la obra con un único responsable de principio a fin." },
+  { icon: FileText, title: "Plazo de 10 a 14 días", desc: "Calendario cerrado con electricidad, fontanería, carpintería y acabados incluidos." },
+];
+
 export default function ReformaCocina() {
   return (
     <>
@@ -82,28 +88,34 @@ export default function ReformaCocina() {
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
                 Diseñamos y ejecutamos tu cocina a medida: carpintería, electrodomésticos, nueva electricidad y fontanería. Proyecto técnico, dirección de obra y entrega llave en mano.
               </p>
+              <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-semibold text-muted-foreground">
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Carpintería incluida</span>
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> 3 años de garantía</span>
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Equipos propios</span>
+              </div>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
                 <a href={whatsappLink("Hola, quiero un presupuesto de reforma de cocina.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-graphite transition hover:brightness-95">
                   <MessageCircle className="h-4 w-4" /> Presupuesto gratis
                 </a>
-                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-7 text-sm font-bold text-foreground transition hover:border-citron hover:text-citron-ink">
-                  <Phone className="h-4 w-4" /> Llamar
+                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-7 text-sm font-bold text-foreground transition hover:border-citron-ink hover:text-citron-ink">
+                  <Phone className="h-4 w-4" /> {siteConfig.phone || "Llamar"}
                 </a>
               </div>
+              <p className="mt-5 text-sm font-semibold text-citron-ink">Te asesoramos sin compromiso</p>
             </div>
-            <div className="order-1 lg:order-2">
-              <HeroCollage
-                main={HERO_IMG}
-                mainAlt="Cocina reformada a medida con isla de cuarzo en Valencia"
-                topLeft={HERO_IMG_2}
-                topLeftAlt="Isla de cocina con encimera de cuarzo y campana integrada en Valencia"
-                bottomRight={HERO_IMG_3}
-                bottomRightAlt="Carpintería lacada a medida con iluminación LED en cocina reformada en Valencia"
+            <div className="order-1 lg:order-2 relative overflow-hidden rounded-sm border border-border">
+              <Image
+                src={HERO_IMG}
+                alt="Cocina reformada a medida con isla de cuarzo en Valencia"
+                className="h-80 w-full lg:h-96"
+                fittingType="fill"
               />
             </div>
           </div>
         </div>
       </section>
+
+      <TrustTicker />
 
       {/* QUÉ INCLUYE */}
       <section className="border-b border-border">
@@ -111,6 +123,7 @@ export default function ReformaCocina() {
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Qué incluye</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu cocina nueva de principio a fin</h2>
+            <p className="mt-4 text-muted-foreground">Diseño, carpintería e instalaciones en un solo proyecto, sin tener que coordinar tú a nadie.</p>
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {incluye.map((i) => (
@@ -143,6 +156,12 @@ export default function ReformaCocina() {
         </div>
       </section>
 
+      <GuaranteesSection
+        title="Tu cocina, respaldada desde el primer día"
+        subtitle="Proyecto, plazo y garantía por escrito: antes de empezar ya sabes a qué te comprometes."
+        items={garantias}
+      />
+
       {/* PROYECTOS */}
       <ProjectGallery
         proyectos={PROYECTOS}
@@ -152,7 +171,9 @@ export default function ReformaCocina() {
         fondoCard
       />
 
-      <ServiceCTA title="¿Vamos a reformar tu cocina?" subtitle="Presupuesto gratis y sin compromiso en menos de 24 horas." />
+      <Reviews />
+
+      <ServiceCTA title="¿Vamos a reformar tu cocina?" subtitle="Te asesoramos sin compromiso. Presupuesto gratis en menos de 24 horas." />
 
       {/* FAQ */}
       <section className="border-b border-border">
@@ -164,7 +185,7 @@ export default function ReformaCocina() {
           <div className="mt-12 space-y-8">
             {[
               { q: `¿Cuánto tarda una reforma de cocina en ${siteConfig.provincia}?`, a: "Una reforma de cocina a medida suele tardar entre 10 y 14 días, incluyendo electricidad, fontanería, carpintería y acabados." },
-              { q: "¿Incluye la carpintería y los electrodomésticos?", a: "Sí. Diseñamos la carpintería a medida y integramos los electrodomésticos que elijas, con nueva instalación eléctrica y de fontanería." },
+              { q: "¿Incluye la carpintería y los electrodomésticos?", a: "Sí. Diseñamos la carpintería a medida e integramos los electrodomésticos que elijas, con nueva instalación eléctrica y de fontanería." },
               { q: "¿Qué garantía tiene la obra?", a: "Todas nuestras reformas de cocina cuentan con 3 años de garantía en la ejecución, además de las garantías de fábrica de los materiales." },
               { q: `¿Dónde reformáis cocinas en la provincia de ${siteConfig.provincia}?`, a: `Damos servicio en toda la provincia: ${siteConfig.localidades.slice(0, 5).join(", ")} y resto de localidades.` },
             ].map((f) => (
@@ -178,7 +199,7 @@ export default function ReformaCocina() {
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" className="border-b border-border">
+      <section id="contacto" className="border-b border-border bg-secondary/40">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
@@ -186,17 +207,17 @@ export default function ReformaCocina() {
               <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu cocina nueva empieza aquí</h2>
               <p className="mt-4 text-muted-foreground">Déjanos tus datos y te llamamos con un presupuesto sin compromiso en menos de 24 horas.</p>
               <div className="mt-8 space-y-4">
-                <a href={telLink} className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
+                <a href={telLink} className="flex items-center gap-4 rounded-sm border border-border bg-background p-4 transition hover:border-citron-ink">
                   <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><Phone className="h-5 w-5 text-citron-ink" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">Llámanos</p><p className="font-bold text-foreground">{siteConfig.phone || "Próximamente"}</p></div>
                 </a>
-                <a href={whatsappLink("Hola, quiero un presupuesto de reforma de cocina.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
+                <a href={whatsappLink("Hola, quiero un presupuesto de reforma de cocina.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border border-border bg-background p-4 transition hover:border-citron-ink">
                   <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><MessageCircle className="h-5 w-5 text-citron-ink" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</p><p className="font-bold text-foreground">Escríbenos ahora</p></div>
                 </a>
               </div>
             </div>
-            <div className="rounded-sm border border-border bg-card p-6 sm:p-8">
+            <div className="rounded-sm border border-border bg-background p-6 sm:p-8">
               <ContactForm servicio="reformas" origen="ReformaCocina" />
             </div>
           </div>

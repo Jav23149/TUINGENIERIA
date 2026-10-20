@@ -1,10 +1,13 @@
 import React from "react";
-import { Wind, Phone, MessageCircle, Snowflake, Wrench, AirVent, Thermometer, Euro } from "lucide-react";
+import { Wind, Phone, MessageCircle, Snowflake, Wrench, AirVent, Thermometer, Euro, BadgeCheck, ShieldCheck, Handshake, FileText } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 import ContactForm from "@/components/site/ContactForm";
 import ServiceCTA from "@/components/site/ServiceCTA";
 import ProjectGallery from "@/components/site/ProjectGallery";
+import TrustTicker from "@/components/site/TrustTicker";
+import Reviews from "@/components/site/Reviews";
+import GuaranteesSection from "@/components/site/GuaranteesSection";
 
 const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/47365688d_generated_image.png";
 const CONDUCTOS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/eb1c621eb_generated_image.png";
@@ -77,6 +80,12 @@ const pasos = [
   { n: "04", title: "Puesta en marcha y mantenimiento", desc: "Probamos el sistema y dejamos plan de mantenimiento." },
 ];
 
+const garantias = [
+  { icon: ShieldCheck, title: "Garantía de instalación", desc: "Cubrimos por escrito la instalación y respondemos si algo no funciona como debe." },
+  { icon: Handshake, title: "Marcas oficiales", desc: "Instalamos equipos de fabricantes líderes, con su garantía de fábrica y servicio técnico." },
+  { icon: FileText, title: "Presupuesto cerrado", desc: "El precio acordado es el que pagas, sin sorpresas ni extras escondidos." },
+];
+
 export default function Climatizacion() {
   return (
     <>
@@ -96,14 +105,20 @@ export default function Climatizacion() {
                 Climatización profesional para viviendas y locales: splits y conductos con tecnología inverter.
                 Confort durante todo el año con la máxima eficiencia energética.
               </p>
+              <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-semibold text-muted-foreground">
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Presupuesto en 24h</span>
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Equipos A+++</span>
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Instaladores propios</span>
+              </div>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
                 <a href={whatsappLink("Hola, quiero información sobre climatización.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-graphite transition hover:brightness-95">
                   <MessageCircle className="h-4 w-4" /> Presupuesto gratis
                 </a>
-                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-7 text-sm font-bold text-foreground transition hover:border-citron hover:text-citron-ink">
-                  <Phone className="h-4 w-4" /> Llamar
+                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border px-7 text-sm font-bold text-foreground transition hover:border-citron-ink hover:text-citron-ink">
+                  <Phone className="h-4 w-4" /> {siteConfig.phone || "Llamar"}
                 </a>
               </div>
+              <p className="mt-5 text-sm font-semibold text-citron-ink">Te asesoramos sin compromiso</p>
             </div>
             <div className="order-1 lg:order-2 relative overflow-hidden rounded-sm border border-border">
               <Image src={HVAC_IMG} alt="Instalador montando un split de aire acondicionado en la pared de un salón" className="h-80 w-full lg:h-96" fittingType="fill" />
@@ -112,12 +127,15 @@ export default function Climatizacion() {
         </div>
       </section>
 
+      <TrustTicker />
+
       {/* SERVICES */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Sistemas de climatización</p>
             <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Confort para cada espacio</h2>
+            <p className="mt-4 text-muted-foreground">Elegimos el sistema que mejor se adapta a tu vivienda o local, no el que más nos conviene vender.</p>
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {servicios.map((s) => (
@@ -181,6 +199,12 @@ export default function Climatizacion() {
         </div>
       </section>
 
+      <GuaranteesSection
+        title="Tu climatización, respaldada por escrito"
+        subtitle="Instalamos con equipo propio y respondemos de nuestro trabajo: sin sorpresas y con servicio postventa."
+        items={garantias}
+      />
+
       {/* PROYECTOS REALES */}
       <ProjectGallery
         proyectos={PROYECTOS_HVAC}
@@ -190,7 +214,9 @@ export default function Climatizacion() {
         fondoCard
       />
 
-      <ServiceCTA title="¿Listo para tu instalación de climatización?" subtitle="Presupuesto gratis y sin compromiso en menos de 24 horas." />
+      <Reviews />
+
+      <ServiceCTA title="¿Listo para tu instalación de climatización?" subtitle="Te asesoramos sin compromiso. Presupuesto gratis en menos de 24 horas." />
 
       {/* FAQ SEO */}
       <section className="border-b border-border">
@@ -217,7 +243,7 @@ export default function Climatizacion() {
       </section>
 
       {/* CONTACT */}
-      <section id="contacto" className="border-b border-border">
+      <section id="contacto" className="border-b border-border bg-secondary/40">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
@@ -225,17 +251,17 @@ export default function Climatizacion() {
               <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu instalación de climatización empieza aquí</h2>
               <p className="mt-4 text-muted-foreground">Déjanos tus datos y te llamamos con un presupuesto sin compromiso en menos de 24 horas.</p>
               <div className="mt-8 space-y-4">
-                <a href={telLink} className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
+                <a href={telLink} className="flex items-center gap-4 rounded-sm border border-border bg-background p-4 transition hover:border-citron-ink">
                   <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><Phone className="h-5 w-5 text-citron-ink" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">Llámanos</p><p className="font-bold text-foreground">{siteConfig.phone || "Próximamente"}</p></div>
                 </a>
-                <a href={whatsappLink("Hola, quiero un presupuesto de climatización.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border border-border bg-card p-4 transition hover:border-citron">
+                <a href={whatsappLink("Hola, quiero un presupuesto de climatización.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-sm border border-border bg-background p-4 transition hover:border-citron-ink">
                   <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-citron/10"><MessageCircle className="h-5 w-5 text-citron-ink" /></div>
                   <div><p className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</p><p className="font-bold text-foreground">Escríbenos ahora</p></div>
                 </a>
               </div>
             </div>
-            <div className="rounded-sm border border-border bg-card p-6 sm:p-8">
+            <div className="rounded-sm border border-border bg-background p-6 sm:p-8">
               <ContactForm servicio="climatizacion" origen="Climatizacion" />
             </div>
           </div>
