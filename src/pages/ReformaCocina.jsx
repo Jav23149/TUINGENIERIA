@@ -137,6 +137,23 @@ export default function ReformaCocina() {
         </div>
       </section>
 
+      <GuaranteesSection
+        title="Tu cocina, respaldada desde el primer día"
+        subtitle="Proyecto, plazo y garantía por escrito: antes de empezar ya sabes a qué te comprometes."
+        items={garantias}
+      />
+
+      {/* PROYECTOS */}
+      <ProjectGallery
+        proyectos={PROYECTOS}
+        eyebrow="Proyectos reales"
+        titulo="Cocinas reformadas en Valencia"
+        subtitulo="Ejemplos reales de cocinas a medida con dirección de ingeniería."
+        fondoCard
+      />
+
+      <Reviews />
+
       {/* PROCESO */}
       <section className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -155,23 +172,6 @@ export default function ReformaCocina() {
           </div>
         </div>
       </section>
-
-      <GuaranteesSection
-        title="Tu cocina, respaldada desde el primer día"
-        subtitle="Proyecto, plazo y garantía por escrito: antes de empezar ya sabes a qué te comprometes."
-        items={garantias}
-      />
-
-      {/* PROYECTOS */}
-      <ProjectGallery
-        proyectos={PROYECTOS}
-        eyebrow="Proyectos reales"
-        titulo="Cocinas reformadas en Valencia"
-        subtitulo="Ejemplos reales de cocinas a medida con dirección de ingeniería."
-        fondoCard
-      />
-
-      <Reviews />
 
       <ServiceCTA title="¿Vamos a reformar tu cocina?" subtitle="Te asesoramos sin compromiso. Presupuesto gratis en menos de 24 horas." />
 

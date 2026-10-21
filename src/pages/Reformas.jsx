@@ -124,25 +124,6 @@ export default function Reformas() {
         </div>
       </section>
 
-      {/* PROCESS */}
-      <section className="border-b border-border bg-card">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Cómo trabajamos</p>
-            <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu reforma en 4 pasos</h2>
-          </div>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {pasos.map((p) => (
-              <div key={p.n} className="rounded-sm border border-border bg-background p-6">
-                <span className="font-display text-3xl font-black text-citron-ink/30">{p.n}</span>
-                <h3 className="mt-3 font-display text-lg font-bold text-foreground">{p.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* WHY */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 lg:px-8">
@@ -181,6 +162,25 @@ export default function Reformas() {
       />
 
       <Reviews />
+
+      {/* PROCESS */}
+      <section className="border-b border-border bg-card">
+        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Cómo trabajamos</p>
+            <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu reforma en 4 pasos</h2>
+          </div>
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {pasos.map((p) => (
+              <div key={p.n} className="rounded-sm border border-border bg-background p-6">
+                <span className="font-display text-3xl font-black text-citron-ink/30">{p.n}</span>
+                <h3 className="mt-3 font-display text-lg font-bold text-foreground">{p.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <ServiceCTA title="¿Vamos a reformar tu baño o cocina?" subtitle="Te asesoramos sin compromiso. Presupuesto gratis en menos de 24 horas." />
 

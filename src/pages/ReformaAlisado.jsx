@@ -132,6 +132,23 @@ export default function ReformaAlisado() {
         </div>
       </section>
 
+      <GuaranteesSection
+        title="Tu alisado, respaldado desde el primer día"
+        subtitle="Acabado uniforme, trabajo limpio y garantía por escrito: sin sorpresas ni sorpresas con el polvo."
+        items={garantias}
+      />
+
+      {/* PROYECTOS */}
+      <ProjectGallery
+        proyectos={PROYECTOS}
+        eyebrow="Proyectos reales"
+        titulo="Paredes alisadas en Valencia"
+        subtitulo="Ejemplos reales de alisado de paredes y eliminación de gotelé."
+        fondoCard
+      />
+
+      <Reviews />
+
       {/* PROCESO */}
       <section className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -150,23 +167,6 @@ export default function ReformaAlisado() {
           </div>
         </div>
       </section>
-
-      <GuaranteesSection
-        title="Tu alisado, respaldado desde el primer día"
-        subtitle="Acabado uniforme, trabajo limpio y garantía por escrito: sin sorpresas ni sorpresas con el polvo."
-        items={garantias}
-      />
-
-      {/* PROYECTOS */}
-      <ProjectGallery
-        proyectos={PROYECTOS}
-        eyebrow="Proyectos reales"
-        titulo="Paredes alisadas en Valencia"
-        subtitulo="Ejemplos reales de alisado de paredes y eliminación de gotelé."
-        fondoCard
-      />
-
-      <Reviews />
 
       <ServiceCTA title="¿Quieres paredes lisas en tu casa?" subtitle="Te asesoramos sin compromiso. Presupuesto gratis en menos de 24 horas." />
 

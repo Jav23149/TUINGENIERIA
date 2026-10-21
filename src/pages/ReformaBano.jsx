@@ -139,6 +139,23 @@ export default function ReformaBano() {
         </div>
       </section>
 
+      <GuaranteesSection
+        title="Tu baño, respaldado desde el primer día"
+        subtitle="Plazo, garantía y un único responsable: antes de empezar ya sabes a qué te comprometes."
+        items={garantias}
+      />
+
+      {/* PROYECTOS */}
+      <ProjectGallery
+        proyectos={PROYECTOS}
+        eyebrow="Proyectos reales"
+        titulo="Baños reformados en Valencia"
+        subtitulo="Ejemplos reales de baños con dirección de ingeniería."
+        fondoCard
+      />
+
+      <Reviews />
+
       {/* PROCESO */}
       <section className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -157,23 +174,6 @@ export default function ReformaBano() {
           </div>
         </div>
       </section>
-
-      <GuaranteesSection
-        title="Tu baño, respaldado desde el primer día"
-        subtitle="Plazo, garantía y un único responsable: antes de empezar ya sabes a qué te comprometes."
-        items={garantias}
-      />
-
-      {/* PROYECTOS */}
-      <ProjectGallery
-        proyectos={PROYECTOS}
-        eyebrow="Proyectos reales"
-        titulo="Baños reformados en Valencia"
-        subtitulo="Ejemplos reales de baños con dirección de ingeniería."
-        fondoCard
-      />
-
-      <Reviews />
 
       <ServiceCTA title="¿Vamos a reformar tu baño?" subtitle="Te asesoramos sin compromiso. Presupuesto gratis en menos de 24 horas." />
 
