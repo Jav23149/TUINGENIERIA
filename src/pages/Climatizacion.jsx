@@ -92,37 +92,37 @@ export default function Climatizacion() {
       {/* HERO con la imagen a todo el ancho de la sección */}
       <section className="relative min-h-[85vh] overflow-hidden border-b border-border">
         <div className="absolute inset-0">
-          <Image src={HVAC_IMG} alt="Instalador montando un split de aire acondicionado en la pared de un salón" className="h-full w-full object-cover brightness-[0.65] contrast-[1.08] saturate-[1.05]" fittingType="fill" />
+          <Image src={HVAC_IMG} alt="Instalador montando un split de aire acondicionado en la pared de un salón" className="h-full w-full object-cover brightness-[0.72] contrast-[1.1] saturate-[1.08]" fittingType="fill" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/55 lg:via-background/60 lg:to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/55 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-graphite/90 via-graphite/60 to-graphite/35" />
+        <div className="absolute inset-0 bg-gradient-to-t from-graphite/70 via-graphite/15 to-transparent" />
         <div className="relative flex min-h-[85vh] items-center">
           <div className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
             <div className="max-w-2xl">
-              <span className="inline-flex items-center gap-2 rounded-full border border-citron/50 bg-citron/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron-ink backdrop-blur-sm">
+              <span className="inline-flex items-center gap-2 rounded-full border border-citron-soft/40 bg-citron-soft/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron-soft backdrop-blur">
                 <Wind className="h-3.5 w-3.5" /> Climatización en {siteConfig.provincia}
               </span>
-              <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
+              <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-white text-balance sm:text-5xl">
                 Aire acondicionado split y por conductos en {siteConfig.provincia}
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              <p className="mt-6 text-lg leading-relaxed text-white/90">
                 Climatización profesional para viviendas y locales: splits y conductos con tecnología inverter.
                 Confort durante todo el año con la máxima eficiencia energética.
               </p>
-              <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-semibold text-muted-foreground">
-                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Presupuesto en 24h</span>
-                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Equipos A+++</span>
-                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-ink" /> Instaladores propios</span>
+              <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-semibold text-white/85">
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-soft" /> Presupuesto en 24h</span>
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-soft" /> Equipos A+++</span>
+                <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-citron-soft" /> Instaladores propios</span>
               </div>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
-                <a href={whatsappLink("Hola, quiero información sobre climatización.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-citron px-7 text-sm font-bold text-primary-foreground transition hover:bg-citron-ink">
+                <a href={whatsappLink("Hola, quiero información sobre climatización.")} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-7 text-sm font-bold text-white transition hover:brightness-95">
                   <MessageCircle className="h-4 w-4" /> Presupuesto gratis
                 </a>
-                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-border bg-background/70 px-7 text-sm font-bold text-foreground backdrop-blur-sm transition hover:border-citron-ink hover:text-citron-ink">
+                <a href={telLink} className="flex h-12 items-center justify-center gap-2 rounded-sm border border-white/30 bg-white/10 px-7 text-sm font-bold text-white backdrop-blur transition hover:border-citron-soft hover:text-citron-soft">
                   <Phone className="h-4 w-4" /> {siteConfig.phone || "Llamar"}
                 </a>
               </div>
-              <p className="mt-5 text-sm font-semibold text-citron-ink">Te asesoramos sin compromiso</p>
+              <p className="mt-5 text-sm font-semibold text-citron-soft">Te asesoramos sin compromiso</p>
             </div>
           </div>
         </div>
