@@ -80,11 +80,11 @@ export default function ReformaBano() {
           <Image
             src={HERO_IMG}
             alt="Reforma de baño real en Valencia con plato de ducha y acabados premium"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover brightness-90"
             fittingType="fill"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/45 lg:via-background/70 lg:to-background/15" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
         <div className="relative flex min-h-[85vh] items-center">
           <div className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">

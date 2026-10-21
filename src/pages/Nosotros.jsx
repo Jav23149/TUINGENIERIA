@@ -29,9 +29,9 @@ export default function Nosotros() {
       {/* HERO con la imagen a todo el ancho de la sección */}
       <section className="relative min-h-[85vh] overflow-hidden border-b border-border">
         <div className="absolute inset-0">
-          <Image src={HERO_IMG} alt="Espacio diseñado y climatizado por TU INGENIERIA" className="h-full w-full object-cover" fittingType="fill" />
+          <Image src={HERO_IMG} alt="Espacio diseñado y climatizado por TU INGENIERIA" className="h-full w-full object-cover brightness-90" fittingType="fill" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/45 lg:via-background/70 lg:to-background/15" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
         <div className="blueprint-grid absolute inset-0 opacity-20" />
         <div className="relative flex min-h-[85vh] items-center">
