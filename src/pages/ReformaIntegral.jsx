@@ -12,6 +12,7 @@ const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cd9d37de6_generated_image.png";
 const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/03cb3f616_generated_image.png";
 const ALISADO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/b9a50dfc4_generated_image.png";
+const PROCESO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/ebeb8a341_generated_image.png";
 
 const incluye = [
   { icon: Bath, title: "Baño completo", desc: "Plato de ducha o bañera, mobiliario, iluminación y acabados premium.", img: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/3068d76bc_generated_image.png" },
