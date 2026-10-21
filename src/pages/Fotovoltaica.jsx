@@ -92,10 +92,10 @@ export default function Fotovoltaica() {
       {/* HERO con la imagen a todo el ancho de la sección */}
       <section className="relative min-h-[85vh] overflow-hidden border-b border-border">
         <div className="absolute inset-0">
-          <Image src={HERO_IMG} alt="Instalador montando paneles solares fotovoltaicos en el tejado de una vivienda" className="h-full w-full object-cover brightness-90" fittingType="fill" />
+          <Image src={HERO_IMG} alt="Instalador montando paneles solares fotovoltaicos en el tejado de una vivienda" className="h-full w-full object-cover brightness-[0.65] contrast-[1.08] saturate-[1.05]" fittingType="fill" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/45 lg:via-background/70 lg:to-background/15" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/55 lg:via-background/60 lg:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/55 via-transparent to-transparent" />
         <div className="relative flex min-h-[85vh] items-center">
           <div className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
             <div className="max-w-2xl">
