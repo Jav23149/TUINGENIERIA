@@ -26,29 +26,32 @@ const stats = [
 export default function Nosotros() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative overflow-hidden border-b border-border">
+      {/* HERO con la imagen a todo el ancho de la sección */}
+      <section className="relative min-h-[85vh] overflow-hidden border-b border-border">
         <div className="absolute inset-0">
           <Image src={HERO_IMG} alt="Espacio diseñado y climatizado por TU INGENIERIA" className="h-full w-full object-cover" fittingType="fill" />
-          <div className="absolute inset-0 bg-gradient-to-br from-background via-background/80 to-background/30" />
-          <div className="blueprint-grid absolute inset-0 opacity-20" />
         </div>
-        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-28">
-          <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-citron/40 bg-citron/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron-ink">
-              <Users className="h-3.5 w-3.5" /> Sobre nosotros
-            </span>
-            <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
-              Ingeniería que soluciona tu vida diaria
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              TU INGENIERIA nace de un conjunto de ingenieros que buscan solucionar la vida de las personas y hacer que diariamente se sientan cómodos en espacios diseñados al estilo del cliente.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
-              <WhatsAppButton label="Hablemos de tu proyecto" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-7 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
-              <Link to="/#contacto" className="flex h-12 items-center justify-center gap-2 rounded-sm border border-citron/50 bg-citron/10 px-7 text-sm font-bold text-citron-ink transition hover:bg-citron/20">
-                Solicitar presupuesto
-              </Link>
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+        <div className="blueprint-grid absolute inset-0 opacity-20" />
+        <div className="relative flex min-h-[85vh] items-center">
+          <div className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <span className="inline-flex items-center gap-2 rounded-full border border-citron/50 bg-citron/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-citron-ink backdrop-blur-sm">
+                <Users className="h-3.5 w-3.5" /> Sobre nosotros
+              </span>
+              <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl">
+                Ingeniería que soluciona tu vida diaria
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+                TU INGENIERIA nace de un conjunto de ingenieros que buscan solucionar la vida de las personas y hacer que diariamente se sientan cómodos en espacios diseñados al estilo del cliente.
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center [&>a]:w-full sm:[&>a]:w-auto">
+                <WhatsAppButton label="Hablemos de tu proyecto" className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-7 text-sm font-bold text-white transition hover:brightness-95" iconClass="h-5 w-5" />
+                <Link to="/#contacto" className="flex h-12 items-center justify-center gap-2 rounded-sm border border-citron/50 bg-citron/10 px-7 text-sm font-bold text-citron-ink backdrop-blur-sm transition hover:bg-citron/20">
+                  Solicitar presupuesto
+                </Link>
+              </div>
             </div>
           </div>
         </div>
