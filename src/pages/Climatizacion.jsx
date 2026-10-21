@@ -92,7 +92,7 @@ export default function Climatizacion() {
       {/* HERO con la imagen a todo el ancho de la sección */}
       <section className="relative min-h-[85vh] overflow-hidden border-b border-border">
         <div className="absolute inset-0">
-          <Image src={HVAC_IMG} alt="Instalador montando un split de aire acondicionado en la pared de un salón" className="h-full w-full object-cover brightness-[0.72] contrast-[1.1] saturate-[1.08]" fittingType="fill" />
+          <Image src={HVAC_IMG} alt="Instalador montando un split de aire acondicionado en la pared de un salón" className="h-full w-full object-cover brightness-[0.72] contrast-[1.1] saturate-[1.08]" fittingType="fill" focalPointX={0.3} focalPointY={0.3} />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-graphite/90 via-graphite/60 to-graphite/35" />
         <div className="absolute inset-0 bg-gradient-to-t from-graphite/70 via-graphite/15 to-transparent" />
