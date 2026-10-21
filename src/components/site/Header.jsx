@@ -9,7 +9,6 @@ const navLinks = [
   { label: "Climatización", to: "/climatizacion" },
   { label: "Fotovoltaica", to: "/fotovoltaica" },
   { label: "Contacto", to: "/#contacto" },
-  { label: "Nosotros", to: "/nosotros" },
 ];
 
 export default function Header() {

@@ -41,7 +41,6 @@ const PAGE_WHATSAPP_MESSAGES = {
   "/reforma-cocina": "Hola, quiero un presupuesto de reforma de cocina en Valencia.",
   "/reforma-alisado": "Hola, quiero un presupuesto de alisado de paredes en Valencia.",
   "/fotovoltaica": "Hola, quiero información sobre paneles solares en Valencia.",
-  "/nosotros": "Hola, quiero información sobre TU INGENIERIA.",
 };
 
 export const pageWhatsAppMsg = () => {
