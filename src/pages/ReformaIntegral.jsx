@@ -12,7 +12,6 @@ const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f
 const BANO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/cd9d37de6_generated_image.png";
 const COCINA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/03cb3f616_generated_image.png";
 const ALISADO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/b9a50dfc4_generated_image.png";
-const PROCESO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/ebeb8a341_generated_image.png";
 
 const incluye = [
   { icon: Bath, title: "Baño completo", desc: "Plato de ducha o bañera, mobiliario, iluminación y acabados premium.", img: "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/3068d76bc_generated_image.png" },
@@ -123,25 +122,6 @@ export default function ReformaIntegral() {
         </div>
       </section>
 
-      {/* PROCESO */}
-      <section className="border-b border-border">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Cómo trabajamos</p>
-            <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu reforma integral en 4 pasos</h2>
-          </div>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {pasos.map((p) => (
-              <div key={p.n} className="rounded-sm border border-border bg-card p-6">
-                <span className="font-display text-3xl font-black text-citron-ink">{p.n}</span>
-                <h3 className="mt-3 font-display text-lg font-bold text-foreground">{p.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ESPECIALIDADES */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -168,6 +148,25 @@ export default function ReformaIntegral() {
                   </span>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROCESO */}
+      <section className="border-b border-border bg-secondary/40">
+        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Cómo trabajamos</p>
+            <h2 className="mt-3 font-display text-3xl font-black text-foreground sm:text-4xl">Tu reforma integral en 4 pasos</h2>
+          </div>
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {pasos.map((p) => (
+              <div key={p.n} className="rounded-sm border border-border bg-card p-6">
+                <span className="font-display text-3xl font-black text-citron-ink">{p.n}</span>
+                <h3 className="mt-3 font-display text-lg font-bold text-foreground">{p.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
+              </div>
             ))}
           </div>
         </div>
