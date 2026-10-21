@@ -96,7 +96,7 @@ export default function Reformas() {
               <p className="mt-5 text-sm font-semibold text-citron-ink">Te asesoramos sin compromiso</p>
             </div>
             <div className="order-1 lg:order-2 relative overflow-hidden rounded-sm border border-border">
-              <Image src={HERO_IMG} alt="Reforma de cocina a medida recién terminada" className="h-80 w-full lg:h-96" fittingType="fill" />
+              <Image src={HERO_IMG} alt="Reforma de cocina a medida recién terminada" className="aspect-[4/3] w-full object-cover sm:aspect-[16/10]" fittingType="fill" />
             </div>
           </div>
         </div>

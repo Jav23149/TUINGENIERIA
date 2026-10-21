@@ -107,7 +107,7 @@ export default function ReformaCocina() {
               <Image
                 src={HERO_IMG}
                 alt="Cocina reformada a medida con isla de cuarzo en Valencia"
-                className="h-80 w-full lg:h-96"
+                className="aspect-[4/3] w-full object-cover sm:aspect-[16/10]"
                 fittingType="fill"
               />
             </div>

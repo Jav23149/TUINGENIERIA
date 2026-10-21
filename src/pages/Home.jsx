@@ -72,7 +72,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative h-screen min-h-[640px] overflow-hidden">
         <div className="absolute inset-0">
-          <Image src={HERO_IMG} alt="Reforma integral de vivienda en Valencia con acabados premium" className="h-full w-full ken-burns" fittingType="fill" />
+          <Image src={HERO_IMG} alt="Reforma integral de vivienda en Valencia con acabados premium" className="h-full w-full object-cover ken-burns" fittingType="fill" />
           <div className="absolute inset-0 bg-gradient-to-b from-graphite/80 via-graphite/55 to-graphite/95" />
         </div>
         <div className="relative flex h-full flex-col items-center justify-center px-4 text-center">
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             <Link to="/reforma-integral" className="group relative h-[300px] overflow-hidden rounded-sm border border-border lg:h-[360px]">
-              <Image src={COCINA_PRO} alt="Reforma de cocina a medida con isla de mármol" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
+              <Image src={COCINA_PRO} alt="Reforma de cocina a medida con isla de mármol" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
               <div className="absolute inset-0 bg-gradient-to-t from-graphite/90 via-graphite/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 lg:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-soft">01 — Reformas Integrales</p>
@@ -125,7 +125,7 @@ export default function Home() {
             </Link>
 
             <Link to="/climatizacion" className="group relative h-[300px] overflow-hidden rounded-sm border border-border lg:h-[360px]">
-              <Image src={HVAC_IMG} alt="Aire acondicionado split instalado en salón reformado" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
+              <Image src={HVAC_IMG} alt="Aire acondicionado split instalado en salón reformado" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
               <div className="absolute inset-0 bg-gradient-to-t from-graphite/90 via-graphite/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 lg:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-soft">02 — Climatización</p>
@@ -139,7 +139,7 @@ export default function Home() {
             </Link>
 
             <Link to="/fotovoltaica" className="group relative h-[300px] overflow-hidden rounded-sm border border-border lg:h-[360px]">
-              <Image src={FOTOVOLTAICA_IMG} alt="Instalador montando paneles solares fotovoltaicos en un tejado" className="h-full w-full transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
+              <Image src={FOTOVOLTAICA_IMG} alt="Instalador montando paneles solares fotovoltaicos en un tejado" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" fittingType="fill" />
               <div className="absolute inset-0 bg-gradient-to-t from-graphite/90 via-graphite/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 lg:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-soft">03 — Fotovoltaica</p>
@@ -199,7 +199,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-sm">
-              <Image src={BANO_PRO} alt="Baño reformado con bañera exenta y acabados premium" className="h-[420px] w-full lg:h-[520px]" fittingType="fill" />
+              <Image src={BANO_PRO} alt="Baño reformado con bañera exenta y acabados premium" className="aspect-[4/5] w-full object-cover lg:aspect-auto lg:h-[520px]" fittingType="fill" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-citron-ink">Por qué TU INGENIERIA</p>
@@ -240,7 +240,7 @@ export default function Home() {
             {PROYECTOS.map((p) => (
               <article key={p.titulo} className="flex w-[85vw] shrink-0 snap-center flex-col overflow-hidden rounded-sm border border-border bg-background sm:w-[400px]">
                 <div className="relative h-72 shrink-0 overflow-hidden bg-graphite">
-                  <Image src={p.imagen} alt={p.titulo} className="h-full w-full" fittingType="fit" />
+                  <Image src={p.imagen} alt={p.titulo} className="h-full w-full object-contain" fittingType="fit" />
                   <span className="absolute left-4 top-4 rounded-full bg-citron px-3 py-1 text-xs font-bold text-primary-foreground">{p.tipo}</span>
                 </div>
                 <div className="flex flex-1 flex-col p-6">

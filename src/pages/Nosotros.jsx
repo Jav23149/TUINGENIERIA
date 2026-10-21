@@ -29,7 +29,7 @@ export default function Nosotros() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0">
-          <Image src={HERO_IMG} alt="Espacio diseñado y climatizado por TU INGENIERIA" className="h-full w-full" fittingType="fill" />
+          <Image src={HERO_IMG} alt="Espacio diseñado y climatizado por TU INGENIERIA" className="h-full w-full object-cover" fittingType="fill" />
           <div className="absolute inset-0 bg-gradient-to-br from-background via-background/80 to-background/30" />
           <div className="blueprint-grid absolute inset-0 opacity-20" />
         </div>
@@ -68,7 +68,7 @@ export default function Nosotros() {
               </div>
             </div>
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={COCINA_IMG} alt="Cocina reformada a medida por TU INGENIERIA" className="h-80 w-full" fittingType="fill" />
+              <Image src={COCINA_IMG} alt="Cocina reformada a medida por TU INGENIERIA" className="aspect-[4/3] w-full object-cover sm:aspect-[16/10]" fittingType="fill" />
             </div>
           </div>
         </div>

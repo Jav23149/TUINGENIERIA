@@ -80,7 +80,7 @@ export default function ReformaBano() {
           <Image
             src={HERO_IMG}
             alt="Reforma de baño real en Valencia con plato de ducha y acabados premium"
-            className="h-full w-full"
+            className="h-full w-full object-cover"
             fittingType="fill"
           />
         </div>

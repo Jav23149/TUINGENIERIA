@@ -89,7 +89,7 @@ export default function ReformaIntegral() {
             {incluye.map((i) => (
               <div key={i.title} className="group overflow-hidden rounded-sm border border-border bg-card">
                 <div className="relative h-44 overflow-hidden">
-                  <Image src={i.img} alt={i.title} className="h-full w-full transition-transform duration-300 group-hover:scale-105" fittingType="fill" />
+                  <Image src={i.img} alt={i.title} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" fittingType="fill" />
                   <i.icon className="absolute left-4 top-4 h-8 w-8 text-citron-soft drop-shadow" />
                 </div>
                 <div className="p-6">
@@ -153,7 +153,7 @@ export default function ReformaIntegral() {
             {ESPECIALIDADES.map((s) => (
               <Link key={s.to} to={s.to} className="group overflow-hidden rounded-sm border border-border bg-card transition hover:border-citron-ink">
                 <div className="relative h-56 overflow-hidden">
-                  <Image src={s.img} alt={s.title} className="h-full w-full transition-transform duration-500 group-hover:scale-105" fittingType="fill" />
+                  <Image src={s.img} alt={s.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" fittingType="fill" />
                   <div className="absolute inset-0 bg-gradient-to-t from-graphite/60 via-transparent to-transparent" />
                   <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-citron px-3 py-1 text-xs font-bold text-primary-foreground">
                     <s.icon className="h-3.5 w-3.5" /> {s.tag}

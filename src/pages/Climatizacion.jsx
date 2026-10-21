@@ -121,7 +121,7 @@ export default function Climatizacion() {
               <p className="mt-5 text-sm font-semibold text-citron-ink">Te asesoramos sin compromiso</p>
             </div>
             <div className="order-1 lg:order-2 relative overflow-hidden rounded-sm border border-border">
-              <Image src={HVAC_IMG} alt="Instalador montando un split de aire acondicionado en la pared de un salón" className="h-80 w-full lg:h-96" fittingType="fill" />
+              <Image src={HVAC_IMG} alt="Instalador montando un split de aire acondicionado en la pared de un salón" className="aspect-[4/3] w-full object-cover sm:aspect-[16/10]" fittingType="fill" />
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@ export default function Climatizacion() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={FACHADA_IMG} alt="Instalador fijando una unidad exterior de aire acondicionado en la fachada de un edificio" className="h-96 w-full" fittingType="fill" />
+              <Image src={FACHADA_IMG} alt="Instalador fijando una unidad exterior de aire acondicionado en la fachada de un edificio" className="aspect-[4/3] w-full object-cover sm:aspect-[16/10]" fittingType="fill" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Eficiencia energética</p>

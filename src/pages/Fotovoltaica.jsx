@@ -121,7 +121,7 @@ export default function Fotovoltaica() {
               <p className="mt-5 text-sm font-semibold text-citron-ink">Te asesoramos sin compromiso</p>
             </div>
             <div className="order-1 lg:order-2 relative overflow-hidden rounded-sm border border-border">
-              <Image src={HERO_IMG} alt="Instalador montando paneles solares fotovoltaicos en el tejado de una vivienda" className="h-80 w-full lg:h-96" fittingType="fill" />
+              <Image src={HERO_IMG} alt="Instalador montando paneles solares fotovoltaicos en el tejado de una vivienda" className="aspect-[4/3] w-full object-cover sm:aspect-[16/10]" fittingType="fill" />
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@ export default function Fotovoltaica() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-sm border border-border">
-              <Image src={PANELES_ATARDECER} alt="Paneles solares fotovoltaicos en un tejado al atardecer" className="h-96 w-full" fittingType="fill" />
+              <Image src={PANELES_ATARDECER} alt="Paneles solares fotovoltaicos en un tejado al atardecer" className="aspect-[4/3] w-full object-cover sm:aspect-[16/10]" fittingType="fill" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-citron-ink">Ahorro energético</p>
