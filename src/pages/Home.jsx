@@ -10,6 +10,7 @@ import Reviews from "@/components/site/Reviews";
 import GuaranteesSection from "@/components/site/GuaranteesSection";
 import UrgencySection from "@/components/site/UrgencySection";
 
+const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/aaba8755409c7c76c2e0abc8c13e6340_generated_57f521c2.png";
 const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/47365688d_generated_image.png";
 const CONDUCTOS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/eb1c621eb_generated_image.png";
 const FACHADA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/60243de9d_generated_image.png";
@@ -101,7 +102,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative min-h-[85vh] overflow-hidden border-b border-border">
         <div className="absolute inset-0">
-          <Image src={HVAC_IMG} alt="Instalador montando un split de aire acondicionado en la pared de un salón" className="h-full w-full object-cover brightness-[0.72] contrast-[1.1] saturate-[1.08]" fittingType="fill" focalPointX={0.3} focalPointY={0.3} />
+          <Image src={HERO_IMG} alt="Técnico ajustando un split de aire acondicionado instalado en la pared de un salón" className="h-full w-full object-cover brightness-[0.72] contrast-[1.1] saturate-[1.08]" fittingType="fill" focalPointX={0.58} focalPointY={0.4} />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-graphite/90 via-graphite/60 to-graphite/35" />
         <div className="absolute inset-0 bg-gradient-to-t from-graphite/70 via-graphite/15 to-transparent" />
