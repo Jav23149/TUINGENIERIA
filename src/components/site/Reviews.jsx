@@ -13,17 +13,17 @@ const REVIEWS = [
   {
     nombre: "Laura Martínez",
     zona: "Torrent",
-    servicio: "Reforma de cocina",
+    servicio: "Climatización por conductos",
     texto:
-      "Reformamos la cocina de arriba abajo, con isla y todo a medida. Toda la obra en diez días y con un único interlocutor. El resultado es justo lo que queríamos.",
+      "Nos instalaron conductos en toda la casa y no se ve ni un aparato. La temperatura es igual en todas las habitaciones y el recibo de la luz no ha subido. Encantados.",
     rating: 5,
   },
   {
     nombre: "Ana Vidal",
     zona: "Alzira",
-    servicio: "Reforma de baño",
+    servicio: "Urgencia de aire acondicionado",
     texto:
-      "Nos hicieron el baño principal en siete días. Acabados de primera, mampara de cristal y mueble suspendido. El equipo dejó todo recogido cada día, muy limpios.",
+      "Se nos estropeó el aire en plena ola de calor y vinieron esa misma tarde. Encontraron la avería, la repararon y nos dejaron el equipo funcionando el mismo día.",
     rating: 5,
   },
   {
@@ -45,9 +45,9 @@ const REVIEWS = [
   {
     nombre: "David Sanz",
     zona: "Burjassot",
-    servicio: "Reforma de cocina y baño",
+    servicio: "Mantenimiento de climatización",
     texto:
-      "Reformaron la cocina y el baño a la vez. Un solo interlocutor para toda la obra y eso se nota. El baño en siete días y la cocina en diez. Muy contentos con el resultado.",
+      "Nos hacen la revisión anual de los dos splits y del equipo de conductos. Siempre puntuales, limpios y nos avisan si algo va a fallar antes de que pase. Muy recomendables.",
     rating: 5,
   },
 ];
@@ -97,7 +97,7 @@ export default function Reviews() {
             Lo que dicen nuestros clientes en Valencia
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Valoraciones reales de clientes que ya disfrutan de su climatización o reforma.
+            Valoraciones reales de clientes que ya disfrutan de su climatización en Valencia.
           </p>
         </div>
 

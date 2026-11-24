@@ -7,13 +7,6 @@ import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import ScrollToTop from './components/ScrollToTop';
 import Home from '@/pages/Home';
-import Climatizacion from '@/pages/Climatizacion';
-import Reformas from '@/pages/Reformas';
-import ReformaIntegral from '@/pages/ReformaIntegral';
-import ReformaBano from '@/pages/ReformaBano';
-import ReformaCocina from '@/pages/ReformaCocina';
-import ReformaAlisado from '@/pages/ReformaAlisado';
-import Fotovoltaica from '@/pages/Fotovoltaica';
 import SiteLayout from '@/components/site/SiteLayout';
 import Login from '@/pages/Login';
 import Register from '@/pages/Register';
@@ -53,13 +46,6 @@ const AuthenticatedApp = () => {
       <Route path="/reset-password" element={<ResetPassword />} />
       <Route element={<SiteLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/climatizacion" element={<Climatizacion />} />
-        <Route path="/reformas" element={<Reformas />} />
-        <Route path="/reforma-integral" element={<ReformaIntegral />} />
-        <Route path="/reforma-bano" element={<ReformaBano />} />
-        <Route path="/reforma-cocina" element={<ReformaCocina />} />
-        <Route path="/reforma-alisado" element={<ReformaAlisado />} />
-        <Route path="/fotovoltaica" element={<Fotovoltaica />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

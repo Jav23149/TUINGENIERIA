@@ -4,11 +4,10 @@ import { Phone, MessageCircle, Menu, X } from "lucide-react";
 import { siteConfig, whatsappLink, telLink } from "@/lib/siteConfig";
 
 const navLinks = [
-  { label: "Inicio", to: "/" },
-  { label: "Reformas Integrales", to: "/reforma-integral" },
-  { label: "Climatización", to: "/climatizacion" },
-  { label: "Fotovoltaica", to: "/fotovoltaica" },
-  { label: "Contacto", to: "/#contacto" },
+  { label: "Servicios", href: "#servicios" },
+  { label: "Urgencias", href: "#urgencias" },
+  { label: "Proyectos", href: "#proyectos" },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 export default function Header() {
@@ -27,17 +26,11 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {navLinks.map((l) =>
-            l.to.includes("#") ? (
-              <a key={l.label} href={l.to.replace("/", "")} className="text-sm font-medium text-muted-foreground transition hover:text-citron-ink">
-                {l.label}
-              </a>
-            ) : (
-              <Link key={l.label} to={l.to} className="text-sm font-medium text-muted-foreground transition hover:text-citron-ink">
-                {l.label}
-              </Link>
-            )
-          )}
+          {navLinks.map((l) => (
+            <a key={l.label} href={l.href} className="text-sm font-medium text-muted-foreground transition hover:text-citron-ink">
+              {l.label}
+            </a>
+          ))}
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
@@ -71,17 +64,11 @@ export default function Header() {
       {open && (
         <div className="border-t border-border bg-background px-4 pb-[calc(1rem+env(safe-area-inset-bottom))] pt-4 md:hidden">
           <nav className="flex flex-col gap-4">
-            {navLinks.map((l) =>
-              l.to.includes("#") ? (
-                <a key={l.label} href={l.to.replace("/", "")} className="flex items-center py-2.5 text-base font-medium text-foreground" onClick={() => setOpen(false)}>
-                  {l.label}
-                </a>
-              ) : (
-                <Link key={l.label} to={l.to} className="flex items-center py-2.5 text-base font-medium text-foreground" onClick={() => setOpen(false)}>
-                  {l.label}
-                </Link>
-              )
-            )}
+            {navLinks.map((l) => (
+              <a key={l.label} href={l.href} className="flex items-center py-2.5 text-base font-medium text-foreground" onClick={() => setOpen(false)}>
+                {l.label}
+              </a>
+            ))}
             <div className="mt-2 flex gap-2">
               <a href={telLink} className="flex flex-1 items-center justify-center gap-2 rounded-sm border border-border py-3 text-sm font-semibold">
                 <Phone className="h-4 w-4" /> Llamar

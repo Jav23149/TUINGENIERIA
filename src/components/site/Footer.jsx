@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Mail, MapPin, Clock } from "lucide-react";
 import { siteConfig, whatsappLink, telLink, mailLink } from "@/lib/siteConfig";
 import ValenciaMap from "@/components/site/ValenciaMap";
@@ -17,7 +16,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Reformas integrales, climatización, energía solar y mantenimiento del hogar en {siteConfig.provincia} y alrededores. Un único equipo para todas tus necesidades.
+              Especialistas en climatización en {siteConfig.provincia}: aire acondicionado split y por conductos, instalación, mantenimiento y servicio urgente.
             </p>
             <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Dónde encontrarnos</p>
             <div className="mt-3">
@@ -28,12 +27,11 @@ export default function Footer() {
           <div>
             <h3 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">Servicios</h3>
             <ul className="mt-4 space-y-3 text-sm">
-              <li><Link to="/reforma-integral" className="text-muted-foreground transition hover:text-citron-ink">Reformas integrales</Link></li>
-              <li><Link to="/reforma-bano" className="text-muted-foreground transition hover:text-citron-ink">Reforma de baño</Link></li>
-              <li><Link to="/reforma-cocina" className="text-muted-foreground transition hover:text-citron-ink">Reforma de cocina</Link></li>
-              <li><Link to="/reforma-alisado" className="text-muted-foreground transition hover:text-citron-ink">Alisado de paredes</Link></li>
-              <li><Link to="/climatizacion" className="text-muted-foreground transition hover:text-citron-ink">Climatización</Link></li>
-              <li><Link to="/fotovoltaica" className="text-muted-foreground transition hover:text-citron-ink">Paneles solares</Link></li>
+              <li><a href="#servicios" className="text-muted-foreground transition hover:text-citron-ink">Aire acondicionado split</a></li>
+              <li><a href="#servicios" className="text-muted-foreground transition hover:text-citron-ink">Climatización por conductos</a></li>
+              <li><a href="#urgencias" className="text-muted-foreground transition hover:text-citron-ink">Reparación urgente</a></li>
+              <li><a href="#servicios" className="text-muted-foreground transition hover:text-citron-ink">Mantenimiento y servicio técnico</a></li>
+              <li><a href="#contacto" className="text-muted-foreground transition hover:text-citron-ink">Presupuesto gratis</a></li>
             </ul>
           </div>
 
@@ -79,7 +77,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row">
           <p>© {new Date().getFullYear()} {siteConfig.brand}. Todos los derechos reservados.</p>
-          <p>Reformas, climatización y energía solar · {siteConfig.provincia}</p>
+          <p>Climatización split y conductos · {siteConfig.provincia}</p>
         </div>
       </div>
     </footer>

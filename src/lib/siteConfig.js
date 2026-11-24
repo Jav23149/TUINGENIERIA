@@ -2,11 +2,11 @@
 // Reemplaza estos valores con los datos reales de la empresa.
 export const siteConfig = {
   brand: "TU INGENIERIA",
-  tagline: "Reformas Integrales",
+  tagline: "Climatización split y conductos",
   phone: "+34 643 084 651",
   phoneRaw: "+34643084651",
   whatsapp: "34643084651",
-  whatsappMsg: "Hola, quiero información sobre vuestros servicios de climatización y reformas.",
+  whatsappMsg: "Hola, quiero información sobre climatización (split o conductos) en Valencia.",
   email: "tuingenieriasl@gmail.com",
   provincia: "Valencia",
   provinciaSlug: "valencia",
@@ -33,14 +33,7 @@ export const siteConfig = {
 
 // Mensaje de WhatsApp personalizado según la página actual (ruta).
 const PAGE_WHATSAPP_MESSAGES = {
-  "/": "Hola, quiero información sobre climatización y reformas en Valencia.",
-  "/climatizacion": "Hola, quiero información sobre climatización en Valencia.",
-  "/reformas": "Hola, quiero un presupuesto de reforma de baño o cocina en Valencia.",
-  "/reforma-integral": "Hola, quiero un presupuesto de reforma integral en Valencia.",
-  "/reforma-bano": "Hola, quiero un presupuesto de reforma de baño en Valencia.",
-  "/reforma-cocina": "Hola, quiero un presupuesto de reforma de cocina en Valencia.",
-  "/reforma-alisado": "Hola, quiero un presupuesto de alisado de paredes en Valencia.",
-  "/fotovoltaica": "Hola, quiero información sobre paneles solares en Valencia.",
+  "/": "Hola, quiero información sobre aire acondicionado split o por conductos en Valencia.",
 };
 
 export const pageWhatsAppMsg = () => {
