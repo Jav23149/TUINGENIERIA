@@ -11,11 +11,11 @@ import GuaranteesSection from "@/components/site/GuaranteesSection";
 import UrgencySection from "@/components/site/UrgencySection";
 
 const HERO_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/aaba8755409c7c76c2e0abc8c13e6340_generated_57f521c2.png";
-const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/47365688d_generated_image.png";
-const CONDUCTOS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/eb1c621eb_generated_image.png";
-const FACHADA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/60243de9d_generated_image.png";
-const TECH_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/0c7b806ef_generated_image.png";
-const LIFT_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/5b92a4983_generated_image.png";
+const HVAC_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/3c34f88d1e16e49a03bbb1e9fdc6e335_generated_image.png";
+const CONDUCTOS_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/6dd1ab51cba4dff683343dcfea1b8176_generated_image.png";
+const FACHADA_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/0d7861efb5806a23a70e0326baee049e_generated_image.png";
+const TECH_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/a99e61c786b87071fa8007e94e5a9ac4_generated_image.png";
+const LIFT_IMG = "https://media.base44.com/images/public/6ac2c61f7c5f2c6d856595f5/10b09a9c4a11ace42813f39b5918ab64_generated_image.png";
 
 const PROYECTOS = [
   {
